@@ -59,6 +59,11 @@ namespace Arkivverket.Arkade.CLI
 
                     arkade.CreatePackage(testSession, options.OutputDirectory);
                 }
+
+            }
+            catch(Exception exception)
+            {
+                Console.WriteLine($@"Execution of Arkade was interrupted: {exception.Message}");
             }
             finally
             {
