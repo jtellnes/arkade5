@@ -37,6 +37,10 @@ namespace Arkivverket.Arkade.CLI
 
                 if (!TestingIsSkipped(options))
                 {
+                    if (AddmlFileIsMissing(testSession))
+                        throw new ArkadeException("An ADDML-file needed for testing was not found." +
+                                                  "Use '--skip testing' to create an untested package");
+
                     arkade.RunTests(testSession);
                     SaveTestReport(arkade, testSession, options);
                 }
@@ -70,6 +74,11 @@ namespace Arkivverket.Arkade.CLI
         private static bool PackingIsSkipped(CommandLineOptions options)
         {
             return options.Skip.HasValue() && options.Skip.Equals("packing");
+        }
+
+        private static bool AddmlFileIsMissing(TestSession testSession)
+        {
+            return !testSession.Archive.AddmlXmlUnit.File.Exists;
         }
 
         private static TestSession CreateTestSession(CommandLineOptions options, Core.Base.Arkade arkade, ArchiveType archiveType)
