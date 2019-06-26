@@ -1,10 +1,12 @@
 using System.IO;
+using System.Net.NetworkInformation;
 using Arkivverket.Arkade.Core.Identify;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Metadata;
 using Arkivverket.Arkade.Core.Report;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.Core.Statistics;
 
 namespace Arkivverket.Arkade.Core.Base
 {
@@ -63,6 +65,8 @@ namespace Arkivverket.Arkade.Core.Base
             testSession.AddLogEntry(Messages.LogMessageFinishedTesting);
 
             _testSessionXmlGenerator.GenerateXmlAndSaveToFile(testSession);
+
+            Statistics.Collect(testSession);
         }
 
         public string CreatePackage(TestSession testSession, string outputDirectory)
@@ -83,6 +87,8 @@ namespace Arkivverket.Arkade.Core.Base
                     testSession.Archive, testSession.ArchiveMetadata, outputDirectory
                 );
             }
+
+            Statistics.Collect(testSession, packageFilePath);
 
             return packageFilePath;
         }
