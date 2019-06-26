@@ -110,6 +110,7 @@ namespace Arkivverket.Arkade.Core.Report
                     _stream.WriteLine(@"                </td>");
                     _stream.WriteLine(@"                <td>");
                     _stream.WriteLine(@"                " + HttpUtility.HtmlEncode(SubstitueLineBreaksWithHtmlBreak(testResult.Message)));
+                    if (testResult.IsError() || testResult.IsErrorGroup()) _stream.Write("&nbsp;<b>&#9888;</b>");
                     _stream.WriteLine(@"                </td>");
                     _stream.WriteLine(@"            </tr>");
                 }
