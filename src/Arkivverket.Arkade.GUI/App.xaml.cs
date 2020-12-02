@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 using System.Windows;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Base.Addml;
@@ -13,6 +15,7 @@ using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.Core.Util.FileFormatIdentification;
 using Arkivverket.Arkade.GUI.ViewModels;
 using Arkivverket.Arkade.GUI.Views;
+using Arkivverket.Arkade.GUI.Languages;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
@@ -30,6 +33,7 @@ namespace Arkivverket.Arkade.GUI
             try
             {
                 ArkadeProcessingArea.Establish(Settings.Default.ArkadeProcessingAreaLocation);
+                SetUILanguage();
             }
             catch (Exception e)
             {
@@ -51,10 +55,7 @@ namespace Arkivverket.Arkade.GUI
 
         protected override void OnInitialized()
         {
-            if (Settings.Default.DarkModeEnabled)
-                SettingsViewModel.ApplyDarkMode();
-            else
-                SettingsViewModel.ApplyLightMode();
+            ApplyUserSettings();
 
             RegionManager.SetRegionManager(MainWindow, Container.Resolve<IRegionManager>());
             RegionManager.UpdateRegions();
@@ -125,6 +126,36 @@ namespace Arkivverket.Arkade.GUI
                 ArkadeProcessingArea.CleanUp();
 
             base.OnExit(e);
+        }
+
+        private static void ApplyUserSettings()
+        {
+            if (Settings.Default.DarkModeEnabled)
+                SettingsViewModel.ApplyDarkMode();
+            else
+                SettingsViewModel.ApplyLightMode();
+        }
+
+        private static void SetUILanguage()
+        {
+            string uiLanguage = Settings.Default.SelectedUILanguage;
+
+            if (uiLanguage == null)
+            {
+                uiLanguage = Thread.CurrentThread.CurrentCulture.ToString();
+                Settings.Default.SelectedUILanguage = uiLanguage;
+            }
+
+            var cultureInfo = new CultureInfo(uiLanguage, true);
+
+            AboutGUI.Culture = cultureInfo;
+            CreatePackageGUI.Culture = cultureInfo;
+            Languages.GUI.Culture = cultureInfo;
+            LoadArchiveExtractionGUI.Culture = cultureInfo;
+            MetaDataGUI.Culture = cultureInfo;
+            SettingsGUI.Culture = cultureInfo;
+            TestRunnerGUI.Culture = cultureInfo;
+            ToolsGUI.Culture = cultureInfo;
         }
     }
 }
