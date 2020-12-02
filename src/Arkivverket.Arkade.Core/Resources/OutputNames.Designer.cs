@@ -22,14 +22,14 @@ namespace Arkivverket.Arkade.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Noark5TestDescriptions {
+    public class OutputNames {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Noark5TestDescriptions() {
+        internal OutputNames() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.Core.Resources.Noark5TestDescriptions", typeof(Noark5TestDescriptions).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.Core.Resources.OutputNames", typeof(OutputNames).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,51 @@ namespace Arkivverket.Arkade.Core.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arkaderesults.
+        /// </summary>
+        public static string DirectoryNameResultOutputContainer {
+            get {
+                return ResourceManager.GetString("DirectoryNameResultOutputContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fileformatinfo.csv.
+        /// </summary>
+        public static string FileFormatInfoFileName {
+            get {
+                return ResourceManager.GetString("FileFormatInfoFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fileformatinfo-statistics.csv.
+        /// </summary>
+        public static string FileFormatInfoStatisticsFileName {
+            get {
+                return ResourceManager.GetString("FileFormatInfoStatisticsFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to arkade-ip-metadata.json.
+        /// </summary>
+        public static string MetadataFileName {
+            get {
+                return ResourceManager.GetString("MetadataFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to noark5-testlist.txt.
+        /// </summary>
+        public static string Noark5TestListFileName {
+            get {
+                return ResourceManager.GetString("Noark5TestListFileName", resourceCulture);
             }
         }
     }
