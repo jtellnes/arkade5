@@ -118,196 +118,164 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AgreementNumber" xml:space="preserve">
-    <value>Agreement Number*</value>
+    <value>Avtalenr*</value>
   </data>
   <data name="ArchiveCreator" xml:space="preserve">
-    <value>Archive Creator*</value>
+    <value>Arkivskaper*</value>
+    <comment>Institusjonsnavn</comment>
   </data>
   <data name="ArchiveCreator_Address" xml:space="preserve">
-    <value>Address (Contact, Archive Creator)</value>
+    <value>Adresse (Kontakt, Arkivskaper)</value>
   </data>
   <data name="ArchiveCreator_ContactPerson" xml:space="preserve">
-    <value>Contact Person (Archive Creator)</value>
+    <value>Kontaktperson (Arkivskaper)</value>
+    <comment>pr Arkivskaper</comment>
   </data>
   <data name="ArchiveCreator_Email" xml:space="preserve">
-    <value>E-mail (Contact, Archive Creator)</value>
+    <value>E-post (Kontakt, Arkivskaper)</value>
+    <comment>pr Arkivskaper</comment>
   </data>
   <data name="ArchiveCreator_Telephone" xml:space="preserve">
-    <value>Telephone (Contact, Archive Creator)</value>
+    <value>Telefon (Kontakt, Arkivskaper)</value>
+    <comment>pr Arkivskaper</comment>
   </data>
   <data name="ArchiveDescription" xml:space="preserve">
-    <value>Archive Description</value>
+    <value>Arkivbeskrivelse</value>
   </data>
   <data name="ArchiveExtractionSystem" xml:space="preserve">
-    <value>Archive Extraction System</value>
+    <value>Uttrekkssystem</value>
+    <comment>Navn på applikasjonen som gjør selve uttrekket</comment>
   </data>
   <data name="ArchiveExtractionType" xml:space="preserve">
-    <value>Type (Extraction)</value>
+    <value>Type (Uttrekk)</value>
+    <comment>Type av uttrekk.
+Gyldige verdier er:
+Noark 3, Noark 4, Noark 5, Fagsystem</comment>
   </data>
   <data name="ArchiveExtractionTypeVersion" xml:space="preserve">
-    <value>Type Version (Extraction)</value>
+    <value>Typeversjon (Uttrekk)</value>
+    <comment>Gjelder kun Noark 5, da obligatorisk</comment>
   </data>
   <data name="ArchiveExtractionVersion" xml:space="preserve">
-    <value>Version (Extraction)</value>
+    <value>Versjon (Uttrekk)</value>
+    <comment>Versjon av applikasjonen</comment>
   </data>
   <data name="ArchiveSystem" xml:space="preserve">
-    <value>Extraction System</value>
-  </data>
-  <data name="CreateDocumentFileInfoText" xml:space="preserve">
-    <value>Include format information for document files</value>
-  </data>
-  <data name="CreateDocumentFileInfoToolTip" xml:space="preserve">
-    <value>NB! Large amounts of document files will heavily increase run time.</value>
-  </data>
-  <data name="Creator" xml:space="preserve">
-    <value>Creator of information package</value>
-  </data>
-  <data name="Creator_Address" xml:space="preserve">
-    <value>Address (Contact, Package Creator)</value>
-  </data>
-  <data name="Creator_ContactPerson" xml:space="preserve">
-    <value>Contact Person (Package Creator)</value>
-  </data>
-  <data name="Creator_Email" xml:space="preserve">
-    <value>E-mail (Contact, Package Creator)</value>
-  </data>
-  <data name="Creator_OriginalSystem" xml:space="preserve">
-    <value>Original System:</value>
-  </data>
-  <data name="Creator_System" xml:space="preserve">
-    <value>System:</value>
-  </data>
-  <data name="Creator_Telephone" xml:space="preserve">
-    <value>Telephone (Contact, Archive Creator)</value>
+    <value>Uttrekkssystem</value>
   </data>
   <data name="EndDate" xml:space="preserve">
-    <value>End Date</value>
+    <value>Sluttdato</value>
+    <comment>Obligatorisk for Noark (addml)</comment>
   </data>
   <data name="ExtractionDate" xml:space="preserve">
-    <value>Extraction Date</value>
+    <value>Uttrekksdato</value>
   </data>
   <data name="GuiSubsection_ArchiveCreator" xml:space="preserve">
-    <value>Archive Creator</value>
+    <value>Arkivskaper</value>
   </data>
   <data name="GuiSubsection_ArchiveMain" xml:space="preserve">
-    <value>Description of archive</value>
+    <value>Beskrivelse av arkiv</value>
   </data>
   <data name="GuiSubsection_ArchiveSystem" xml:space="preserve">
-    <value>Extraction System</value>
-  </data>
-  <data name="GuiSubsection_Creator" xml:space="preserve">
-    <value>Creator of information package</value>
+    <value>Uttrekkssystem</value>
   </data>
   <data name="GuiSubsection_ExtractionDate" xml:space="preserve">
-    <value>Extraction Date</value>
+    <value>Uttrekksdato</value>
   </data>
   <data name="GuiSubsection_NoarkParameters" xml:space="preserve">
-    <value>Noark fields</value>
+    <value>Noark felter</value>
   </data>
   <data name="GuiSubsection_Owner" xml:space="preserve">
-    <value>Owner</value>
+    <value>Eier</value>
   </data>
   <data name="GuiSubsection_Producer" xml:space="preserve">
-    <value>Producer</value>
+    <value>Produsent</value>
   </data>
   <data name="GuiSubsection_Recipient" xml:space="preserve">
-    <value>Recipient</value>
+    <value>Mottaker</value>
+    <comment>Institusjonsnavn</comment>
   </data>
   <data name="GuiSubsection_System" xml:space="preserve">
     <value>System</value>
   </data>
   <data name="GuiSubsection_Transferer" xml:space="preserve">
-    <value>Transferer</value>
+    <value>Overfører</value>
   </data>
   <data name="Label" xml:space="preserve">
-    <value>Label</value>
-  </data>
-  <data name="Label_HintTextStandardLabel" xml:space="preserve">
-    <value>Current system name, start year and end year</value>
-  </data>
-  <data name="Label_HintTextUserdefinedLabel" xml:space="preserve">
-    <value>Loaded or given value</value>
-  </data>
-  <data name="Label_OptionTextStandardLabel" xml:space="preserve">
-    <value>Standard</value>
-  </data>
-  <data name="Label_OptionTextUserdefinedLabel" xml:space="preserve">
-    <value>Custom</value>
-  </data>
-  <data name="LoadExternalMetadataButtonText" xml:space="preserve">
-    <value>Fetch external metadata</value>
-  </data>
-  <data name="LoadExternalMetadataInfoText" xml:space="preserve">
-    <value>Fill out the form with metadata from an external METS-file. I.e. info.xml from a previously created package.</value>
+    <value>Merkelapp</value>
   </data>
   <data name="MetadataGuiLocale" xml:space="preserve">
-    <value>en</value>
-  </data>
-  <data name="MetadataLoadError" xml:space="preserve">
-    <value>Was not able to fetch metadata from {0}</value>
+    <value>no</value>
+    <comment>Can't get it to work as a reference</comment>
   </data>
   <data name="MetadataRequiredFieldsInfo" xml:space="preserve">
-    <value>* = Required field for creating a valid archive package</value>
+    <value>* = Feltet er påkrevet for å skape en gyldig arkivpakke</value>
   </data>
   <data name="Owner" xml:space="preserve">
-    <value>Owner*</value>
+    <value>Eier*</value>
+    <comment>Intitusjons-/Firma-/Organisasjons-/Familienavn/Personnavn (ved personlig arkiv)</comment>
   </data>
   <data name="Owner_Address" xml:space="preserve">
-    <value>Address (Contact, Owner)</value>
+    <value>Adresse (Kontakt, Eier)</value>
   </data>
   <data name="Owner_ContactPerson" xml:space="preserve">
-    <value>Contact Person (Owner)</value>
+    <value>Kontaktperson (Eier)</value>
   </data>
   <data name="Owner_Email" xml:space="preserve">
-    <value>E-mail (Contact, Owner)</value>
+    <value>E-post (Kontakt, Eier)</value>
   </data>
   <data name="Owner_Telephone" xml:space="preserve">
-    <value>Telephone (Contact, Owner)</value>
+    <value>Telefon (Kontakt, Eier)</value>
   </data>
   <data name="PackageCreationErrorStatusMessage" xml:space="preserve">
-    <value>Could not create/overwite package. Please make sure the package location is not busy.</value>
-  </data>
-  <data name="PackageCreationOngoing" xml:space="preserve">
-    <value>Creating package...</value>
+    <value>Klarte ikke opprette/overskrive pakke. Sjekk om pakkedestinasjonen er opptatt.</value>
   </data>
   <data name="Producer" xml:space="preserve">
-    <value>Producer*</value>
+    <value>Produsent*</value>
+    <comment>Institusjonsnavn/Firmanavn</comment>
   </data>
   <data name="Producer_Address" xml:space="preserve">
-    <value>Address (Contact, Producer)</value>
+    <value>Adresse (Kontakt, Produsent)</value>
   </data>
   <data name="Producer_ContactPerson" xml:space="preserve">
-    <value>Contact Person (Producer)</value>
+    <value>Kontaktperson (Produsent)</value>
   </data>
   <data name="Producer_Email" xml:space="preserve">
-    <value>E-mail  (Contact, Producer)</value>
+    <value>E-post (Kontakt, Produsent)</value>
   </data>
   <data name="Producer_Telephone" xml:space="preserve">
-    <value>Telephone  (Contact, Producer)</value>
+    <value>Telefon (Kontakt, Produsent)</value>
   </data>
   <data name="Recipient" xml:space="preserve">
-    <value>Recipient*</value>
+    <value>Mottaker*</value>
+    <comment>Institusjonsnavn</comment>
   </data>
   <data name="SelectMetadataFile" xml:space="preserve">
-    <value>Choose METS-file to load metadata</value>
+    <value>Velg METS-fil for å laste inn metadata</value>
   </data>
   <data name="SelectOutputDirectoryMessage" xml:space="preserve">
-    <value>Choose location for package</value>
+    <value>Velg plassering for pakke</value>
   </data>
   <data name="StartDate" xml:space="preserve">
-    <value>Start Date</value>
+    <value>Startdato</value>
+    <comment>Obligatorisk for Noark (addml)</comment>
   </data>
   <data name="SystemName" xml:space="preserve">
-    <value>System Name*</value>
+    <value>Systemnavn*</value>
   </data>
   <data name="SystemType" xml:space="preserve">
     <value>Type (System)*</value>
+    <comment>Type av system.
+Gyldige verdier er:
+Noark 3, Noark 4, Noark 5, Fagsystem</comment>
   </data>
   <data name="SystemTypeVersion" xml:space="preserve">
-    <value>Type Version (System)</value>
+    <value>Typeversjon (System)</value>
+    <comment>Gjelder kun Noark 5, da obligatorisk</comment>
   </data>
   <data name="SystemVersion" xml:space="preserve">
-    <value>Version (System)*</value>
+    <value>Versjon (System)*</value>
+    <comment>Versjon av system</comment>
   </data>
   <data name="Test" xml:space="preserve">
     <value>Test</value>
@@ -316,27 +284,77 @@
     <value>Metadata</value>
   </data>
   <data name="Transferer" xml:space="preserve">
-    <value>Transferer*</value>
+    <value>Overfører*</value>
+    <comment>Institusjonsnavn
+Tidl. nevnt som avleverende myndighet</comment>
   </data>
   <data name="Transferer_Address" xml:space="preserve">
-    <value>Address (Contact, Transferer)</value>
+    <value>Adresse (Kontakt, Overfører)</value>
   </data>
   <data name="Transferer_ContractPerson" xml:space="preserve">
-    <value>Contact Person (Transferer)*</value>
+    <value>Kontaktperson (Overfører)*</value>
   </data>
   <data name="Transferer_Email" xml:space="preserve">
-    <value>E-mail (Contact, Transferer)</value>
+    <value>E-post (Kontakt, Overfører)</value>
   </data>
   <data name="Transferer_Telephone" xml:space="preserve">
-    <value>Telephone (Contact, Transferer)</value>
+    <value>Telefon (Kontakt, Overfører)</value>
+  </data>
+  <data name="MetadataLoadError" xml:space="preserve">
+    <value>Klarte ikke å hente inn metadata fra {0}</value>
+  </data>
+  <data name="LoadExternalMetadataButtonText" xml:space="preserve">
+    <value>Hent eksterne metadata</value>
+  </data>
+  <data name="LoadExternalMetadataInfoText" xml:space="preserve">
+    <value>Fyll ut skjemaet med metadata fra en ekstern METS-fil, f.eks. info.xml vedlagt en tidligere opprettet pakke.</value>
+  </data>
+  <data name="Label_HintTextStandardLabel" xml:space="preserve">
+    <value>Gjeldende systemnavn, startår og sluttår</value>
+  </data>
+  <data name="Label_HintTextUserdefinedLabel" xml:space="preserve">
+    <value>Innlastet eller oppgitt verdi</value>
+  </data>
+  <data name="Label_OptionTextStandardLabel" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Label_OptionTextUserdefinedLabel" xml:space="preserve">
+    <value>Egendefinert</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Skaper av informasjonspakke</value>
+  </data>
+  <data name="Creator_Address" xml:space="preserve">
+    <value>Adresse (Kontakt, Pakkeskaper)</value>
+  </data>
+  <data name="Creator_ContactPerson" xml:space="preserve">
+    <value>Kontaktperson (Pakkeskaper)</value>
+  </data>
+  <data name="Creator_Email" xml:space="preserve">
+    <value>E-post (Kontakt, Pakkeskaper)</value>
+  </data>
+  <data name="Creator_Telephone" xml:space="preserve">
+    <value>Telefon (Kontakt, Pakkeskaper)</value>
+  </data>
+  <data name="GuiSubsection_Creator" xml:space="preserve">
+    <value>Skaper av informasjonspakke</value>
+  </data>
+  <data name="PackageCreationOngoing" xml:space="preserve">
+    <value>Oppretter pakke...</value>
   </data>
   <data name="UnsufficientDiskSpaceStatusMessage" xml:space="preserve">
-    <value>Not enough disk space on target location.</value>
+    <value>Valgt destinasjon har ikke nok lagringsplass.</value>
   </data>
-  <data name="PackageCreationErrorLogMessage" xml:space="preserve">
-    <value>Error: Could not create/overwrite package.</value>
+  <data name="Creator_OriginalSystem" xml:space="preserve">
+    <value>Opprinnelig system:</value>
   </data>
-  <data name="UnsufficientDiskSpaceLogMessage" xml:space="preserve">
-    <value>Not enough diskspace on target location.</value>
+  <data name="Creator_System" xml:space="preserve">
+    <value>System:</value>
+  </data>
+  <data name="CreateDocumentFileInfoText" xml:space="preserve">
+    <value>Inkluder formatinformasjon for dokumentfiler</value>
+  </data>
+  <data name="CreateDocumentFileInfoToolTip" xml:space="preserve">
+    <value>NB! Tidkrevende ved stort antall dokumentfiler.</value>
   </data>
 </root>

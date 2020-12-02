@@ -117,52 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutDialogCloseButtonText" xml:space="preserve">
-    <value>Close</value>
+  <data name="ArchiveNotTestable" xml:space="preserve">
+    <value>Arkivuttrekket kan ikke testes: Det ble ikke funnet en gyldig spesifikasjonsfil for uttrekket.
+(Se logg for detaljer {0}).
+Du kan fortsatt lage en pakke av uttrekket.</value>
   </data>
-  <data name="AboutDialogHeaderText" xml:space="preserve">
-    <value>Arkade 5</value>
+  <data name="ArchiveTestability" xml:space="preserve">
+    <value>Testbarhet</value>
   </data>
-  <data name="AboutDialogWindowName" xml:space="preserve">
-    <value>About Arkade 5</value>
+  <data name="FinishedOperationMessage" xml:space="preserve">
+    <value>Testingen er fullført</value>
   </data>
-  <data name="ApacheV2_0Uri" xml:space="preserve">
-    <value>http://www.apache.org/licenses/LICENSE-2.0</value>
+  <data name="FinishedWithError" xml:space="preserve">
+    <value>Feil under testkjøring</value>
   </data>
-  <data name="ArkadeCopyrightInformationText" xml:space="preserve">
-    <value>Copyright © {0} Arkivverket. Licensed under</value>
-    <comment>{0} - årstall</comment>
+  <data name="MessageLabelError" xml:space="preserve">
+    <value>Feil</value>
   </data>
-  <data name="BundledSoftwareInformation_1" xml:space="preserve">
-    <value>Arkade 5 uses</value>
-    <comment>Første del av bundleinfo - ren tekst</comment>
+  <data name="MessageLabelSuccess" xml:space="preserve">
+    <value>Ok</value>
   </data>
-  <data name="BundledSoftwareInformation_2" xml:space="preserve">
-    <value>Siegfried</value>
-    <comment>andre del - tekst til hyperlenke</comment>
+  <data name="MessageLabelWarning" xml:space="preserve">
+    <value>Advarsel</value>
   </data>
-  <data name="BundledSoftwareInformation_3" xml:space="preserve">
-    <value>(Copyright © 2019 Richard Lehane), licensed under</value>
-    <comment>tredje del - ren tekst</comment>
+  <data name="ErrorReadingArchive" xml:space="preserve">
+    <value>Feil ved innlesing av arkiv: {0}</value>
   </data>
-  <data name="BundledSoftwareInformation_5" xml:space="preserve">
-    <value>to perform format analysis.</value>
-    <comment>femte del - ren tekst</comment>
+  <data name="FileNotFoundMessage" xml:space="preserve">
+    <value>Fil ikke funnet: {0}</value>
   </data>
-  <data name="GnuGpl3_0Uri" xml:space="preserve">
-    <value>https://www.gnu.org/licenses/gpl-3.0.en.html</value>
+  <data name="DetailedErrorMessageInfo" xml:space="preserve">
+    <value>Detaljer er skrevet til {0}</value>
   </data>
-  <data name="LicenseApache2_0" xml:space="preserve">
-    <value>Apache License, Version 2.0</value>
-    <comment>fjerde del - tekst til hyperlenke</comment>
+  <data name="CreatePackageButtonText" xml:space="preserve">
+    <value>Opprett pakke</value>
   </data>
-  <data name="LicenseGNU" xml:space="preserve">
-    <value>GNU GPL v3.0</value>
+  <data name="NewProgramSessionButtonText" xml:space="preserve">
+    <value>Ny kjøring</value>
   </data>
-  <data name="SiegfriedUri" xml:space="preserve">
-    <value>https://www.itforarchivists.com/siegfried/</value>
+  <data name="Title" xml:space="preserve">
+    <value>Testing av uttrekk</value>
   </data>
-  <data name="VersionText" xml:space="preserve">
-    <value>Version: </value>
+  <data name="HeaderFilePath" xml:space="preserve">
+    <value>Filsti:</value>
+  </data>
+  <data name="HeaderUUID" xml:space="preserve">
+    <value>UUID:</value>
+  </data>
+  <data name="HeaderArchiveType" xml:space="preserve">
+    <value>Arkivtype:</value>
+  </data>
+  <data name="HeaderProcessingFile" xml:space="preserve">
+    <value>Fil som blir prosessert nå:</value>
+  </data>
+  <data name="HeaderNumberOfProcessedFiles" xml:space="preserve">
+    <value>Antall filer prosessert:</value>
+  </data>
+  <data name="HeaderNumberofProcessedPosts" xml:space="preserve">
+    <value>Antall poster prosessert:</value>
+  </data>
+  <data name="HeaderNumberOfProcessedXmlElements" xml:space="preserve">
+    <value>Antall XML-elementer prosessert:</value>
+  </data>
+  <data name="TestSelectionHeader" xml:space="preserve">
+    <value>Testpunkter (ekspander for utvalg)</value>
+  </data>
+  <data name="TestSelectionChooseAllOrNoneCheckBoxText" xml:space="preserve">
+    <value>Velg alle/ingen</value>
+  </data>
+  <data name="StartTestingButtonText" xml:space="preserve">
+    <value>Start testing</value>
+  </data>
+  <data name="ShowTestReportButtonText" xml:space="preserve">
+    <value>Vis rapport</value>
+  </data>
+  <data name="TestMessagesHeading" xml:space="preserve">
+    <value>Meldinger:</value>
   </data>
 </root>

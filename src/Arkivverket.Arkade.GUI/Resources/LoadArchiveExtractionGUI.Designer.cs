@@ -22,14 +22,14 @@ namespace Arkivverket.Arkade.GUI.Languages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ToolsGUI {
+    public class LoadArchiveExtractionGUI {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ToolsGUI() {
+        internal LoadArchiveExtractionGUI() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.GUI.Resources.ToolsGUI", typeof(ToolsGUI).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.GUI.Resources.LoadArchiveExtractionGUI", typeof(LoadArchiveExtractionGUI).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,93 +61,65 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close.
+        ///   Looks up a localized string similar to Archive Type.
         /// </summary>
-        public static string CloseDialogButtonText {
+        public static string ArchiveTypeHeadingText {
             get {
-                return ResourceManager.GetString("CloseDialogButtonText", resourceCulture);
+                return ResourceManager.GetString("ArchiveTypeHeadingText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to save format analysis result.
+        ///   Looks up a localized string similar to Archive extraction.
         /// </summary>
-        public static string FormatCheckActionChooseOutputDirectory {
+        public static string ChooseArchiveHeadingText {
             get {
-                return ResourceManager.GetString("FormatCheckActionChooseOutputDirectory", resourceCulture);
+                return ResourceManager.GetString("ChooseArchiveHeadingText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to format analysis.
+        ///   Looks up a localized string similar to Please select archive extraction.
         /// </summary>
-        public static string FormatCheckActionChooseTargetDirectory {
+        public static string ChooseArchiveLabelText {
             get {
-                return ResourceManager.GetString("FormatCheckActionChooseTargetDirectory", resourceCulture);
+                return ResourceManager.GetString("ChooseArchiveLabelText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose directory ....
+        ///   Looks up a localized string similar to Select folder.
         /// </summary>
-        public static string FormatCheckChooseTargetDirectoryButtonText {
+        public static string ChooseFolderButtonText {
             get {
-                return ResourceManager.GetString("FormatCheckChooseTargetDirectoryButtonText", resourceCulture);
+                return ResourceManager.GetString("ChooseFolderButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Format analysis completed!
-        ///Result saved at:.
+        ///   Looks up a localized string similar to Select file.
         /// </summary>
-        public static string FormatCheckCompletedMessage {
+        public static string ChooseTarFileButtonText {
             get {
-                return ResourceManager.GetString("FormatCheckCompletedMessage", resourceCulture);
+                return ResourceManager.GetString("ChooseTarFileButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PRONOM fileformat-analysis.
+        ///   Looks up a localized string similar to Load extraction.
         /// </summary>
-        public static string FormatCheckHeading {
+        public static string LoadArchiveButtonText {
             get {
-                return ResourceManager.GetString("FormatCheckHeading", resourceCulture);
+                return ResourceManager.GetString("LoadArchiveButtonText", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Performing format analysis ....
+        ///   Looks up a localized string similar to Load archive extraction.
         /// </summary>
-        public static string FormatCheckOngoing {
+        public static string ViewHeadingText {
             get {
-                return ResourceManager.GetString("FormatCheckOngoing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Choose location to save results.
-        /// </summary>
-        public static string FormatCheckOutputDirectoryPickerTitle {
-            get {
-                return ResourceManager.GetString("FormatCheckOutputDirectoryPickerTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Run.
-        /// </summary>
-        public static string FormatCheckRunButtonText {
-            get {
-                return ResourceManager.GetString("FormatCheckRunButtonText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tools.
-        /// </summary>
-        public static string ToolsDialogTitle {
-            get {
-                return ResourceManager.GetString("ToolsDialogTitle", resourceCulture);
+                return ResourceManager.GetString("ViewHeadingText", resourceCulture);
             }
         }
     }

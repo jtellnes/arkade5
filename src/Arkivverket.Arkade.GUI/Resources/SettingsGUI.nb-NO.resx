@@ -117,52 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutDialogCloseButtonText" xml:space="preserve">
-    <value>Close</value>
+  <data name="ArkadeProcessingAreaLocation_ApplyButtonText" xml:space="preserve">
+    <value>Lagre</value>
   </data>
-  <data name="AboutDialogHeaderText" xml:space="preserve">
-    <value>Arkade 5</value>
+  <data name="ArkadeProcessingAreaLocation_CancelButtonText" xml:space="preserve">
+    <value>Avbryt</value>
   </data>
-  <data name="AboutDialogWindowName" xml:space="preserve">
-    <value>About Arkade 5</value>
+  <data name="ArkadeProcessingAreaLocation_EditButtonText" xml:space="preserve">
+    <value>Endre ...</value>
   </data>
-  <data name="ApacheV2_0Uri" xml:space="preserve">
-    <value>http://www.apache.org/licenses/LICENSE-2.0</value>
+  <data name="ArkadeProcessingAreaLocation_Header" xml:space="preserve">
+    <value>Arkades prosesseringsområde</value>
   </data>
-  <data name="ArkadeCopyrightInformationText" xml:space="preserve">
-    <value>Copyright © {0} Arkivverket. Licensed under</value>
-    <comment>{0} - årstall</comment>
+  <data name="ArkadeProcessingAreaLocation_Info" xml:space="preserve">
+    <value>Arkades prosesseringsområde er en katalog "arkade-tmp" der midlertidige filer blir plassert under prosessering av arkivutrekk og der hvor system- og feillogger lagres. Du må velge en egnet plassering for denne katalogen.</value>
   </data>
-  <data name="BundledSoftwareInformation_1" xml:space="preserve">
-    <value>Arkade 5 uses</value>
-    <comment>Første del av bundleinfo - ren tekst</comment>
+  <data name="ArkadeProcessingAreaLocation_Warning" xml:space="preserve">
+    <value>NB! Prosesseringsområdet vil potensielt inneholde sensitive data og store datamengder.</value>
   </data>
-  <data name="BundledSoftwareInformation_2" xml:space="preserve">
-    <value>Siegfried</value>
-    <comment>andre del - tekst til hyperlenke</comment>
+  <data name="OtherInstancesRunningOnProcessingAreaChangeMessage" xml:space="preserve">
+    <value>Vennligst avslutt andre instanser av Arkade før du endrer plassering av prosesseringområdet.</value>
   </data>
-  <data name="BundledSoftwareInformation_3" xml:space="preserve">
-    <value>(Copyright © 2019 Richard Lehane), licensed under</value>
-    <comment>tredje del - ren tekst</comment>
+  <data name="SelectDarkModeText" xml:space="preserve">
+    <value>Bruk mørk modus</value>
   </data>
-  <data name="BundledSoftwareInformation_5" xml:space="preserve">
-    <value>to perform format analysis.</value>
-    <comment>femte del - ren tekst</comment>
+  <data name="UndefinedArkadeProcessingAreaLocationDialogMessage" xml:space="preserve">
+    <value>Vennligst velg et prosesseringsområde som er tilgjengelig for Arkade</value>
   </data>
-  <data name="GnuGpl3_0Uri" xml:space="preserve">
-    <value>https://www.gnu.org/licenses/gpl-3.0.en.html</value>
+  <data name="UndefinedArkadeProcessingAreaLocationDialogTitle" xml:space="preserve">
+    <value>Gyldig prosesseringsområde mangler</value>
   </data>
-  <data name="LicenseApache2_0" xml:space="preserve">
-    <value>Apache License, Version 2.0</value>
-    <comment>fjerde del - tekst til hyperlenke</comment>
+  <data name="SelectUILanguageText" xml:space="preserve">
+    <value>Velg språk som vises i Arkade-applikasjonen:</value>
   </data>
-  <data name="LicenseGNU" xml:space="preserve">
-    <value>GNU GPL v3.0</value>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Innstillinger</value>
   </data>
-  <data name="SiegfriedUri" xml:space="preserve">
-    <value>https://www.itforarchivists.com/siegfried/</value>
-  </data>
-  <data name="VersionText" xml:space="preserve">
-    <value>Version: </value>
+  <data name="SelectOutputLanguageText" xml:space="preserve">
+    <value>Velg språk for filer som produseres av Arkade:</value>
   </data>
 </root>

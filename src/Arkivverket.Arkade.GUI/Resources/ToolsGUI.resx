@@ -118,34 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CloseDialogButtonText" xml:space="preserve">
-    <value>Lukk</value>
+    <value>Close</value>
+  </data>
+  <data name="FormatCheckChooseTargetDirectoryButtonText" xml:space="preserve">
+    <value>Choose directory ...</value>
+  </data>
+  <data name="FormatCheckCompletedMessage" xml:space="preserve">
+    <value>Format analysis completed!
+Result saved at:</value>
+  </data>
+  <data name="FormatCheckHeading" xml:space="preserve">
+    <value>PRONOM fileformat-analysis</value>
+  </data>
+  <data name="FormatCheckOngoing" xml:space="preserve">
+    <value>Performing format analysis ...</value>
+  </data>
+  <data name="FormatCheckOutputDirectoryPickerTitle" xml:space="preserve">
+    <value>Choose location to save results</value>
+  </data>
+  <data name="FormatCheckRunButtonText" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="ToolsDialogTitle" xml:space="preserve">
+    <value>Tools</value>
   </data>
   <data name="FormatCheckActionChooseOutputDirectory" xml:space="preserve">
     <value>save format analysis result</value>
   </data>
   <data name="FormatCheckActionChooseTargetDirectory" xml:space="preserve">
     <value>format analysis</value>
-  </data>
-  <data name="FormatCheckChooseTargetDirectoryButtonText" xml:space="preserve">
-    <value>Velg katalog ...</value>
-  </data>
-  <data name="FormatCheckCompletedMessage" xml:space="preserve">
-    <value>Formatanalyse er utført!
-Resultat lagret i:</value>
-  </data>
-  <data name="FormatCheckHeading" xml:space="preserve">
-    <value>PRONOM filformat-analyse</value>
-  </data>
-  <data name="FormatCheckOngoing" xml:space="preserve">
-    <value>Utfører formatanalyse ...</value>
-  </data>
-  <data name="FormatCheckOutputDirectoryPickerTitle" xml:space="preserve">
-    <value>Velg plassering for lagring av resultat</value>
-  </data>
-  <data name="FormatCheckRunButtonText" xml:space="preserve">
-    <value>Kjør</value>
-  </data>
-  <data name="ToolsDialogTitle" xml:space="preserve">
-    <value>Verktøy</value>
   </data>
 </root>
