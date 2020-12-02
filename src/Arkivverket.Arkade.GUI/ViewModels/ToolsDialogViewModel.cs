@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Forms;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.GUI.Languages;
 using Prism.Commands;
 using Prism.Mvvm;
 using Serilog;
@@ -76,7 +77,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         {
             FormatCheckStatus = string.Empty;
 
-            DirectoryPicker(Resources.ToolsGUI.FormatCheckActionChooseTargetDirectory,
+            DirectoryPicker(ToolsGUI.FormatCheckActionChooseTargetDirectory,
                 null,
                 out string directoryForFormatCheck
             );
@@ -90,8 +91,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private async void RunFormatCheck()
         {
-            DirectoryPicker(Resources.ToolsGUI.FormatCheckActionChooseOutputDirectory,
-                Resources.ToolsGUI.FormatCheckOutputDirectoryPickerTitle,
+            DirectoryPicker(ToolsGUI.FormatCheckActionChooseOutputDirectory,
+                ToolsGUI.FormatCheckOutputDirectoryPickerTitle,
                 out string directoryToSaveFormatCheckResults
             );
 
@@ -115,7 +116,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
             string filePath = $"{Path.Combine(DirectoryToSaveFormatCheckResult, ArkadeConstants.FileFormatInfoFileName)}";
 
-            FormatCheckStatus = $"{Resources.ToolsGUI.FormatCheckCompletedMessage}\n" +
+            FormatCheckStatus = $"{ToolsGUI.FormatCheckCompletedMessage}\n" +
                                 $"{filePath}";
 
             string argument = "/select, \"" + filePath + "\"";

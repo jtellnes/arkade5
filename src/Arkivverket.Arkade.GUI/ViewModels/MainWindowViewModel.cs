@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using System.Windows;
-using Arkivverket.Arkade.GUI.Resources;
+using Arkivverket.Arkade.GUI.Languages;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
 using Arkivverket.Arkade.Core.Util;
@@ -14,6 +14,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
     public class MainWindowViewModel : BindableBase
     {
         private ILogger _log = Log.ForContext<LoadArchiveExtractionViewModel>();
+
+        public static bool UiLanguageIsChanged { get; set; }
 
         private readonly IRegionManager _regionManager;
         public DelegateCommand<string> NavigateCommandMain { get; set; }
@@ -36,8 +38,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             ShowAboutDialogCommand = new DelegateCommand(ShowAboutDialog);
             ShowInvalidProcessingAreaLocationDialogCommand =
                 new DelegateCommand(ShowInvalidProcessingAreaLocationDialog);
-            CurrentVersion = "Versjon " + ArkadeVersion.Current;
-            VersionStatusMessage = arkadeVersion.UpdateIsAvailable() ? Resources.GUI.NewVersionMessage : null;
+            CurrentVersion = Languages.GUI.VersionText + ArkadeVersion.Current;
+            VersionStatusMessage = arkadeVersion.UpdateIsAvailable() ? Languages.GUI.NewVersionMessage : null;
             DownloadNewVersionCommand = new DelegateCommand(DownloadNewVersion);
         }
 
@@ -88,13 +90,13 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private static void RestartArkadeIfNeededAndWanted()
         {
-            bool restartIsNeeded = !ArkadeProcessingAreaLocationSetting.IsApplied();
+            bool restartIsNeeded = !ArkadeProcessingAreaLocationSetting.IsApplied() || UiLanguageIsChanged;
 
             if (restartIsNeeded)
             {
                 bool restartIsWanted = MessageBox.Show(
-                                           Resources.GUI.RestartArkadeForChangesToTakeEffectPrompt,
-                                           Resources.GUI.RestartArkadeDialogTitle,
+                                           Languages.GUI.RestartArkadeForChangesToTakeEffectPrompt,
+                                           Languages.GUI.RestartArkadeDialogTitle,
                                            MessageBoxButton.YesNo) == MessageBoxResult.Yes;
 
                 if (restartIsWanted)
@@ -107,8 +109,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                     }
                     else
                     {
-                        MessageBox.Show("Could not restart Arkade\nPlease manually start Arkade after shutdown",
-                            "Automatic restart failed", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show(Languages.GUI.RestartFailedMessageBoxText,
+                            Languages.GUI.RestartFailedMessageBoxTitle, MessageBoxButton.OK, MessageBoxImage.Error);
                     }
 
                     Application.Current.Shutdown();

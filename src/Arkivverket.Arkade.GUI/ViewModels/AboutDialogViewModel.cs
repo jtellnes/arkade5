@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.GUI.Languages;
 using Prism.Commands;
 using Prism.Mvvm;
 
@@ -16,8 +17,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         public AboutDialogViewModel()
         {
-            VersionInfoString = "Versjon: " + ArkadeVersion.Current;
-            CopyrightInfoString = string.Format(Resources.AboutGUI.ArkadeCopyrightInformationText, DateTime.Now.Year);
+            VersionInfoString = AboutGUI.VersionText + ArkadeVersion.Current;
+            CopyrightInfoString = string.Format(AboutGUI.ArkadeCopyrightInformationText, DateTime.Now.Year);
 
             ShowLicenseWebPageCommand = new DelegateCommand(ShowLicenseWebPage);
             ShowSiegfriedWebPageCommand = new DelegateCommand(ShowSiegfriedWebPage);
@@ -26,17 +27,17 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private void ShowLicenseWebPage()
         {
-            Process.Start(Resources.AboutGUI.GnuGpl3_0Uri);
+            Process.Start(AboutGUI.GnuGpl3_0Uri);
         }
 
         private void ShowSiegfriedWebPage()
         {
-            Process.Start(Resources.AboutGUI.SiegfriedUri);
+            Process.Start(AboutGUI.SiegfriedUri);
         }
 
         private void ShowApacheLicenseWebPage()
         {
-            Process.Start(Resources.AboutGUI.ApacheV2_0Uri);
+            Process.Start(AboutGUI.ApacheV2_0Uri);
         }
     }
 }

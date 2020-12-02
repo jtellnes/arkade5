@@ -1,22 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Arkivverket.Arkade.Core.Base;
-using Arkivverket.Arkade.GUI.Models;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using Serilog;
 using Arkivverket.Arkade.Core.Logging;
+using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
-using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.GUI.Models;
+using Arkivverket.Arkade.GUI.Languages;
 using Application = System.Windows.Application;
+using Settings = Arkivverket.Arkade.GUI.Properties.Settings;
 
 namespace Arkivverket.Arkade.GUI.ViewModels
 {
@@ -254,8 +257,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 if (!_testSession.IsTestableArchive())
                 {
                     _statusEventHandler.RaiseEventOperationMessage(
-                        Resources.GUI.TestrunnerArchiveTestability,
-                        string.Format(Resources.GUI.TestrunnerArchiveNotTestable, ArkadeProcessingArea.LogsDirectory),
+                        TestRunnerGUI.ArchiveTestability,
+                        string.Format(TestRunnerGUI.ArchiveNotTestable, ArkadeProcessingArea.LogsDirectory),
                         OperationMessageStatus.Warning
                     );
                 }
@@ -264,7 +267,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             }
             catch (Exception e)
             {
-                string message = string.Format(Resources.GUI.ErrorReadingArchive, e.Message);
+                string message = string.Format(TestRunnerGUI.ErrorReadingArchive, e.Message);
                 Log.Error(e, message);
                 _statusEventHandler.RaiseEventOperationMessage(null, message, OperationMessageStatus.Error);
             }
@@ -324,11 +327,13 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             try
             {
                 NotifyStartRunningTests();
-                
+
                 _testSession.TestsToRun = GetSelectedTests();
 
+                _testSession.CultureInfo = new CultureInfo(Settings.Default.SelectedOutputLanguage);
+
                 _arkadeApi.RunTests(_testSession);
-                
+
                 _testSession.TestSummary = new TestSummary(_numberOfProcessedFiles, _numberOfProcessedRecords, _numberOfTestsFinished);
 
                 _testSession.AddLogEntry("Test run completed.");
@@ -336,14 +341,14 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 SaveHtmlReport();
 
                 _testRunCompletedSuccessfully = true;
-                _statusEventHandler.RaiseEventOperationMessage(Resources.GUI.TestrunnerFinishedOperationMessage, null, OperationMessageStatus.Ok);
+                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.FinishedOperationMessage, null, OperationMessageStatus.Ok);
                 NotifyFinishedRunningTests();
             }
             catch (ArkadeException e)
             {
                 _testSession?.AddLogEntry("Test run failed: " + e.Message);
                 _log.Error(e.Message, e);
-                _statusEventHandler.RaiseEventOperationMessage(Resources.GUI.TestrunnerFinishedWithError, e.Message, OperationMessageStatus.Error);
+                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.FinishedWithError, e.Message, OperationMessageStatus.Error);
                 NotifyFinishedRunningTests();
             }
             catch (Exception e)
@@ -356,7 +361,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 if (e.GetType() == typeof(FileNotFoundException))
                 {
                     string nameOfMissingFile = new FileInfo(((FileNotFoundException) e).FileName).Name;
-                    operationMessageBuilder.Append(string.Format(Resources.GUI.FileNotFoundMessage, nameOfMissingFile));
+                    operationMessageBuilder.Append(string.Format(TestRunnerGUI.FileNotFoundMessage, nameOfMissingFile));
                 }
                 else
                 {
@@ -366,12 +371,12 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string fileName = new DetailedExceptionMessage(e).WriteToFile();
 
                 if (!string.IsNullOrEmpty(fileName))
-                    operationMessageBuilder.AppendLine("\n" + string.Format(Resources.GUI.DetailedErrorMessageInfo, fileName));
+                    operationMessageBuilder.AppendLine("\n" + string.Format(TestRunnerGUI.DetailedErrorMessageInfo, fileName));
 
                 string operationMessage = operationMessageBuilder.ToString();
 
                 _statusEventHandler.RaiseEventOperationMessage(
-                    Resources.GUI.TestrunnerFinishedWithError, operationMessage, OperationMessageStatus.Error
+                    TestRunnerGUI.FinishedWithError, operationMessage, OperationMessageStatus.Error
                 );
 
                 NotifyFinishedRunningTests();

@@ -2,6 +2,7 @@ using System.IO;
 using System.Windows.Forms;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Identify;
+using Arkivverket.Arkade.GUI.Languages;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -15,7 +16,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private readonly IRegionManager _regionManager;
         private string _archiveFileName;
-        private string _archiveFileNameGuiRepresentation = Resources.GUI.LoadArchiveChooseArchiveLabelText;
+        private string _archiveFileNameGuiRepresentation = LoadArchiveExtractionGUI.ChooseArchiveLabelText;
         private bool _isArchiveFileNameSelected;
         private ArchiveType? _archiveType;
         private bool _isArchiveTypeSelected;

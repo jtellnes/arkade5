@@ -6,18 +6,18 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows;
-using Arkivverket.Arkade.Core.Base;
-using Arkivverket.Arkade.Core.Metadata;
-using Arkivverket.Arkade.GUI.Models;
-using Arkivverket.Arkade.GUI.Util;
-using Arkivverket.Arkade.Core.Util;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using Serilog;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Arkivverket.Arkade.GUI.Resources;
+using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Metadata;
+using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.GUI.Models;
+using Arkivverket.Arkade.GUI.Util;
+using Arkivverket.Arkade.GUI.Languages;
 using Arkivverket.Arkade.GUI.Views;
 using MessageBox = System.Windows.MessageBox;
 
@@ -270,7 +270,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             catch (Exception e)
             {
                 
-                string message = string.Format(Resources.GUI.ErrorGeneral, e.Message);
+                string message = string.Format(Languages.GUI.ErrorGeneral, e.Message);
                 StatusMessageText = message;
                 
                 Log.Error(e, message);
@@ -495,7 +495,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string fileName = new DetailedExceptionMessage(exception).WriteToFile();
 
                 if (!string.IsNullOrEmpty(fileName))
-                    StatusMessagePath = string.Format(Resources.GUI.DetailedErrorMessageInfo, fileName);
+                    StatusMessagePath = string.Format(Languages.GUI.DetailedErrorMessageInfo, fileName);
 
                 _isRunningCreatePackage = false;
             }
