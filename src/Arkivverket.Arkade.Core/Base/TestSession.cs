@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using Arkivverket.Arkade.Core.Base.Addml.Definitions;
 using Arkivverket.Arkade.Core.Util;
@@ -26,6 +27,8 @@ namespace Arkivverket.Arkade.Core.Base
         public DateTime DateOfTesting { get; }
 
         public bool GenerateDocumentFileInfo { get; set; }
+
+        public CultureInfo CultureInfo { get; set; }
 
         public TestSession(Archive archive)
         {
