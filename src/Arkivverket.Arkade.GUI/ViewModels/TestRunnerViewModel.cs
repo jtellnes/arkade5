@@ -341,14 +341,14 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 SaveHtmlReport();
 
                 _testRunCompletedSuccessfully = true;
-                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.FinishedOperationMessage, null, OperationMessageStatus.Ok);
+                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.EventIdFinishedOperation, null, OperationMessageStatus.Ok);
                 NotifyFinishedRunningTests();
             }
             catch (ArkadeException e)
             {
                 _testSession?.AddLogEntry("Test run failed: " + e.Message);
                 _log.Error(e.Message, e);
-                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.FinishedWithError, e.Message, OperationMessageStatus.Error);
+                _statusEventHandler.RaiseEventOperationMessage(TestRunnerGUI.EventIdFinishedWithError, e.Message, OperationMessageStatus.Error);
                 NotifyFinishedRunningTests();
             }
             catch (Exception e)
@@ -376,7 +376,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string operationMessage = operationMessageBuilder.ToString();
 
                 _statusEventHandler.RaiseEventOperationMessage(
-                    TestRunnerGUI.FinishedWithError, operationMessage, OperationMessageStatus.Error
+                    TestRunnerGUI.EventIdFinishedWithError, operationMessage, OperationMessageStatus.Error
                 );
 
                 NotifyFinishedRunningTests();
@@ -470,12 +470,12 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private void SaveHtmlReport(FileInfo htmlFile)
         {
-            string eventId = "Lager rapport";
+            string eventId = TestRunnerGUI.EventIdCreatingReport;
             _statusEventHandler.RaiseEventOperationMessage(eventId, null, OperationMessageStatus.Started);
 
             _arkadeApi.SaveReport(_testSession, htmlFile);
 
-            var message = "Rapport lagret " + htmlFile.FullName;
+            var message = string.Format(TestRunnerGUI.TestReportIsSavedMessage, htmlFile.FullName);
             _statusEventHandler.RaiseEventOperationMessage(eventId, message, OperationMessageStatus.Ok);
         }
 

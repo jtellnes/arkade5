@@ -132,4 +132,7 @@
   <data name="WindowTitle" xml:space="preserve">
     <value>Enter metadata and create package</value>
   </data>
+  <data name="IPandMetadataSuccessfullyCreatedStatusMessage" xml:space="preserve">
+    <value>IP and metadata created at </value>
+  </data>
 </root>

@@ -473,9 +473,9 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string argument = "/select, \"" + packageOutputContainer + "\"";
                 System.Diagnostics.Process.Start("explorer.exe", argument);
 
-                StatusMessageText = "IP og metadata lagret i ";
+                StatusMessageText = CreatePackageGUI.IPandMetadataSuccessfullyCreatedStatusMessage;
                 StatusMessagePath = packageOutputContainer;
-                Log.Debug("Package created in " + packageOutputContainer);
+                Log.Debug("Package created at " + packageOutputContainer);
 
             }
             catch (Exception exception)

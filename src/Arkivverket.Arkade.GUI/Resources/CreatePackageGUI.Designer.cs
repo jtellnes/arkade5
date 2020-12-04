@@ -70,6 +70,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to IP and metadata created at .
+        /// </summary>
+        public static string IPandMetadataSuccessfullyCreatedStatusMessage {
+            get {
+                return ResourceManager.GetString("IPandMetadataSuccessfullyCreatedStatusMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AIP.
         /// </summary>
         public static string PackageTypeAIP {

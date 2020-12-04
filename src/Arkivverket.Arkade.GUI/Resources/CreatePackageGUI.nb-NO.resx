@@ -132,4 +132,7 @@
   <data name="WindowTitle" xml:space="preserve">
     <value>Registrer metadata og opprett pakke</value>
   </data>
+  <data name="IPandMetadataSuccessfullyCreatedStatusMessage" xml:space="preserve">
+    <value>IP og metadata lagret i </value>
+  </data>
 </root>

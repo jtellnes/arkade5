@@ -377,6 +377,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language for files produced by Arkade 5 is not English.
+        /// </summary>
+        public static string UiAndOutputLanguagesIsDifferentWarningMessage {
+            get {
+                return ResourceManager.GetString("UiAndOutputLanguagesIsDifferentWarningMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If the application is exited now, the current test results will be lost. Do you still want to exit?.
         /// </summary>
         public static string UnsavedTestResultsOnExitWarning {

@@ -125,10 +125,10 @@ Du kan fortsatt lage en pakke av uttrekket.</value>
   <data name="ArchiveTestability" xml:space="preserve">
     <value>Testbarhet</value>
   </data>
-  <data name="FinishedOperationMessage" xml:space="preserve">
+  <data name="EventIdFinishedOperation" xml:space="preserve">
     <value>Testingen er fullført</value>
   </data>
-  <data name="FinishedWithError" xml:space="preserve">
+  <data name="EventIdFinishedWithError" xml:space="preserve">
     <value>Feil under testkjøring</value>
   </data>
   <data name="MessageLabelError" xml:space="preserve">
@@ -193,5 +193,11 @@ Du kan fortsatt lage en pakke av uttrekket.</value>
   </data>
   <data name="TestMessagesHeading" xml:space="preserve">
     <value>Meldinger:</value>
+  </data>
+  <data name="TestReportIsSavedMessage" xml:space="preserve">
+    <value>Rapport lagret {0}</value>
+  </data>
+  <data name="EventIdCreatingReport" xml:space="preserve">
+    <value>Lager rapport</value>
   </data>
 </root>

@@ -125,10 +125,10 @@ Package creation can still be executed.</value>
   <data name="ArchiveTestability" xml:space="preserve">
     <value>Testability</value>
   </data>
-  <data name="FinishedOperationMessage" xml:space="preserve">
+  <data name="EventIdFinishedOperation" xml:space="preserve">
     <value>Testing completed</value>
   </data>
-  <data name="FinishedWithError" xml:space="preserve">
+  <data name="EventIdFinishedWithError" xml:space="preserve">
     <value>Error while testing</value>
   </data>
   <data name="MessageLabelError" xml:space="preserve">
@@ -193,5 +193,11 @@ Package creation can still be executed.</value>
   </data>
   <data name="TestMessagesHeading" xml:space="preserve">
     <value>Messages:</value>
+  </data>
+  <data name="TestReportIsSavedMessage" xml:space="preserve">
+    <value>Report saved {0}</value>
+  </data>
+  <data name="EventIdCreatingReport" xml:space="preserve">
+    <value>Creating report</value>
   </data>
 </root>

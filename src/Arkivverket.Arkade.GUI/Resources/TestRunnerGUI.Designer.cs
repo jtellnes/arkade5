@@ -108,29 +108,38 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File not found: {0}.
+        ///   Looks up a localized string similar to Creating report.
         /// </summary>
-        public static string FileNotFoundMessage {
+        public static string EventIdCreatingReport {
             get {
-                return ResourceManager.GetString("FileNotFoundMessage", resourceCulture);
+                return ResourceManager.GetString("EventIdCreatingReport", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Testing completed.
         /// </summary>
-        public static string FinishedOperationMessage {
+        public static string EventIdFinishedOperation {
             get {
-                return ResourceManager.GetString("FinishedOperationMessage", resourceCulture);
+                return ResourceManager.GetString("EventIdFinishedOperation", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Error while testing.
         /// </summary>
-        public static string FinishedWithError {
+        public static string EventIdFinishedWithError {
             get {
-                return ResourceManager.GetString("FinishedWithError", resourceCulture);
+                return ResourceManager.GetString("EventIdFinishedWithError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File not found: {0}.
+        /// </summary>
+        public static string FileNotFoundMessage {
+            get {
+                return ResourceManager.GetString("FileNotFoundMessage", resourceCulture);
             }
         }
         
@@ -257,6 +266,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         public static string TestMessagesHeading {
             get {
                 return ResourceManager.GetString("TestMessagesHeading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report saved {0}.
+        /// </summary>
+        public static string TestReportIsSavedMessage {
+            get {
+                return ResourceManager.GetString("TestReportIsSavedMessage", resourceCulture);
             }
         }
         
