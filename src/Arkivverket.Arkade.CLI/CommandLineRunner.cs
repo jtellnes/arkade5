@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -58,7 +59,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.TestListFile, options.DocumentFileFormatCheck);
+                    options.LanguageForOutputFiles, options.TestListFile, options.DocumentFileFormatCheck);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -83,7 +84,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.TestListFile);
+                    options.LanguageForOutputFiles, options.TestListFile);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -106,7 +107,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    checkDocumentFileFormat: options.DocumentFileFormatCheck);
+                    options.LanguageForOutputFiles, checkDocumentFileFormat: options.DocumentFileFormatCheck);
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 
@@ -200,7 +201,8 @@ namespace Arkivverket.Arkade.CLI
         }
 
         private static TestSession CreateTestSession(string archive, string archiveTypeString,
-            string command, string testListFilePath = null, bool checkDocumentFileFormat = false)
+            string command, string languageForOutputFiles, string testListFilePath = null,
+            bool checkDocumentFileFormat = false)
         {
             var fileInfo = new FileInfo(archive);
             Log.Information($"{{{command}ing}} archive: {fileInfo.FullName}");
@@ -208,6 +210,7 @@ namespace Arkivverket.Arkade.CLI
             ArchiveType archiveType = GetArchiveType(archiveTypeString, archive);
 
             TestSession testSession;
+
             if (File.Exists(archive))
             {
                 Log.Debug("File exists");
@@ -233,6 +236,8 @@ namespace Arkivverket.Arkade.CLI
                     throw new ArgumentException($"No tests selected in {testListFilePath}");
             }
 
+            languageForOutputFiles ??= "nb-NO";
+            testSession.CultureInfo = CultureInfo.CreateSpecificCulture(languageForOutputFiles);
             testSession.GenerateDocumentFileInfo = checkDocumentFileFormat;
 
             return testSession;

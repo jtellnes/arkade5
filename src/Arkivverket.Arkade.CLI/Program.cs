@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Util;
 using CommandLine;
 using Serilog;
@@ -34,7 +36,8 @@ namespace Arkivverket.Arkade.CLI
         {
             if (!ReadyToRun(processOptions.OutputDirectory, processOptions.ProcessingArea,
                 metadataFilePath: processOptions.MetadataFile,
-                testListFilePath: processOptions.TestListFile))
+                testListFilePath: processOptions.TestListFile,
+                languageForOutputFiles: processOptions.LanguageForOutputFiles))
                 return;
 
             CommandLineRunner.Run(processOptions);
@@ -43,7 +46,8 @@ namespace Arkivverket.Arkade.CLI
         private static void RunTestOptions(TestOptions testOptions)
         {
             if (!ReadyToRun(testOptions.OutputDirectory, testOptions.ProcessingArea,
-                testListFilePath: testOptions.TestListFile))
+                testListFilePath: testOptions.TestListFile,
+                languageForOutputFiles: testOptions.LanguageForOutputFiles))
                 return;
 
             CommandLineRunner.Run(testOptions);
@@ -52,7 +56,8 @@ namespace Arkivverket.Arkade.CLI
         private static void RunPackOptions(PackOptions packOptions)
         {
             if (!ReadyToRun(packOptions.OutputDirectory, packOptions.ProcessingArea,
-                metadataFilePath: packOptions.MetadataFile))
+                metadataFilePath: packOptions.MetadataFile,
+                languageForOutputFiles: packOptions.LanguageForOutputFiles))
                 return;
 
             CommandLineRunner.Run(packOptions);
@@ -76,19 +81,24 @@ namespace Arkivverket.Arkade.CLI
 
         private static bool ReadyToRun(Options options)
         {
-            return DirectoryArgsExists(options.OutputDirectory);
+            return DirectoryArgsExists(options.OutputDirectory) &&
+                SelectedOutputLanguageIsValid(options.LanguageForOutputFiles);
         }
 
         private static bool ReadyToRun(AnalyseOptions analyseOptions)
         {
             return DirectoryArgsExists(analyseOptions.OutputDirectory,
-                documentFileDirectoryPath: analyseOptions.FormatCheckTarget);
+                documentFileDirectoryPath: analyseOptions.FormatCheckTarget) &&
+                SelectedOutputLanguageIsValid(analyseOptions.LanguageForOutputFiles);
         }
 
         private static bool ReadyToRun(string outputDirectoryPath, string processingAreaPath = null,
-            string documentFileDirectoryPath = null, string metadataFilePath = null, string testListFilePath = null)
+            string documentFileDirectoryPath = null, string metadataFilePath = null, string testListFilePath = null,
+            string languageForOutputFiles = null)
         {
-            if (!(DirectoryArgsExists(outputDirectoryPath, processingAreaPath, documentFileDirectoryPath) && FileArgsExists(metadataFilePath, testListFilePath)))
+            if (!(DirectoryArgsExists(outputDirectoryPath, processingAreaPath, documentFileDirectoryPath) &&
+                  FileArgsExists(metadataFilePath, testListFilePath) &&
+                  SelectedOutputLanguageIsValid(languageForOutputFiles)))
                 return false;
 
             ArkadeProcessingArea.Establish(processingAreaPath); // Removes temporary log directory
@@ -135,6 +145,14 @@ namespace Arkivverket.Arkade.CLI
             }
 
             return true;
+        }
+
+        private static bool SelectedOutputLanguageIsValid(string selectedLanguageForOutputFiles)
+        {
+            if (selectedLanguageForOutputFiles == null || Enum.TryParse(selectedLanguageForOutputFiles, out SupportedLanguages _))
+                return true;
+            Log.Error(new ArgumentOutOfRangeException(), $"'{selectedLanguageForOutputFiles}' is not a valid value for output language.");
+            return false;
         }
 
         private static void ConfigureLogging()
