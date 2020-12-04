@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utfører en frekvensanalyse for samtlige felt hvor det er definert et kodesett.
+        ///   Looks up a localized string similar to Performs a frequency analysis on all fields with a defined codeset.
         /// </summary>
         public static string AnalyseAllFrequenceListDescription {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} forekomster av {1}.
+        ///   Looks up a localized string similar to {0} occurrences of {1}.
         /// </summary>
         public static string AnalyseAllFrequenceListMessage {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp antall tegn i en fil.
+        ///   Looks up a localized string similar to Counts number of characters in a file.
         /// </summary>
         public static string AnalyseCountCharsDescription {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} tegn.
+        ///   Looks up a localized string similar to {0} characters.
         /// </summary>
         public static string AnalyseCountCharsMessage {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp antall forekomster av verdien null i feltet.
+        ///   Looks up a localized string similar to Counts number of occurrences of &apos;null&apos; in the field.
         /// </summary>
         public static string AnalyseCountNullDescription {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} forekomster av null.
+        ///   Looks up a localized string similar to {0} occurrences of &apos;null&apos;.
         /// </summary>
         public static string AnalyseCountNullMessage {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp antall poster for hver posttype.
+        ///   Looks up a localized string similar to Counts amount of records per record type.
         /// </summary>
         public static string AnalyseCountRecordDefinitionOccurrencesDescription {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} poster.
+        ///   Looks up a localized string similar to {0} records.
         /// </summary>
         public static string AnalyseCountRecordDefinitionOccurrencesMessage {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp antall poster i en fil.
+        ///   Looks up a localized string similar to Counts amount of records in a file.
         /// </summary>
         public static string AnalyseCountRecordsDescription {
             get {
@@ -142,7 +142,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Totalt: {0} poster.
+        ///   Looks up a localized string similar to Total: {0} records.
         /// </summary>
         public static string AnalyseCountRecordsMessage {
             get {
@@ -151,7 +151,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner lengste og korteste post for hver posttype.
+        ///   Looks up a localized string similar to Finds the longest and shortest record for each record type.
         /// </summary>
         public static string AnalyseFindExtremeRecordsDescription {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lengste/korteste post: {0}/{1}.
+        ///   Looks up a localized string similar to Longest/shortest record: {0}/{1}.
         /// </summary>
         public static string AnalyseFindExtremeRecordsMessage {
             get {
@@ -169,7 +169,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner lengste og korteste verdi i feltet.
+        ///   Looks up a localized string similar to Finds the longest and shortest value in the field.
         /// </summary>
         public static string AnalyseFindExtremeValuesDescription {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lengste/korteste verdi: {0}/{1}.
+        ///   Looks up a localized string similar to Longest/shortest value: {0}/{1}.
         /// </summary>
         public static string AnalyseFindExtremeValuesMessage {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner laveste og høyeste verdi i feltet.
+        ///   Looks up a localized string similar to Finds the smallest and largest value in the field.
         /// </summary>
         public static string AnalyseFindMinMaxValuesDescription {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Laveste/høyeste verdi: {0}/{1}.
+        ///   Looks up a localized string similar to Smallest/largest value: {0}/{1}.
         /// </summary>
         public static string AnalyseFindMinMaxValuesMessage {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp antall forekomster for hver verdi i feltet.
+        ///   Looks up a localized string similar to Counts the amount of occurrences of each value in the field.
         /// </summary>
         public static string AnalyseFrequenceListDescription {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} forekomster av {1}.
+        ///   Looks up a localized string similar to {0} occurrences of {1}.
         /// </summary>
         public static string AnalyseFrequenceListMessage {
             get {
@@ -223,7 +223,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av kontrollsifferne i et kontonummer.
+        ///   Looks up a localized string similar to Control of control digits in an account number.
         /// </summary>
         public static string ControlAccountNumberDescription {
             get {
@@ -232,7 +232,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig kontonummer: {0}.
+        ///   Looks up a localized string similar to Invalid account number: {0}.
         /// </summary>
         public static string ControlAccountNumberMessage {
             get {
@@ -241,7 +241,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer at oppgitt postlengde på samtlige posttyper er korrekt (kun fast format).
+        ///   Looks up a localized string similar to Validates given record lengths for all record types (fixed format only).
         /// </summary>
         public static string ControlAllFixedLengthDescription {
             get {
@@ -250,7 +250,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oppgitt postlengde ({0}) er ulik faktisk ({1}).
+        ///   Looks up a localized string similar to Mismatch between given record length ({0}) and actual record length ({1}).
         /// </summary>
         public static string ControlAllFixedLengthMessage {
             get {
@@ -259,7 +259,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av kontrollsifferne i et fødselsnummer.
+        ///   Looks up a localized string similar to Validates control digits in a birth number.
         /// </summary>
         public static string ControlBirthNumberDescription {
             get {
@@ -268,7 +268,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig fødselsnummer: {0}.
+        ///   Looks up a localized string similar to Invalid birth number: {0}.
         /// </summary>
         public static string ControlBirthNumberMessage {
             get {
@@ -277,7 +277,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av verdiene i et boolsk felt.
+        ///   Looks up a localized string similar to Validate values in a boolean field.
         /// </summary>
         public static string ControlBooleanValueDescription {
             get {
@@ -286,7 +286,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Følgende ikke-boolske verdier finnes: {0}.
+        ///   Looks up a localized string similar to Found non-boolean values: {0}.
         /// </summary>
         public static string ControlBooleanValueMessage {
             get {
@@ -295,7 +295,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av sjekksummer.
+        ///   Looks up a localized string similar to Checksum validation.
         /// </summary>
         public static string ControlChecksumDescription {
             get {
@@ -304,8 +304,8 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forventet sjekksum: {0}
-        ///Aktuell sjekksum: {1}.
+        ///   Looks up a localized string similar to Expected checksum: {0}
+        ///Actual checksum: {1}.
         /// </summary>
         public static string ControlChecksumMessage_ChecksumMismatch {
             get {
@@ -314,7 +314,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ingen sjekksum funnet i ADDML-filen.
+        ///   Looks up a localized string similar to Did not find any checksum in the ADDML-file.
         /// </summary>
         public static string ControlChecksumMessage_ChecksumMissing {
             get {
@@ -323,7 +323,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ukjent sjekksum-algoritme: {0}.
+        ///   Looks up a localized string similar to Unknown checksum-algorithm: {0}.
         /// </summary>
         public static string ControlChecksumMessage_UnknownChecksumAlgorithm {
             get {
@@ -332,7 +332,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om definerte koder benyttes og om det benyttes koder som ikke er definert i kodelisten.
+        ///   Looks up a localized string similar to Validates that defined codes are used, and that used codes are defined in the codelist.
         /// </summary>
         public static string ControlCodesDescription {
             get {
@@ -341,7 +341,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ikke i kodelisten: {0}.
+        ///   Looks up a localized string similar to Used codes not present in the codelist: {0}.
         /// </summary>
         public static string ControlCodesMessage {
             get {
@@ -350,7 +350,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om oppgitt dataformat er korrekt.
+        ///   Looks up a localized string similar to Validates given data format.
         /// </summary>
         public static string ControlDataFormatDescription {
             get {
@@ -359,7 +359,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig dataformat: {0}.
+        ///   Looks up a localized string similar to Invalid data format: {0}.
         /// </summary>
         public static string ControlDataFormatMessage {
             get {
@@ -368,7 +368,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  + {0} flere.
+        ///   Looks up a localized string similar to  + {0} more.
         /// </summary>
         public static string ControlDataFormatMessageExtension {
             get {
@@ -377,7 +377,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av verdiene i et dato-felt.
+        ///   Looks up a localized string similar to Validation of date-field values.
         /// </summary>
         public static string ControlDateValueDescription {
             get {
@@ -386,7 +386,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verdier som ikke er dato: {0}.
+        ///   Looks up a localized string similar to Values not validated as date: {0}.
         /// </summary>
         public static string ControlDateValueMessage {
             get {
@@ -395,7 +395,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om det finnes filer som ikke er definert i ADDML og omvendt.
+        ///   Looks up a localized string similar to Checks that existing files are defined in ADDML, and that files defined in ADDML are existing.
         /// </summary>
         public static string ControlExtraOrMissingFilesDescription {
             get {
@@ -404,7 +404,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finnes i ADDML, men ikke i arkiv.
+        ///   Looks up a localized string similar to Present in ADDML, missing from archive.
         /// </summary>
         public static string ControlExtraOrMissingFilesMessage1 {
             get {
@@ -413,7 +413,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finnes i arkiv, men ikke i ADDML.
+        ///   Looks up a localized string similar to Present in archive, missing from ADDML.
         /// </summary>
         public static string ControlExtraOrMissingFilesMessage2 {
             get {
@@ -422,7 +422,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om oppgitt postlengde er korrekt (kun for fast format).
+        ///   Looks up a localized string similar to Validates given record length (fixed format only).
         /// </summary>
         public static string ControlFixedLengthDescription {
             get {
@@ -431,7 +431,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oppgitt postlengde ({0}) er ulik faktisk ({1}).
+        ///   Looks up a localized string similar to Mismatch between given record length ({0}) and actual record length ({1}).
         /// </summary>
         public static string ControlFixedLengthMessage {
             get {
@@ -440,7 +440,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer fremmednøkler for å sjekke at de går til en faktisk forekomst.
+        ///   Looks up a localized string similar to Validate foreign keys.
         /// </summary>
         public static string ControlForeignKeyDescription {
             get {
@@ -449,7 +449,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig fremmednøkkel: Verdien [{0}] finnes ikke i det refererte feltet {1}.
+        ///   Looks up a localized string similar to Invalid foreign key: The value [{0}] does not exist in the referred field {1}.
         /// </summary>
         public static string ControlForeignKeyMessage1 {
             get {
@@ -458,7 +458,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig fremmednøkkel: Verdiene [{0}] finnes ikke i de refererte feltene {1}.
+        ///   Looks up a localized string similar to Invalid foreign key: The values [{0}] does not exist in the referred fields {1}.
         /// </summary>
         public static string ControlForeignKeyMessage1Combined {
             get {
@@ -467,7 +467,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig fremmednøkkel: Finner ingen verdier for feltet {0}.
+        ///   Looks up a localized string similar to Invalid foreign key: Can not find any values for the field {0}.
         /// </summary>
         public static string ControlForeignKeyMessage2 {
             get {
@@ -476,7 +476,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer at nøkkelen (primary eller alternate) er unik.
+        ///   Looks up a localized string similar to Validates uniqueness of the key (primary eller alternate).
         /// </summary>
         public static string ControlKeyDescription {
             get {
@@ -485,7 +485,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Følgende primærnøkkelverdier er ikke unike: {0}.
+        ///   Looks up a localized string similar to The following primary key values are non-uniques: {0}.
         /// </summary>
         public static string ControlKeyMessage {
             get {
@@ -494,7 +494,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om oppgitt største lengde faktisk er største lengde i feltet.
+        ///   Looks up a localized string similar to Checks whether the stated maximum length is actually the largest length in the field.
         /// </summary>
         public static string ControlMaxLengthDescription {
             get {
@@ -503,7 +503,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verdier lengre enn maksimumlengde: {0}.
+        ///   Looks up a localized string similar to Values larger than the maximum length: {0}.
         /// </summary>
         public static string ControlMaxLengthMessage {
             get {
@@ -512,7 +512,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om oppgitt minste lengde faktisk er minste lengde i feltet.
+        ///   Looks up a localized string similar to Checks whether the stated minimum length is actually the smallest length in the field.
         /// </summary>
         public static string ControlMinLengthDescription {
             get {
@@ -521,7 +521,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verdier kortere enn minstelengde: {0}.
+        ///   Looks up a localized string similar to Values smaller than the minimum length: {0}.
         /// </summary>
         public static string ControlMinLengthMessage {
             get {
@@ -530,7 +530,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om det fines null-verdier i feltet.
+        ///   Looks up a localized string similar to Checks the field for null-values.
         /// </summary>
         public static string ControlNotNullDescription {
             get {
@@ -539,7 +539,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NULL-verdier finnes.
+        ///   Looks up a localized string similar to NULL-values exists.
         /// </summary>
         public static string ControlNotNullMessage {
             get {
@@ -548,7 +548,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om denne posttypen benyttes i datasettet.
+        ///   Looks up a localized string similar to Checks if this record type is used in the dataset.
         /// </summary>
         public static string ControlNotUsedRecordDefDescription {
             get {
@@ -557,7 +557,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Posttypen er ikke i bruk.
+        ///   Looks up a localized string similar to The record type is not in use.
         /// </summary>
         public static string ControlNotUsedRecordDefMessage {
             get {
@@ -566,7 +566,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teller opp og kontrollerer at antall poster i filen er lik antallet som er oppgitt i egenskapen numberOfRecords i flatFile.
+        ///   Looks up a localized string similar to Counts and checks that the number of records in the file is equal to the number specified in the numberOfRecords property in flatFile.
         /// </summary>
         public static string ControlNumberOfRecordsDescription {
             get {
@@ -602,7 +602,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av kontrollsifferne i et organisasjonsnummer.
+        ///   Looks up a localized string similar to Validation of the control digits in an organisation number.
         /// </summary>
         public static string ControlOrganizationNumberDescription {
             get {
@@ -611,7 +611,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ugyldig organisasjonsnummer: {0}.
+        ///   Looks up a localized string similar to Invalid organisation number: {0}.
         /// </summary>
         public static string ControlOrganizationNumberMessage {
             get {
@@ -620,7 +620,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontrollerer om verdiene i feltet er unike.
+        ///   Looks up a localized string similar to Validates uniqueness of the values in the field.
         /// </summary>
         public static string ControlUniquenessDescription {
             get {
@@ -629,7 +629,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alle verdier er unike.
+        ///   Looks up a localized string similar to All values are unique.
         /// </summary>
         public static string ControlUniquenessMessage1 {
             get {
@@ -638,7 +638,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verdiene er ikke unike.
+        ///   Looks up a localized string similar to Not all values are unique.
         /// </summary>
         public static string ControlUniquenessMessage2 {
             get {
@@ -647,7 +647,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}: Antall tegn i FixedLength-feltet [{1}] stemmer ikke med antall tegn summert for postdefinisjonen [{2}]..
+        ///   Looks up a localized string similar to {0}: The number of characters in the FixedLength field [{1}] does not match the number of characters summed for the record definition [{2}]..
         /// </summary>
         public static string ExceptionFixedLengthSumIsNotCorrect {
             get {
@@ -656,7 +656,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feil ved innlesing av ADDML.
+        ///   Looks up a localized string similar to Error while reading ADDML.
         ///{0}.
         /// </summary>
         public static string ExceptionReadingAddmlFile {
@@ -666,7 +666,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testing av arkivet er fullført..
+        ///   Looks up a localized string similar to Testing of archive completed..
         /// </summary>
         public static string LogMessageFinishedTesting {
             get {
@@ -675,7 +675,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starter testing av arkivet..
+        ///   Looks up a localized string similar to Starting testing of archive..
         /// </summary>
         public static string LogMessageStartTesting {
             get {
@@ -684,7 +684,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oppsummering av antall poster som har feil tilknyttet feltseparator og/eller postseparator..
+        ///   Looks up a localized string similar to Summary of the number of records with errors associated with field separator and/or record separator..
         /// </summary>
         public static string NumberOfRecordsWithFieldDelimiterErrorDescription {
             get {
@@ -693,7 +693,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Innlesing av arkiv.
+        ///   Looks up a localized string similar to Reading archive.
         /// </summary>
         public static string ReadingArchiveEvent {
             get {
@@ -702,7 +702,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivet er lest inn..
+        ///   Looks up a localized string similar to Archive is loaded..
         /// </summary>
         public static string ReadingArchiveEventFinishedMessage {
             get {
@@ -711,7 +711,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML-prosesser på filen: {0}.
+        ///   Looks up a localized string similar to ADDML-processes on the file: {0}.
         /// </summary>
         public static string RunningAddmlProcessesOnFile {
             get {
@@ -720,7 +720,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utpakking av arkiv.
+        ///   Looks up a localized string similar to Archive extraction.
         /// </summary>
         public static string TarExtractionEvent {
             get {
@@ -729,7 +729,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivet er pakket ut til {0}.
+        ///   Looks up a localized string similar to Archive is extracted to {0}.
         /// </summary>
         public static string TarExtractionMessageFinished {
             get {
@@ -738,7 +738,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starter utpakking..
+        ///   Looks up a localized string similar to Starting extraction..
         /// </summary>
         public static string TarExtractionMessageStarted {
             get {
