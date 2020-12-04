@@ -15,10 +15,10 @@ namespace Arkivverket.Arkade.Core.Report
         private readonly StreamWriter _stream;
         private readonly CultureInfo _norwegianCulture;
 
-        public HtmlReportGenerator(StreamWriter stream)
+        public HtmlReportGenerator(StreamWriter stream, string cultureInfoName="nb-NO")
         {
             _stream = stream;
-            _norwegianCulture = CultureInfo.CreateSpecificCulture("nb-NO");
+            _norwegianCulture = CultureInfo.CreateSpecificCulture(cultureInfoName);
         }
 
         public void Generate(TestSession testSession)
