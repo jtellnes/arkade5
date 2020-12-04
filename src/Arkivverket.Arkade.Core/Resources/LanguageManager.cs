@@ -31,6 +31,18 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.OutputNames.Culture = cultureInfo;
             Resources.Report.Culture = cultureInfo;
         }
+
+        internal static void SetResourceCultureForPackageCreation(CultureInfo cultureInfo)
+        {
+            Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
+            Resources.AddmlMessages.Culture = cultureInfo;
+            Resources.ExceptionMessages.Culture = cultureInfo;
+            Resources.Messages.Culture = cultureInfo;
+            Resources.Noark5Messages.Culture = cultureInfo;
+            Resources.Noark5TestDescriptions.Culture = cultureInfo;
+            Resources.OutputNames.Culture = cultureInfo;
+            Resources.Report.Culture = cultureInfo;
+        }
     }
 
     public enum SupportedLanguages

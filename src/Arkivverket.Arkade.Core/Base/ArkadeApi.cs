@@ -83,6 +83,8 @@ namespace Arkivverket.Arkade.Core.Base
                 : "AIP";
             Log.Information($"Creating {packageType}.");
 
+            LanguageManager.SetResourceCultureForPackageCreation(testSession.CultureInfo);
+
             _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateDocumentFileInfo);
 
             string packageFilePath;
