@@ -1,4 +1,4 @@
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Arkivverket.Arkade.Core.Languages
 {
@@ -18,6 +18,18 @@ namespace Arkivverket.Arkade.Core.Languages
 
             supportedLanguage = null;
             return false;
+        }
+
+        internal static void SetResourcesCultureForTesting(CultureInfo cultureInfo)
+        {
+            Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
+            Resources.AddmlMessages.Culture = cultureInfo;
+            Resources.ExceptionMessages.Culture = cultureInfo;
+            Resources.Messages.Culture = cultureInfo;
+            Resources.Noark5Messages.Culture = cultureInfo;
+            Resources.Noark5TestDescriptions.Culture = cultureInfo;
+            Resources.OutputNames.Culture = cultureInfo;
+            Resources.Report.Culture = cultureInfo;
         }
     }
 

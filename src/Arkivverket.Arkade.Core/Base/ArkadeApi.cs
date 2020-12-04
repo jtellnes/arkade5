@@ -1,6 +1,7 @@
 using System.IO;
 using System.Reflection;
 using Arkivverket.Arkade.Core.Identify;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Metadata;
 using Arkivverket.Arkade.Core.Report;
@@ -63,6 +64,8 @@ namespace Arkivverket.Arkade.Core.Base
             testSession.AddLogEntry(Messages.LogMessageStartTesting);
 
             Log.Information("Starting testing of archive.");
+
+            LanguageManager.SetResourcesCultureForTesting(testSession.CultureInfo);
 
             ITestEngine testEngine = _testEngineFactory.GetTestEngine(testSession);
             testSession.TestSuite = testEngine.RunTestsOnArchive(testSession);
