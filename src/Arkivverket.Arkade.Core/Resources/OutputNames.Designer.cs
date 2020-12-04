@@ -104,5 +104,14 @@ namespace Arkivverket.Arkade.Core.Resources {
                 return ResourceManager.GetString("Noark5TestListFileName", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arkadereport-{0}.{1}.
+        /// </summary>
+        public static string TestReportFileName {
+            get {
+                return ResourceManager.GetString("TestReportFileName", resourceCulture);
+            }
+        }
     }
 }

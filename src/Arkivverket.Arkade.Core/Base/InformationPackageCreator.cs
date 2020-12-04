@@ -113,7 +113,7 @@ namespace Arkivverket.Arkade.Core.Base
 
             if (File.Exists(testReportFullFileName))
                 File.Copy(testReportFullFileName,
-                    Path.Combine(resultDirectory, $"Arkaderapport-{uuid}.html")
+                    Path.Combine(resultDirectory, string.Format(OutputNames.TestReportFileName, uuid, "html"))
                 );
         }
 

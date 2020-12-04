@@ -132,4 +132,8 @@
   <data name="Noark5TestListFileName" xml:space="preserve">
     <value>noark5-testlist.txt</value>
   </data>
+  <data name="TestReportFileName" xml:space="preserve">
+    <value>Arkadereport-{0}.{1}</value>
+    <comment>{0} = uuid, {1} = extension</comment>
+  </data>
 </root>

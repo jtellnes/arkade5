@@ -61,6 +61,15 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sjekksum er kontrollert med algoritmen {0}..
+        /// </summary>
+        public static string AlgorithmUsedToControlChecksumMessage {
+            get {
+                return ResourceManager.GetString("AlgorithmUsedToControlChecksumMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Referanse fra {0} (systemID) {1} til arkivdel (systemID) {2} er ikke gyldig.
         /// </summary>
         public static string ArchivepartReferenceControlMessage {

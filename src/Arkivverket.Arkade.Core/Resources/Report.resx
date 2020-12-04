@@ -198,4 +198,7 @@
   <data name="WarningNotAllTestsExecuted" xml:space="preserve">
     <value>Ikke alle tester er utført</value>
   </data>
+  <data name="HeadingDeviations" xml:space="preserve">
+    <value>Avvik</value>
+  </data>
 </root>

@@ -79,6 +79,15 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Avvik.
+        /// </summary>
+        public static string HeadingDeviations {
+            get {
+                return ResourceManager.GetString("HeadingDeviations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Testrapport.
         /// </summary>
         public static string HeadingTestReport {

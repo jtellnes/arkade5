@@ -132,4 +132,7 @@
   <data name="Noark5TestListFileName" xml:space="preserve">
     <value>noark5-testliste.txt</value>
   </data>
+  <data name="TestReportFileName" xml:space="preserve">
+    <value>Arkaderapport-{0}.{1}</value>
+  </data>
 </root>

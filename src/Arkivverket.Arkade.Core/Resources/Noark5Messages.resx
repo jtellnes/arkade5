@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -406,5 +406,8 @@ Generert:  {2}</value>
   </data>
   <data name="NumberOfRegistrations_DocumentedAndActualMismatch" xml:space="preserve">
     <value>Det er angitt at arkivstrukturen skal innholde {0} registreringer, men {1} ble funnet</value>
+  </data>
+  <data name="AlgorithmUsedToControlChecksumMessage" xml:space="preserve">
+    <value>Sjekksum er kontrollert med algoritmen {0}.</value>
   </data>
 </root>

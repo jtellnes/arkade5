@@ -124,6 +124,24 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ADDML-post med feil antall felt i fil {0}, post nummer {1}, feil nummer {2}.
+        /// </summary>
+        public static string FailedRecordErrorIdentifier {
+            get {
+                return ResourceManager.GetString("FailedRecordErrorIdentifier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Felttekst: {1}.
+        /// </summary>
+        public static string FailedRecordErrorMessage {
+            get {
+                return ResourceManager.GetString("FailedRecordErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ADDML element flatFileDefinitions.
         /// </summary>
         public static string FlatFileDefinitions {
@@ -142,6 +160,15 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ADDML-poster med feil antall felt i filen {0}.
+        /// </summary>
+        public static string NumberOfRecordsWithFieldDelimiterErrorIdentifier {
+            get {
+                return ResourceManager.GetString("NumberOfRecordsWithFieldDelimiterErrorIdentifier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ADDML element recordDefinitions.
         /// </summary>
         public static string RecordDefinitions {
@@ -156,6 +183,24 @@ namespace Arkivverket.Arkade.Core.Resources {
         public static string RecordLengthErrorTestName {
             get {
                 return ResourceManager.GetString("RecordLengthErrorTestName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filens totale antall poster med feil antall felt: {0}.
+        /// </summary>
+        public static string TotalAmountOfRecordsWithFieldDelimiterErrorResultText {
+            get {
+                return ResourceManager.GetString("TotalAmountOfRecordsWithFieldDelimiterErrorResultText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Totalt antall: {0}.
+        /// </summary>
+        public static string TotalAmountText {
+            get {
+                return ResourceManager.GetString("TotalAmountText", resourceCulture);
             }
         }
         

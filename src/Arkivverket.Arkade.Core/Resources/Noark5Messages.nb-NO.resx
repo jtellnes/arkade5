@@ -407,4 +407,7 @@ Generert:  {2}</value>
   <data name="ValidateStructureFileExists_FileMissing" xml:space="preserve">
     <value>Filen {0} er listet opp i arkivuttrekket, men mangler i pakke</value>
   </data>
+  <data name="AlgorithmUsedToControlChecksumMessage" xml:space="preserve">
+    <value>Sjekksum er kontrollert med algoritmen {0}.</value>
+  </data>
 </root>
