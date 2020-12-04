@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade 5 versjon: {0}.
+        ///   Looks up a localized string similar to Arkade 5 version: {0}.
         /// </summary>
         public static string FooterArkadeVersion {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Avvik.
+        ///   Looks up a localized string similar to Deviations.
         /// </summary>
         public static string HeadingDeviations {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testrapport.
+        ///   Looks up a localized string similar to Testreport.
         /// </summary>
         public static string HeadingTestReport {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Resultater.
+        ///   Looks up a localized string similar to Results.
         /// </summary>
         public static string HeadingTestResults {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Analyser og kontroller.
+        ///   Looks up a localized string similar to Analyses and controls.
         /// </summary>
         public static string HeadingTests {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testsammendrag.
+        ///   Looks up a localized string similar to Test summary.
         /// </summary>
         public static string HeadingTestSummary {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivskaper.
+        ///   Looks up a localized string similar to Archive creator.
         /// </summary>
         public static string LabelArchiveCreators {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivperiode.
+        ///   Looks up a localized string similar to Archive period.
         /// </summary>
         public static string LabelArchivePeriod {
             get {
@@ -142,7 +142,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivtype.
+        ///   Looks up a localized string similar to Archive type.
         /// </summary>
         public static string LabelArchiveType {
             get {
@@ -151,7 +151,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tidspunkt for testing.
+        ///   Looks up a localized string similar to Time of testing.
         /// </summary>
         public static string LabelDateOfTesting {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall avvik funnet.
+        ///   Looks up a localized string similar to Number of deviations found.
         /// </summary>
         public static string LabelNumberOfErrors {
             get {
@@ -169,7 +169,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall filer som er prosessert.
+        ///   Looks up a localized string similar to Number of processed files.
         /// </summary>
         public static string LabelNumberOfFilesProcessed {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall poster som er prosessert.
+        ///   Looks up a localized string similar to Number of processed records.
         /// </summary>
         public static string LabelNumberOfRecordsProcessed {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall tester utført.
+        ///   Looks up a localized string similar to Number of tests executed.
         /// </summary>
         public static string LabelNumberOfTestsExecuted {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall tester som er kjørt.
+        ///   Looks up a localized string similar to Number of tests run.
         /// </summary>
         public static string LabelNumberOfTestsRun {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Systemnavn.
+        ///   Looks up a localized string similar to System name.
         /// </summary>
         public static string LabelSystemName {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Systemtype.
+        ///   Looks up a localized string similar to System type.
         /// </summary>
         public static string LabelSystemType {
             get {
@@ -232,7 +232,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lokasjon.
+        ///   Looks up a localized string similar to Location.
         /// </summary>
         public static string TestLocation {
             get {
@@ -241,7 +241,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Melding.
+        ///   Looks up a localized string similar to Message.
         /// </summary>
         public static string TestMessage {
             get {
@@ -250,7 +250,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} flere resultater av samme type..
+        ///   Looks up a localized string similar to {0} more results of same kind..
         /// </summary>
         public static string TestMoreResultsOfSameKind {
             get {
@@ -259,7 +259,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ingen avvik funnet..
+        ///   Looks up a localized string similar to No deviations found..
         /// </summary>
         public static string TestNoErrorsFound {
             get {
@@ -268,7 +268,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Innholdsanalyse.
+        ///   Looks up a localized string similar to Content analysis.
         /// </summary>
         public static string TestTypeContentAnalysisDisplayName {
             get {
@@ -277,7 +277,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Innholdskontroll.
+        ///   Looks up a localized string similar to Content control.
         /// </summary>
         public static string TestTypeContentControlDisplayName {
             get {
@@ -286,7 +286,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Strukturanalyse.
+        ///   Looks up a localized string similar to Structural analysis.
         /// </summary>
         public static string TestTypeStructureAnalysisDisplayName {
             get {
@@ -295,7 +295,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Strukturkontroll.
+        ///   Looks up a localized string similar to Structural control.
         /// </summary>
         public static string TestTypeStructureControlDisplayName {
             get {
@@ -304,7 +304,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ikke alle tester er utført.
+        ///   Looks up a localized string similar to Not all tests executed.
         /// </summary>
         public static string WarningNotAllTestsExecuted {
             get {
