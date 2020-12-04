@@ -8,6 +8,7 @@ using Arkivverket.Arkade.GUI.Properties;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Languages;
 using Prism.Commands;
+using Prism.Events;
 using Prism.Mvvm;
 using Serilog;
 using MessageBox = System.Windows.MessageBox;
@@ -16,6 +17,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 {
     public class SettingsViewModel : BindableBase
     {
+        private IEventAggregator _eventAggregator;
+
         private readonly ILogger _log = Log.ForContext<SettingsViewModel>();
         private string _arkadeProcessingAreaLocationSetting;
         private bool _darkModeSelected;
@@ -50,21 +53,23 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         }
 
         public DelegateCommand ChangeArkadeProcessingAreaLocationCommand { get; }
-        public DelegateCommand ApplyChangesCommand { get; }
+        public DelegateCommand ApplyChangesAndCloseWindowCommand { get; }
 
-        public SettingsViewModel()
+        public SettingsViewModel(IEventAggregator eventAggregator)
         {
+            _eventAggregator = eventAggregator;
+
             ArkadeProcessingAreaLocationSetting = Util.ArkadeProcessingAreaLocationSetting.Get();
             CurrentArkadeProcessingAreaLocation = ArkadeProcessingArea.Location?.FullName;
             DirectoryNameArkadeProcessingAreaRoot = Core.Util.ArkadeConstants.DirectoryNameArkadeProcessingAreaRoot;
 
             ChangeArkadeProcessingAreaLocationCommand = new DelegateCommand(ChangeArkadeProcessingAreaLocation);
-            ApplyChangesCommand = new DelegateCommand(ApplyChanges);
+            ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
             if (!LanguageManager.TryParseFromString(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
                 Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.ToString();
-            if (!LanguageManager.TryParseFromString(Settings.Default.SelectedOutputLanguage, out _selectedUILanguage))
+            if (!LanguageManager.TryParseFromString(Settings.Default.SelectedUILanguage, out _selectedUILanguage))
                 Settings.Default.SelectedUILanguage = Thread.CurrentThread.CurrentCulture.ToString();
 
         }
@@ -97,12 +102,14 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             else _log.Information("User action: Abort choose Arkade processing area location");
         }
 
-        private void ApplyChanges()
+        private void ApplyChangesAndCloseWindow()
         {
             ApplySelectedMode();
             ApplyUILanguageSelection();
             ApplyOutputLanguageSelection();
             Util.ArkadeProcessingAreaLocationSetting.Set(ArkadeProcessingAreaLocationSetting);
+
+            _eventAggregator.GetEvent<CloseChildWindowEvent>().Publish();
         }
 
         private void ApplySelectedMode()
@@ -142,7 +149,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 _ => Settings.Default.SelectedUILanguage
             };
 
-            MainWindowViewModel.UiLanguageIsChanged = currentCulture != Settings.Default.SelectedUILanguage;
+            _eventAggregator.GetEvent<UpdateUiLanguageEvent>().Publish(currentCulture);
 
             Settings.Default.Save();
         }
@@ -155,6 +162,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 SupportedLanguages.Norsk_BM => "nb-NO",
                 _ => Settings.Default.SelectedOutputLanguage
             };
+
+            _eventAggregator.GetEvent<UpdateOutputLanguageEvent>().Publish();
 
             Settings.Default.Save();
         }
