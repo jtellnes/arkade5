@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Util.FileFormatIdentification;
 using CsvHelper;
 using CsvHelper.Configuration;
@@ -73,7 +73,7 @@ namespace Arkivverket.Arkade.Core.Report
 
         private static void WriteFileList(string fileLocation)
         {
-            string fullFileName = Path.Combine(fileLocation, ArkadeConstants.FileFormatInfoFileName);
+            string fullFileName = Path.Combine(fileLocation, OutputNames.FileFormatInfoFileName);
 
             using (var writer = new StreamWriter(fullFileName))
             using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
@@ -85,7 +85,7 @@ namespace Arkivverket.Arkade.Core.Report
 
         private static void WriteFileTypeStatisticsFile(string fileLocation)
         {
-            string fullFileName = Path.Combine(fileLocation, ArkadeConstants.FileFormatInfoStatisticsFileName);
+            string fullFileName = Path.Combine(fileLocation, OutputNames.FileFormatInfoStatisticsFileName);
 
             using (var writer = new StreamWriter(fullFileName))
             {
