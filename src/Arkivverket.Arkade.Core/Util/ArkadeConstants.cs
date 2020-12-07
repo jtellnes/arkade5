@@ -56,21 +56,6 @@ namespace Arkivverket.Arkade.Core.Util
         public const string MetadataFileName = "arkade-ip-metadata.json";
         public const string FileFormatInfoFileName = "fileformatinfo.csv";
         public const string FileFormatInfoStatisticsFileName = "fileformatinfo-statistics.csv";
-        public struct FileFormatInfoHeaders
-        {
-            public const string FileName = "Filnavn";
-            public const string FileExtension = "Filendelse";
-            public const string FormatId = "Format-ID";
-            public const string FormatName = "Formatnavn";
-            public const string FormatVersion = "Formatversjon";
-            public const string MimeType = "MIME-type";
-            public const string FileScanError = "Feil";
-        }
-        public struct FileFormatInfoStatisticsHeaders
-        {
-            public const string FileType = "Filtype";
-            public const string Amount = "Antall";
-        }
 
         public const string MetadataStandardLabelPlaceholder = "[standard_label]";
         public const string MetsHdrAgentMetaNoteKeyWord = "notescontent:";
