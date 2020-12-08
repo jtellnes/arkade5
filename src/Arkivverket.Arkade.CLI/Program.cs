@@ -149,7 +149,7 @@ namespace Arkivverket.Arkade.CLI
 
         private static bool SelectedOutputLanguageIsValid(string selectedLanguageForOutputFiles)
         {
-            if (selectedLanguageForOutputFiles == null || LanguageManager.TryParseFromString(selectedLanguageForOutputFiles, out _))
+            if (selectedLanguageForOutputFiles == null || Enum.TryParse(selectedLanguageForOutputFiles, out SupportedLanguage _))
                 return true;
             Log.Error(new ArgumentOutOfRangeException(), $"'{selectedLanguageForOutputFiles}' is not a valid value for output language.");
             return false;

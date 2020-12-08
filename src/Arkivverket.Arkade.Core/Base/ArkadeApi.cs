@@ -65,7 +65,7 @@ namespace Arkivverket.Arkade.Core.Base
 
             Log.Information("Starting testing of archive.");
 
-            LanguageManager.SetResourcesCultureForTesting(testSession.CultureInfo);
+            LanguageManager.SetResourcesCultureForTesting(testSession.OutputLanguage);
 
             ITestEngine testEngine = _testEngineFactory.GetTestEngine(testSession);
             testSession.TestSuite = testEngine.RunTestsOnArchive(testSession);
@@ -83,7 +83,7 @@ namespace Arkivverket.Arkade.Core.Base
                 : "AIP";
             Log.Information($"Creating {packageType}.");
 
-            LanguageManager.SetResourceCultureForPackageCreation(testSession.CultureInfo);
+            LanguageManager.SetResourceCultureForPackageCreation(testSession.OutputLanguage);
 
             _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateDocumentFileInfo);
 

@@ -1,4 +1,4 @@
-﻿<Window x:Class="Arkivverket.Arkade.GUI.Views.Settings"
+<Window x:Class="Arkivverket.Arkade.GUI.Views.Settings"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -15,9 +15,9 @@
         d:DataContext="{d:DesignData SettingsViewModel}">
     <Grid>
         <Grid.Resources>
-            <ObjectDataProvider x:Key="GetSupportedLanguages" MethodName="GetValues" ObjectType="coreLang:SupportedLanguages">
+            <ObjectDataProvider x:Key="GetSupportedLanguages" MethodName="GetValues" ObjectType="coreLang:SupportedLanguage">
                 <ObjectDataProvider.MethodParameters>
-                    <x:Type TypeName="coreLang:SupportedLanguages"></x:Type>
+                    <x:Type TypeName="coreLang:SupportedLanguage"></x:Type>
                 </ObjectDataProvider.MethodParameters>
             </ObjectDataProvider>
         </Grid.Resources>

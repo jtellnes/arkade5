@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,6 +13,7 @@ using Serilog;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
@@ -331,7 +331,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
                 _testSession.TestsToRun = GetSelectedTests();
 
-                _testSession.CultureInfo = new CultureInfo(Settings.Default.SelectedOutputLanguage);
+                Enum.TryParse(Settings.Default.SelectedOutputLanguage, out SupportedLanguage outputLanguage);
+                _testSession.OutputLanguage = outputLanguage;
 
                 _arkadeApi.RunTests(_testSession);
 

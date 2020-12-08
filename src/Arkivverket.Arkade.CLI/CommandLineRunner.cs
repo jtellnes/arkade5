@@ -1,10 +1,10 @@
 using System;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Threading;
 using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Metadata;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Testing.Noark5;
@@ -203,7 +203,7 @@ namespace Arkivverket.Arkade.CLI
         }
 
         private static TestSession CreateTestSession(string archive, string archiveTypeString,
-            string command, string languageForOutputFiles, string testSelectionFilePath = null,
+            string command, string selectedOutputLanguage, string testSelectionFilePath = null,
             bool checkDocumentFileFormat = false)
         {
             var fileInfo = new FileInfo(archive);
@@ -238,8 +238,10 @@ namespace Arkivverket.Arkade.CLI
                     throw new ArgumentException($"No tests selected in {testSelectionFilePath}");
             }
 
-            languageForOutputFiles ??= Thread.CurrentThread.CurrentCulture.Name;
-            testSession.CultureInfo = CultureInfo.CreateSpecificCulture(languageForOutputFiles);
+            selectedOutputLanguage ??= Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+            if (!Enum.TryParse(selectedOutputLanguage, out SupportedLanguage outputLanguage))
+                outputLanguage = SupportedLanguage.en;
+            testSession.OutputLanguage = outputLanguage;
             testSession.GenerateDocumentFileInfo = checkDocumentFileFormat;
 
             return testSession;

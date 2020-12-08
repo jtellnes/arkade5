@@ -4,24 +4,10 @@ namespace Arkivverket.Arkade.Core.Languages
 {
     public static class LanguageManager
     {
-        public static bool TryParseFromString(string cultureInfoName, out SupportedLanguages? supportedLanguage)
+        internal static void SetResourcesCultureForTesting(SupportedLanguage selectedLanguage)
         {
-            switch (cultureInfoName)
-            {
-                case "en":
-                    supportedLanguage = SupportedLanguages.English;
-                    return true;
-                case "nb":
-                    supportedLanguage = SupportedLanguages.Norsk_BM;
-                    return true;
-            }
+            var cultureInfo = CultureInfo.CreateSpecificCulture(selectedLanguage.ToString());
 
-            supportedLanguage = null;
-            return false;
-        }
-
-        internal static void SetResourcesCultureForTesting(CultureInfo cultureInfo)
-        {
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
             Resources.ExceptionMessages.Culture = cultureInfo;
@@ -32,8 +18,10 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.Report.Culture = cultureInfo;
         }
 
-        internal static void SetResourceCultureForPackageCreation(CultureInfo cultureInfo)
+        internal static void SetResourceCultureForPackageCreation(SupportedLanguage selectedLanguage)
         {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(selectedLanguage.ToString());
+
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
             Resources.ExceptionMessages.Culture = cultureInfo;
@@ -49,9 +37,9 @@ namespace Arkivverket.Arkade.Core.Languages
         }
     }
 
-    public enum SupportedLanguages
+    public enum SupportedLanguage
     {
-        English,
-        Norsk_BM,
+        en,
+        nb,
     }
 }

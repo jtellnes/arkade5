@@ -22,8 +22,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         private readonly ILogger _log = Log.ForContext<SettingsViewModel>();
         private string _arkadeProcessingAreaLocationSetting;
         private bool _darkModeSelected;
-        private SupportedLanguages? _selectedUILanguage;
-        private SupportedLanguages? _selectedOutputLanguage;
+        private SupportedLanguage _selectedUILanguage;
+        private SupportedLanguage _selectedOutputLanguage;
 
         public string CurrentArkadeProcessingAreaLocation { get; }
         public string DirectoryNameArkadeProcessingAreaRoot { get; }
@@ -34,13 +34,13 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             set => SetProperty(ref _darkModeSelected, value);
         }
 
-        public SupportedLanguages? SelectedUILanguage
+        public SupportedLanguage SelectedUILanguage
         {
             get => _selectedUILanguage;
             set => SetProperty(ref _selectedUILanguage, value);
         }
         
-        public SupportedLanguages? SelectedOutputLanguage
+        public SupportedLanguage SelectedOutputLanguage
         {
             get => _selectedOutputLanguage;
             set => SetProperty(ref _selectedOutputLanguage, value);
@@ -67,10 +67,10 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
-            if (!LanguageManager.TryParseFromString(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
-                Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.ToString();
-            if (!LanguageManager.TryParseFromString(Settings.Default.SelectedUILanguage, out _selectedUILanguage))
-                Settings.Default.SelectedUILanguage = Thread.CurrentThread.CurrentCulture.ToString();
+            if (!Enum.TryParse(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
+                Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+            if (!Enum.TryParse(Settings.Default.SelectedUILanguage, out _selectedUILanguage))
+                Settings.Default.SelectedUILanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
 
         }
 
@@ -142,12 +142,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         {
             string currentCulture = Settings.Default.SelectedUILanguage;
 
-            Settings.Default.SelectedUILanguage = SelectedUILanguage switch
-            {
-                SupportedLanguages.English => "en-GB",
-                SupportedLanguages.Norsk_BM => "nb-NO",
-                _ => Settings.Default.SelectedUILanguage
-            };
+            Settings.Default.SelectedUILanguage = SelectedUILanguage.ToString();
 
             _eventAggregator.GetEvent<UpdateUiLanguageEvent>().Publish(currentCulture);
 
@@ -156,12 +151,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private void ApplyOutputLanguageSelection()
         {
-            Settings.Default.SelectedOutputLanguage = SelectedOutputLanguage switch
-            {
-                SupportedLanguages.English => "en-GB",
-                SupportedLanguages.Norsk_BM => "nb-NO",
-                _ => Settings.Default.SelectedOutputLanguage
-            };
+            Settings.Default.SelectedOutputLanguage = SelectedOutputLanguage.ToString();
 
             _eventAggregator.GetEvent<UpdateOutputLanguageEvent>().Publish();
 
