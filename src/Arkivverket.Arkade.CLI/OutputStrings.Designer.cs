@@ -22,7 +22,7 @@ namespace Arkivverket.Arkade.CLI {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class OutputStrings {
+    public class OutputStrings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Arkivverket.Arkade.CLI {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.CLI.OutputStrings", typeof(OutputStrings).Assembly);
@@ -51,7 +51,7 @@ namespace Arkivverket.Arkade.CLI {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,25 +64,25 @@ namespace Arkivverket.Arkade.CLI {
         ///   Looks up a localized string similar to Oppgi test-ID (N5.XX) i starten av en egen linje for hver test som skal utføres
         ///{0} Tester kan utelates ved å sette tegnet {0} først på linjen.
         /// </summary>
-        internal static string Noark5TestListDescription {
+        public static string Noark5TestSelectionFileDescription {
             get {
-                return ResourceManager.GetString("Noark5TestListDescription", resourceCulture);
+                return ResourceManager.GetString("Noark5TestSelectionFileDescription", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to NOARK5-TESTER SOM SKAL UTFØRES AV ARKADE.
         /// </summary>
-        internal static string Noark5TestListHeading {
+        public static string Noark5TestSelectionFileHeading {
             get {
-                return ResourceManager.GetString("Noark5TestListHeading", resourceCulture);
+                return ResourceManager.GetString("Noark5TestSelectionFileHeading", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to [{Level}] {Message}{NewLine}{Exception}.
         /// </summary>
-        internal static string SystemLogOutputTemplateForConsole {
+        public static string SystemLogOutputTemplateForConsole {
             get {
                 return ResourceManager.GetString("SystemLogOutputTemplateForConsole", resourceCulture);
             }
@@ -91,7 +91,7 @@ namespace Arkivverket.Arkade.CLI {
         /// <summary>
         ///   Looks up a localized string similar to {Timestamp:yyyy-MM-ddTHH:mm:ss.fff} [{Level}] {SourceContext} {Message}{NewLine}{Exception}.
         /// </summary>
-        internal static string SystemLogOutputTemplateForFile {
+        public static string SystemLogOutputTemplateForFile {
             get {
                 return ResourceManager.GetString("SystemLogOutputTemplateForFile", resourceCulture);
             }
@@ -100,7 +100,7 @@ namespace Arkivverket.Arkade.CLI {
         /// <summary>
         ///   Looks up a localized string similar to Arkaderapport-{0}.html.
         /// </summary>
-        internal static string TestReportFileName {
+        public static string TestReportFileName {
             get {
                 return ResourceManager.GetString("TestReportFileName", resourceCulture);
             }

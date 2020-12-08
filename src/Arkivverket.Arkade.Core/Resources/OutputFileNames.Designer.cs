@@ -22,14 +22,14 @@ namespace Arkivverket.Arkade.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class OutputNames {
+    public class OutputFileNames {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal OutputNames() {
+        internal OutputFileNames() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.Core.Resources.OutputNames", typeof(OutputNames).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Arkivverket.Arkade.Core.Resources.OutputFileNames", typeof(OutputFileNames).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,56 +61,56 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkaderesults.
-        /// </summary>
-        public static string DirectoryNameResultOutputContainer {
-            get {
-                return ResourceManager.GetString("DirectoryNameResultOutputContainer", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to fileformatinfo.csv.
         /// </summary>
-        public static string FileFormatInfoFileName {
+        public static string FileFormatInfoFile {
             get {
-                return ResourceManager.GetString("FileFormatInfoFileName", resourceCulture);
+                return ResourceManager.GetString("FileFormatInfoFile", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to fileformatinfo-statistics.csv.
         /// </summary>
-        public static string FileFormatInfoStatisticsFileName {
+        public static string FileFormatInfoStatisticsFile {
             get {
-                return ResourceManager.GetString("FileFormatInfoStatisticsFileName", resourceCulture);
+                return ResourceManager.GetString("FileFormatInfoStatisticsFile", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to arkade-ip-metadata.json.
         /// </summary>
-        public static string MetadataFileName {
+        public static string MetadataFile {
             get {
-                return ResourceManager.GetString("MetadataFileName", resourceCulture);
+                return ResourceManager.GetString("MetadataFile", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to noark5-testlist.txt.
+        ///   Looks up a localized string similar to noark5-testselection.txt.
         /// </summary>
-        public static string Noark5TestListFileName {
+        public static string Noark5TestSelectionFile {
             get {
-                return ResourceManager.GetString("Noark5TestListFileName", resourceCulture);
+                return ResourceManager.GetString("Noark5TestSelectionFile", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkadereport-{0}.{1}.
+        ///   Looks up a localized string similar to Arkaderesults.
         /// </summary>
-        public static string TestReportFileName {
+        public static string ResultOutputDirectory {
             get {
-                return ResourceManager.GetString("TestReportFileName", resourceCulture);
+                return ResourceManager.GetString("ResultOutputDirectory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arkadereport-{0}.html.
+        /// </summary>
+        public static string TestReportFile {
+            get {
+                return ResourceManager.GetString("TestReportFile", resourceCulture);
             }
         }
     }

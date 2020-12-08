@@ -117,22 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DirectoryNameResultOutputContainer" xml:space="preserve">
+  <data name="ResultOutputDirectory" xml:space="preserve">
     <value>Arkaderesultater</value>
   </data>
-  <data name="FileFormatInfoFileName" xml:space="preserve">
+  <data name="FileFormatInfoFile" xml:space="preserve">
     <value>filformatinfo.csv</value>
   </data>
-  <data name="FileFormatInfoStatisticsFileName" xml:space="preserve">
+  <data name="FileFormatInfoStatisticsFile" xml:space="preserve">
     <value>filformatinfo-statistikk.csv</value>
   </data>
-  <data name="MetadataFileName" xml:space="preserve">
+  <data name="MetadataFile" xml:space="preserve">
     <value>arkade-ip-metadata.json</value>
   </data>
-  <data name="Noark5TestListFileName" xml:space="preserve">
-    <value>noark5-testliste.txt</value>
+  <data name="Noark5TestSelectionFile" xml:space="preserve">
+    <value>noark5-testutvalg.txt</value>
   </data>
-  <data name="TestReportFileName" xml:space="preserve">
-    <value>Arkaderapport-{0}.{1}</value>
+  <data name="TestReportFile" xml:space="preserve">
+    <value>Arkaderapport-{0}.html</value>
   </data>
 </root>

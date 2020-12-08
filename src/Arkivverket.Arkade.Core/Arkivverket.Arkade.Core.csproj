@@ -116,10 +116,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Noark5TestDescriptions.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\OutputNames.Designer.cs">
+    <Compile Update="Resources\OutputFileNames.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>OutputNames.resx</DependentUpon>
+      <DependentUpon>OutputFileNames.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Report.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -175,12 +175,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Noark5TestDescriptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\OutputNames.nb-NO.resx">
+    <EmbeddedResource Update="Resources\OutputFileNames.nb-NO.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\OutputNames.resx">
+    <EmbeddedResource Update="Resources\OutputFileNames.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>OutputNames.Designer.cs</LastGenOutput>
+      <LastGenOutput>OutputFileNames.Designer.cs</LastGenOutput>
       <CustomToolNamespace></CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Report.nb-NO.resx">

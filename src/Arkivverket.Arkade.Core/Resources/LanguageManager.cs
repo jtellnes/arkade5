@@ -8,10 +8,10 @@ namespace Arkivverket.Arkade.Core.Languages
         {
             switch (cultureInfoName)
             {
-                case "en-GB":
+                case "en":
                     supportedLanguage = SupportedLanguages.English;
                     return true;
-                case "nb-NO":
+                case "nb":
                     supportedLanguage = SupportedLanguages.Norsk_BM;
                     return true;
             }
@@ -28,7 +28,7 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.Messages.Culture = cultureInfo;
             Resources.Noark5Messages.Culture = cultureInfo;
             Resources.Noark5TestDescriptions.Culture = cultureInfo;
-            Resources.OutputNames.Culture = cultureInfo;
+            Resources.OutputFileNames.Culture = cultureInfo;
             Resources.Report.Culture = cultureInfo;
         }
 
@@ -37,11 +37,15 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
             Resources.ExceptionMessages.Culture = cultureInfo;
+            Resources.FormatAnalysisResultFileContent.Culture = cultureInfo;
             Resources.Messages.Culture = cultureInfo;
-            Resources.Noark5Messages.Culture = cultureInfo;
-            Resources.Noark5TestDescriptions.Culture = cultureInfo;
-            Resources.OutputNames.Culture = cultureInfo;
-            Resources.Report.Culture = cultureInfo;
+            Resources.OutputFileNames.Culture = cultureInfo;
+        }
+
+        internal static void SetResourceCultureForStandalonePronomAnalysis(CultureInfo cultureInfo)
+        {
+            Resources.FormatAnalysisResultFileContent.Culture = cultureInfo;
+            Resources.OutputFileNames.Culture = cultureInfo;
         }
     }
 

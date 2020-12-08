@@ -7,12 +7,12 @@ namespace Arkivverket.Arkade.CLI
         [Option('o', "output-directory", HelpText = "Directory to place Arkade output files.", Required = true)]
         public string OutputDirectory { get; set; }
 
-        [Option('L', "language",
+        [Option('l', "language",
             HelpText =
                 "Optional. Used to set language for files produced by Arkade.\n" +
                 "Supported values are:\n" +
-                "\t'en-GB' (British english) OR\n" +
-                "\t'nb-NO' (Norsk bokmål)")]
+                "\t'en' (British English) OR\n" +
+                "\t'nb' (Norwegian Bokmål)")]
         public string LanguageForOutputFiles { get; set; }
     }
 }

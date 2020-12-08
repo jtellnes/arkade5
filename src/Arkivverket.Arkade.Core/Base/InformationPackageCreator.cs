@@ -108,12 +108,14 @@ namespace Arkivverket.Arkade.Core.Base
 
         private static void CopyTestReportToResultsFolder(FileSystemInfo repositoryOperations, string uuid, string resultDirectory)
         {
+            string testReportFileName = string.Format(OutputFileNames.TestReportFile, uuid);
+
             string testReportFullFileName =
-                Path.Combine(repositoryOperations.FullName, "report.html");
+                Path.Combine(repositoryOperations.FullName, testReportFileName);
 
             if (File.Exists(testReportFullFileName))
                 File.Copy(testReportFullFileName,
-                    Path.Combine(resultDirectory, string.Format(OutputNames.TestReportFileName, uuid, "html"))
+                    Path.Combine(resultDirectory, testReportFileName)
                 );
         }
 

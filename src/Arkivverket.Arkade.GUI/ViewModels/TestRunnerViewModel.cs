@@ -14,6 +14,7 @@ using Serilog;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
 using Arkivverket.Arkade.GUI.Models;
@@ -458,7 +459,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         private FileInfo GetHtmlFile()
         {
             DirectoryInfo directoryName = _testSession.GetReportDirectory();
-            return new FileInfo(Path.Combine(directoryName.FullName, "report.html"));
+            return new FileInfo(Path.Combine(directoryName.FullName,
+                string.Format(OutputFileNames.TestReportFile, _testSession.Archive.Uuid)));
         }
 
         private void ShowHtmlReport()

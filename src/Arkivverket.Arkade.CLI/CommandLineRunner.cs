@@ -3,8 +3,10 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Metadata;
+using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Testing.Noark5;
 using Arkivverket.Arkade.Core.Util;
 using Serilog;
@@ -59,7 +61,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, options.TestListFile, options.DocumentFileFormatCheck);
+                    options.LanguageForOutputFiles, options.TestSelectionFile, options.DocumentFileFormatCheck);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -84,7 +86,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, options.TestListFile);
+                    options.LanguageForOutputFiles, options.TestSelectionFile);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -125,15 +127,15 @@ namespace Arkivverket.Arkade.CLI
 
             if (options.GenerateMetadataExample)
             {
-                string metadataFileName = Path.Combine(options.OutputDirectory, ArkadeConstants.MetadataFileName);
+                string metadataFileName = Path.Combine(options.OutputDirectory, OutputFileNames.MetadataFile);
                 new MetadataExampleGenerator().Generate(metadataFileName);
                 Log.Information(metadataFileName + " was created");
             }
 
-            if (options.GenerateNoark5TestList)
+            if (options.GenerateNoark5TestSelectionFile)
             {
-                string noark5TestListFileName = Path.Combine(options.OutputDirectory, ArkadeConstants.Noark5TestListFileName);
-                Noark5TestListGenerator.Generate(noark5TestListFileName);
+                string noark5TestListFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
+                Noark5TestSelectionFileGenerator.Generate(noark5TestListFileName);
                 Log.Information(noark5TestListFileName + " was created");
             }
 
@@ -229,14 +231,14 @@ namespace Arkivverket.Arkade.CLI
             if (archiveType == ArchiveType.Noark5)
             {
                 testSession.TestsToRun = File.Exists(testListFilePath)
-                    ? Noark5TestListReader.GetUserSelectedTestIds(testListFilePath)
+                    ? Noark5TestSelectionFileReader.GetUserSelectedTestIds(testListFilePath)
                     : Noark5TestProvider.GetAllTestIds();
 
                 if (testSession.TestsToRun.Count == 0)
                     throw new ArgumentException($"No tests selected in {testListFilePath}");
             }
 
-            languageForOutputFiles ??= "nb-NO";
+            languageForOutputFiles ??= Thread.CurrentThread.CurrentCulture.Name;
             testSession.CultureInfo = CultureInfo.CreateSpecificCulture(languageForOutputFiles);
             testSession.GenerateDocumentFileInfo = checkDocumentFileFormat;
 
@@ -246,7 +248,8 @@ namespace Arkivverket.Arkade.CLI
         private static void SaveTestReport(TestSession testSession, string outputDirectory)
         {
             var packageTestReport = new FileInfo(Path.Combine(
-                testSession.GetReportDirectory().FullName, "report.html"
+                testSession.GetReportDirectory().FullName,
+                string.Format(OutputFileNames.TestReportFile, testSession.Archive.Uuid)
             ));
             Arkade.SaveReport(testSession, packageTestReport);
 

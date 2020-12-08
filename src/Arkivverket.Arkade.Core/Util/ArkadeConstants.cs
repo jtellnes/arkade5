@@ -52,10 +52,6 @@ namespace Arkivverket.Arkade.Core.Util
         public const string SiegfriedLinuxExecutable = "siegfried_linux";
         public const string SiegfriedMacOSXExecutable = "siegfried_mac";
         public const string SiegfriedWindowsExecutable = "siegfried.exe";
-        public const string Noark5TestListFileName = "noark5-testlist.txt";
-        public const string MetadataFileName = "arkade-ip-metadata.json";
-        public const string FileFormatInfoFileName = "fileformatinfo.csv";
-        public const string FileFormatInfoStatisticsFileName = "fileformatinfo-statistics.csv";
 
         public const string MetadataStandardLabelPlaceholder = "[standard_label]";
         public const string MetsHdrAgentMetaNoteKeyWord = "notescontent:";

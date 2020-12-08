@@ -36,7 +36,7 @@ namespace Arkivverket.Arkade.CLI
         {
             if (!ReadyToRun(processOptions.OutputDirectory, processOptions.ProcessingArea,
                 metadataFilePath: processOptions.MetadataFile,
-                testListFilePath: processOptions.TestListFile,
+                testListFilePath: processOptions.TestSelectionFile,
                 languageForOutputFiles: processOptions.LanguageForOutputFiles))
                 return;
 
@@ -46,7 +46,7 @@ namespace Arkivverket.Arkade.CLI
         private static void RunTestOptions(TestOptions testOptions)
         {
             if (!ReadyToRun(testOptions.OutputDirectory, testOptions.ProcessingArea,
-                testListFilePath: testOptions.TestListFile,
+                testListFilePath: testOptions.TestSelectionFile,
                 languageForOutputFiles: testOptions.LanguageForOutputFiles))
                 return;
 

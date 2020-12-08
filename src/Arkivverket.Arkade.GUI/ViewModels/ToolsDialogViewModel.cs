@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using Arkivverket.Arkade.Core.Base;
-using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.GUI.Languages;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -114,7 +114,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             CloseButtonIsEnabled = true;
             ProgressBarVisibility = Visibility.Hidden;
 
-            string filePath = $"{Path.Combine(DirectoryToSaveFormatCheckResult, ArkadeConstants.FileFormatInfoFileName)}";
+            string filePath = $"{Path.Combine(DirectoryToSaveFormatCheckResult, OutputFileNames.FileFormatInfoFile)}";
 
             FormatCheckStatus = $"{ToolsGUI.FormatCheckCompletedMessage}\n" +
                                 $"{filePath}";
