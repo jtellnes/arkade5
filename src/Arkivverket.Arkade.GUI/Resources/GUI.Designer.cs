@@ -377,7 +377,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language for files produced by Arkade 5 is not English.
+        ///   Looks up a localized string similar to Output language: {0}.
         /// </summary>
         public static string UiAndOutputLanguagesIsDifferentWarningMessage {
             get {

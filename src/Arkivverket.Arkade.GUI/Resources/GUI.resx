@@ -232,6 +232,6 @@ Please manually start Arkade after shutdown.</value>
     <value>Automatic restart failed</value>
   </data>
   <data name="UiAndOutputLanguagesIsDifferentWarningMessage" xml:space="preserve">
-    <value>Language for files produced by Arkade 5 is not English</value>
+    <value>Output language: {0}</value>
   </data>
 </root>

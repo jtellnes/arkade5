@@ -231,6 +231,6 @@ Vennligst start Arkade manuelt etter avslutning.</value>
     <value>Automatisk omstart feilet</value>
   </data>
   <data name="UiAndOutputLanguagesIsDifferentWarningMessage" xml:space="preserve">
-    <value>Språk for filer som produseres av Arkade er ikke norsk bokmål</value>
+    <value>Utdataspråk: {0}</value>
   </data>
 </root>
