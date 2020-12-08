@@ -134,9 +134,9 @@ namespace Arkivverket.Arkade.CLI
 
             if (options.GenerateNoark5TestSelectionFile)
             {
-                string noark5TestListFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
-                Noark5TestSelectionFileGenerator.Generate(noark5TestListFileName);
-                Log.Information(noark5TestListFileName + " was created");
+                string noark5TestSelectionFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
+                Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName);
+                Log.Information(noark5TestSelectionFileName + " was created");
             }
 
             LogFinishedStatus(command);
@@ -203,7 +203,7 @@ namespace Arkivverket.Arkade.CLI
         }
 
         private static TestSession CreateTestSession(string archive, string archiveTypeString,
-            string command, string languageForOutputFiles, string testListFilePath = null,
+            string command, string languageForOutputFiles, string testSelectionFilePath = null,
             bool checkDocumentFileFormat = false)
         {
             var fileInfo = new FileInfo(archive);
@@ -230,12 +230,12 @@ namespace Arkivverket.Arkade.CLI
 
             if (archiveType == ArchiveType.Noark5)
             {
-                testSession.TestsToRun = File.Exists(testListFilePath)
-                    ? Noark5TestSelectionFileReader.GetUserSelectedTestIds(testListFilePath)
+                testSession.TestsToRun = File.Exists(testSelectionFilePath)
+                    ? Noark5TestSelectionFileReader.GetUserSelectedTestIds(testSelectionFilePath)
                     : Noark5TestProvider.GetAllTestIds();
 
                 if (testSession.TestsToRun.Count == 0)
-                    throw new ArgumentException($"No tests selected in {testListFilePath}");
+                    throw new ArgumentException($"No tests selected in {testSelectionFilePath}");
             }
 
             languageForOutputFiles ??= Thread.CurrentThread.CurrentCulture.Name;

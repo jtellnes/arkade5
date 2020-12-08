@@ -21,9 +21,9 @@ namespace Arkivverket.Arkade.CLI.Tests
 
             File.Exists(testFilePath).Should().BeTrue();
 
-            var testList = new StringReader(File.ReadAllText(testFilePath));
+            var testSelectionFileContent = new StringReader(File.ReadAllText(testFilePath));
 
-            testList.ReadLine().Should().Be("# " + OutputStrings.Noark5TestSelectionFileHeading);
+            testSelectionFileContent.ReadLine().Should().Be("# " + OutputStrings.Noark5TestSelectionFileHeading);
 
             File.Delete(testFilePath);
         }

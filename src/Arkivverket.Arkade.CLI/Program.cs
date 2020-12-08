@@ -36,7 +36,7 @@ namespace Arkivverket.Arkade.CLI
         {
             if (!ReadyToRun(processOptions.OutputDirectory, processOptions.ProcessingArea,
                 metadataFilePath: processOptions.MetadataFile,
-                testListFilePath: processOptions.TestSelectionFile,
+                testSelectionFilePath: processOptions.TestSelectionFile,
                 languageForOutputFiles: processOptions.LanguageForOutputFiles))
                 return;
 
@@ -46,7 +46,7 @@ namespace Arkivverket.Arkade.CLI
         private static void RunTestOptions(TestOptions testOptions)
         {
             if (!ReadyToRun(testOptions.OutputDirectory, testOptions.ProcessingArea,
-                testListFilePath: testOptions.TestSelectionFile,
+                testSelectionFilePath: testOptions.TestSelectionFile,
                 languageForOutputFiles: testOptions.LanguageForOutputFiles))
                 return;
 
@@ -93,11 +93,11 @@ namespace Arkivverket.Arkade.CLI
         }
 
         private static bool ReadyToRun(string outputDirectoryPath, string processingAreaPath = null,
-            string documentFileDirectoryPath = null, string metadataFilePath = null, string testListFilePath = null,
+            string documentFileDirectoryPath = null, string metadataFilePath = null, string testSelectionFilePath = null,
             string languageForOutputFiles = null)
         {
             if (!(DirectoryArgsExists(outputDirectoryPath, processingAreaPath, documentFileDirectoryPath) &&
-                  FileArgsExists(metadataFilePath, testListFilePath) &&
+                  FileArgsExists(metadataFilePath, testSelectionFilePath) &&
                   SelectedOutputLanguageIsValid(languageForOutputFiles)))
                 return false;
 
@@ -130,7 +130,7 @@ namespace Arkivverket.Arkade.CLI
             return true;
         }
 
-        private static bool FileArgsExists(string metadataFilePath = null, string testListFilePath = null)
+        private static bool FileArgsExists(string metadataFilePath = null, string testSelectionFilePath = null)
         {
             if (metadataFilePath != null && !File.Exists(metadataFilePath))
             {
@@ -138,9 +138,9 @@ namespace Arkivverket.Arkade.CLI
                 return false;
             }
 
-            if (testListFilePath != null && !File.Exists(testListFilePath))
+            if (testSelectionFilePath != null && !File.Exists(testSelectionFilePath))
             {
-                Log.Error(new FileNotFoundException(), $"Could not find test list file: '{testListFilePath}'.");
+                Log.Error(new FileNotFoundException(), $"Could not find test selection file: '{testSelectionFilePath}'.");
                 return false;
             }
 
