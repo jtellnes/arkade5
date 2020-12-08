@@ -148,12 +148,12 @@
     <value>Gyldig prosesseringsområde mangler</value>
   </data>
   <data name="SelectUILanguageText" xml:space="preserve">
-    <value>Velg språk som vises i Arkade-applikasjonen:</value>
+    <value>Språk for brukergrensesnitt:</value>
   </data>
   <data name="DialogTitle" xml:space="preserve">
     <value>Innstillinger</value>
   </data>
   <data name="SelectOutputLanguageText" xml:space="preserve">
-    <value>Velg språk for filer som produseres av Arkade:</value>
+    <value>Språk for produserte filer:</value>
   </data>
 </root>

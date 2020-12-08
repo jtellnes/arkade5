@@ -148,12 +148,12 @@
     <value>Missing valid processing area</value>
   </data>
   <data name="SelectUILanguageText" xml:space="preserve">
-    <value>Choose language for user interface:</value>
+    <value>Language for user interface:</value>
   </data>
   <data name="DialogTitle" xml:space="preserve">
     <value>Settings</value>
   </data>
   <data name="SelectOutputLanguageText" xml:space="preserve">
-    <value>Choose language for files produced by Arkade:</value>
+    <value>Language for produced files:</value>
   </data>
 </root>

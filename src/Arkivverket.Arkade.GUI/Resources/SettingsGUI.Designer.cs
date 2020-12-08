@@ -142,7 +142,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose language for files produced by Arkade:.
+        ///   Looks up a localized string similar to Language for produced files:.
         /// </summary>
         public static string SelectOutputLanguageText {
             get {
@@ -151,7 +151,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose language for user interface:.
+        ///   Looks up a localized string similar to Language for user interface:.
         /// </summary>
         public static string SelectUILanguageText {
             get {
