@@ -118,259 +118,259 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AH_01" xml:space="preserve">
-    <value>Kontroll av sjekksummer</value>
+    <value></value>
   </data>
   <data name="AH_02" xml:space="preserve">
-    <value>Kontroll av ekstra / manglende filer</value>
+    <value></value>
   </data>
   <data name="AH_03" xml:space="preserve">
-    <value>Kontroll av ugyldig postskille eller feil antall felter</value>
+    <value></value>
   </data>
   <data name="AI_01" xml:space="preserve">
-    <value>Kontroll av unik nøkkel for post</value>
+    <value></value>
   </data>
   <data name="A_01" xml:space="preserve">
-    <value>Antall poster</value>
+    <value>Number of records</value>
   </data>
   <data name="A_02" xml:space="preserve">
-    <value>Antall tegn</value>
+    <value>Number of characters</value>
   </data>
   <data name="A_03" xml:space="preserve">
-    <value>Lengste og korteste post</value>
+    <value></value>
   </data>
   <data name="A_04" xml:space="preserve">
-    <value>Antall poster for posttype</value>
+    <value></value>
   </data>
   <data name="A_05" xml:space="preserve">
-    <value>Koder brukt i datasettet</value>
+    <value></value>
   </data>
   <data name="A_07" xml:space="preserve">
-    <value>Antall null-verdi for felt</value>
+    <value></value>
   </data>
   <data name="A_08" xml:space="preserve">
-    <value>Lengste og korteste verdi for felt</value>
+    <value></value>
   </data>
   <data name="A_09" xml:space="preserve">
-    <value>Laveste og høyeste verdi for felt</value>
+    <value></value>
   </data>
   <data name="A_10" xml:space="preserve">
-    <value>Antall forekomster av verdier for felt</value>
+    <value>Number of instances of values for fields</value>
   </data>
   <data name="A_11" xml:space="preserve">
-    <value>Kontroll av oppgitt lengde for alle posttyper</value>
+    <value></value>
   </data>
   <data name="A_12" xml:space="preserve">
-    <value>Antall og kontroll av antall poster</value>
+    <value></value>
   </data>
   <data name="A_13" xml:space="preserve">
-    <value>Kontroll av oppgitt lengde for posttype</value>
+    <value></value>
   </data>
   <data name="A_14" xml:space="preserve">
-    <value>Kontroll om posttype benyttes</value>
+    <value></value>
   </data>
   <data name="A_15" xml:space="preserve">
-    <value>Kontroll av unik nøkkel</value>
+    <value></value>
   </data>
   <data name="A_16" xml:space="preserve">
-    <value>Kontroll av fremmednøkkel</value>
+    <value></value>
   </data>
   <data name="A_17" xml:space="preserve">
-    <value>Kontroll av oppgitt minste lengde</value>
+    <value></value>
   </data>
   <data name="A_18" xml:space="preserve">
-    <value>Kontroll av oppgitt største lengde</value>
+    <value></value>
   </data>
   <data name="A_19" xml:space="preserve">
-    <value>Kontroll av oppgitt dataformat for felt</value>
+    <value></value>
   </data>
   <data name="A_20" xml:space="preserve">
-    <value>Kontroll av null-verdier i felt</value>
+    <value></value>
   </data>
   <data name="A_21" xml:space="preserve">
-    <value>Kontroll av unike verdier i felt</value>
+    <value></value>
   </data>
   <data name="A_22" xml:space="preserve">
-    <value>Koder som benyttes i felt</value>
+    <value></value>
   </data>
   <data name="A_32" xml:space="preserve">
-    <value>Kontroll av fødselsnummer i felt</value>
+    <value></value>
   </data>
   <data name="A_33" xml:space="preserve">
-    <value>Kontroll av organisasjonsnummer i felt</value>
+    <value></value>
   </data>
   <data name="A_34" xml:space="preserve">
-    <value>Kontroll av kontonummer i felt</value>
+    <value></value>
   </data>
   <data name="A_35" xml:space="preserve">
-    <value>Kontroll av dato i felt</value>
+    <value></value>
   </data>
   <data name="A_36" xml:space="preserve">
-    <value>Kontroll av boolsk verdi i felt</value>
+    <value></value>
   </data>
   <data name="DisplayNameFormat" xml:space="preserve">
     <value>{0} - {1}</value>
     <comment>ID - name</comment>
   </data>
   <data name="N5_01" xml:space="preserve">
-    <value>Kontroll av eksistens for XML-filene</value>
+    <value></value>
   </data>
   <data name="N5_02" xml:space="preserve">
-    <value>Validering av sjekksummer</value>
+    <value></value>
   </data>
   <data name="N5_03" xml:space="preserve">
-    <value>Validering av XML i henhold til skjema</value>
+    <value></value>
   </data>
   <data name="N5_04" xml:space="preserve">
-    <value>Antall arkiv</value>
+    <value>Number of archives</value>
   </data>
   <data name="N5_05" xml:space="preserve">
-    <value>Antall arkivdeler</value>
+    <value>Number of archive parts</value>
   </data>
   <data name="N5_06" xml:space="preserve">
-    <value>Status på arkivdeler</value>
+    <value></value>
   </data>
   <data name="N5_07" xml:space="preserve">
-    <value>Antall klassifikasjonssystem</value>
+    <value>Number of classification systems</value>
   </data>
   <data name="N5_08" xml:space="preserve">
-    <value>Antall klasser</value>
+    <value>&amp;Number of bins</value>
   </data>
   <data name="N5_09" xml:space="preserve">
-    <value>Antall klasser i det primære klassifikasjonssystemet uten underklasser, mapper eller registreringer</value>
+    <value>Number of classes in the primary classification system without subclasses, folders or registrations</value>
   </data>
   <data name="N5_10" xml:space="preserve">
-    <value>Antall mapper</value>
+    <value>Number of folders to apply the view to: &lt;0d&gt;</value>
   </data>
   <data name="N5_11" xml:space="preserve">
-    <value>Antall mapper for hvert år</value>
+    <value>Number of folders for each year</value>
   </data>
   <data name="N5_12" xml:space="preserve">
-    <value>Klasser med både underklasse(r) og mappe(r)</value>
+    <value></value>
   </data>
   <data name="N5_13" xml:space="preserve">
-    <value>Antall mapper for hver klasse</value>
+    <value>Number of folders for each class</value>
   </data>
   <data name="N5_14" xml:space="preserve">
-    <value>Antall mapper uten registreringer eller undermapper</value>
+    <value>Number of folders without registrations or subfolders</value>
   </data>
   <data name="N5_15" xml:space="preserve">
-    <value>Antall av ulike saksmappestatuser</value>
+    <value>Number of different case folder statuses</value>
   </data>
   <data name="N5_16" xml:space="preserve">
-    <value>Antall registreringer</value>
+    <value>Total number of recording made for framework : %1 and industry : %2 is %3</value>
   </data>
   <data name="N5_17" xml:space="preserve">
-    <value>Antall av ulike journalposttyper</value>
+    <value>Number of different journal entry types</value>
   </data>
   <data name="N5_18" xml:space="preserve">
-    <value>Antall registreringer for hvert år</value>
+    <value></value>
   </data>
   <data name="N5_19" xml:space="preserve">
-    <value>Klasser med både underklasse(r) og registrering(er)</value>
+    <value></value>
   </data>
   <data name="N5_20" xml:space="preserve">
-    <value>Antall registreringer for hver klasse (ikke medregnet registreringer under mappe)</value>
+    <value></value>
   </data>
   <data name="N5_21" xml:space="preserve">
-    <value>Antall registreringer uten dokumentbeskrivelse</value>
+    <value></value>
   </data>
   <data name="N5_22" xml:space="preserve">
-    <value>Antall av ulike journalstatuser</value>
+    <value>Number of different journal statuses</value>
   </data>
   <data name="N5_23" xml:space="preserve">
-    <value>Antall dokumentbeskrivelser</value>
+    <value>Number of document descriptions</value>
   </data>
   <data name="N5_24" xml:space="preserve">
-    <value>Antall dokumentbeskrivelser uten dokumentobjekt</value>
+    <value>Number of document descriptions without document object</value>
   </data>
   <data name="N5_25" xml:space="preserve">
-    <value>Antall av ulike dokumentstatuser</value>
+    <value>Number of different document statuses</value>
   </data>
   <data name="N5_26" xml:space="preserve">
-    <value>Antall dokumentobjekter</value>
+    <value>Number of document objects</value>
   </data>
   <data name="N5_27" xml:space="preserve">
-    <value>Opprettelsesdatoer for første og siste registrering</value>
+    <value></value>
   </data>
   <data name="N5_28" xml:space="preserve">
-    <value>Validering av antall dokumentfiler</value>
+    <value></value>
   </data>
   <data name="N5_29" xml:space="preserve">
-    <value>Antall av ulike dokumentformater</value>
+    <value>Number of different document formats</value>
   </data>
   <data name="N5_30" xml:space="preserve">
-    <value>Dokumentfilers sjekksummer</value>
+    <value></value>
   </data>
   <data name="N5_32" xml:space="preserve">
-    <value>Refererte dokumenters eksistens</value>
+    <value></value>
   </data>
   <data name="N5_33" xml:space="preserve">
-    <value>Dokumentfiler som mangler referanse</value>
+    <value></value>
   </data>
   <data name="N5_34" xml:space="preserve">
-    <value>Dokumentfiler med referanse fra mer enn ett dokumentobjekt</value>
+    <value></value>
   </data>
   <data name="N5_35" xml:space="preserve">
-    <value>Antall saksparter</value>
+    <value></value>
   </data>
   <data name="N5_35v5_5" xml:space="preserve">
-    <value>Antall parter</value>
+    <value>Number of parties</value>
   </data>
   <data name="N5_36" xml:space="preserve">
-    <value>Antall merknader</value>
+    <value>Number of notes</value>
   </data>
   <data name="N5_37" xml:space="preserve">
-    <value>Antall kryssreferanser</value>
+    <value>Number of cross-references</value>
   </data>
   <data name="N5_38" xml:space="preserve">
-    <value>Antall presedenser</value>
+    <value>Number of precedents</value>
   </data>
   <data name="N5_39" xml:space="preserve">
-    <value>Antall korrespondanseparter</value>
+    <value>Number of correspondence parties</value>
   </data>
   <data name="N5_40" xml:space="preserve">
-    <value>Antall avskrivninger</value>
+    <value>Number of depreciation</value>
   </data>
   <data name="N5_41" xml:space="preserve">
-    <value>Antall dokumentflyter</value>
+    <value>Number of document flows</value>
   </data>
   <data name="N5_42" xml:space="preserve">
-    <value>Antall skjerminger</value>
+    <value></value>
   </data>
   <data name="N5_43" xml:space="preserve">
-    <value>Antall graderinger</value>
+    <value></value>
   </data>
   <data name="N5_44" xml:space="preserve">
-    <value>Antall kassasjonsvedtak</value>
+    <value></value>
   </data>
   <data name="N5_45" xml:space="preserve">
-    <value>Antall utførte kassasjoner</value>
+    <value></value>
   </data>
   <data name="N5_46" xml:space="preserve">
-    <value>Antall konverterte dokumenter</value>
+    <value>Number of converted documents</value>
   </data>
   <data name="N5_47" xml:space="preserve">
-    <value>Systemidentifikasjoner</value>
+    <value></value>
   </data>
   <data name="N5_48" xml:space="preserve">
-    <value>Arkivdelreferanser</value>
+    <value></value>
   </data>
   <data name="N5_51" xml:space="preserve">
-    <value>Klassereferanser</value>
+    <value></value>
   </data>
   <data name="N5_59" xml:space="preserve">
-    <value>Antall journalposter</value>
+    <value>Number of journal entries</value>
   </data>
   <data name="N5_60" xml:space="preserve">
-    <value>Start- og sluttdatoer</value>
+    <value>Timesheet period start and end dates</value>
   </data>
   <data name="N5_61" xml:space="preserve">
-    <value>Antall loggførte endringer</value>
+    <value>Number of logged changes</value>
   </data>
   <data name="N5_62" xml:space="preserve">
-    <value>Endringslogg-referanser til arkivstrukturen</value>
+    <value></value>
   </data>
   <data name="N5_63" xml:space="preserve">
-    <value>Elementer som mangler innhold</value>
+    <value></value>
   </data>
 </root>

@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall poster.
+        ///   Looks up a localized string similar to Number of records.
         /// </summary>
         public static string A_01 {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall tegn.
+        ///   Looks up a localized string similar to Number of characters.
         /// </summary>
         public static string A_02 {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lengste og korteste post.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_03 {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall poster for posttype.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_04 {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Koder brukt i datasettet.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_05 {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall null-verdi for felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_07 {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lengste og korteste verdi for felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_08 {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Laveste og høyeste verdi for felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_09 {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall forekomster av verdier for felt.
+        ///   Looks up a localized string similar to Number of instances of values for fields.
         /// </summary>
         public static string A_10 {
             get {
@@ -142,7 +142,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av oppgitt lengde for alle posttyper.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_11 {
             get {
@@ -151,7 +151,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall og kontroll av antall poster.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_12 {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av oppgitt lengde for posttype.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_13 {
             get {
@@ -169,7 +169,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll om posttype benyttes.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_14 {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av unik nøkkel.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_15 {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av fremmednøkkel.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_16 {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av oppgitt minste lengde.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_17 {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av oppgitt største lengde.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_18 {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av oppgitt dataformat for felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_19 {
             get {
@@ -223,7 +223,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av null-verdier i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_20 {
             get {
@@ -232,7 +232,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av unike verdier i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_21 {
             get {
@@ -241,7 +241,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Koder som benyttes i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_22 {
             get {
@@ -250,7 +250,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av fødselsnummer i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_32 {
             get {
@@ -259,7 +259,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av organisasjonsnummer i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_33 {
             get {
@@ -268,7 +268,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av kontonummer i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_34 {
             get {
@@ -277,7 +277,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av dato i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_35 {
             get {
@@ -286,7 +286,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av boolsk verdi i felt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string A_36 {
             get {
@@ -295,7 +295,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av sjekksummer.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AH_01 {
             get {
@@ -304,7 +304,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av ekstra / manglende filer.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AH_02 {
             get {
@@ -313,7 +313,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av ugyldig postskille eller feil antall felter.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AH_03 {
             get {
@@ -322,7 +322,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av unik nøkkel for post.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AI_01 {
             get {
@@ -340,7 +340,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kontroll av eksistens for XML-filene.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_01 {
             get {
@@ -349,7 +349,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Validering av sjekksummer.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_02 {
             get {
@@ -358,7 +358,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Validering av XML i henhold til skjema.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_03 {
             get {
@@ -367,7 +367,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall arkiv.
+        ///   Looks up a localized string similar to Number of archives.
         /// </summary>
         public static string N5_04 {
             get {
@@ -376,7 +376,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall arkivdeler.
+        ///   Looks up a localized string similar to Number of archive parts.
         /// </summary>
         public static string N5_05 {
             get {
@@ -385,7 +385,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status på arkivdeler.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_06 {
             get {
@@ -394,7 +394,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall klassifikasjonssystem.
+        ///   Looks up a localized string similar to Number of classification systems.
         /// </summary>
         public static string N5_07 {
             get {
@@ -403,7 +403,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall klasser.
+        ///   Looks up a localized string similar to &amp;Number of bins.
         /// </summary>
         public static string N5_08 {
             get {
@@ -412,7 +412,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall klasser i det primære klassifikasjonssystemet uten underklasser, mapper eller registreringer.
+        ///   Looks up a localized string similar to Number of classes in the primary classification system without subclasses, folders or registrations.
         /// </summary>
         public static string N5_09 {
             get {
@@ -421,7 +421,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall mapper.
+        ///   Looks up a localized string similar to Number of folders to apply the view to: &lt;0d&gt;.
         /// </summary>
         public static string N5_10 {
             get {
@@ -430,7 +430,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall mapper for hvert år.
+        ///   Looks up a localized string similar to Number of folders for each year.
         /// </summary>
         public static string N5_11 {
             get {
@@ -439,7 +439,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasser med både underklasse(r) og mappe(r).
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_12 {
             get {
@@ -448,7 +448,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall mapper for hver klasse.
+        ///   Looks up a localized string similar to Number of folders for each class.
         /// </summary>
         public static string N5_13 {
             get {
@@ -457,7 +457,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall mapper uten registreringer eller undermapper.
+        ///   Looks up a localized string similar to Number of folders without registrations or subfolders.
         /// </summary>
         public static string N5_14 {
             get {
@@ -466,7 +466,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall av ulike saksmappestatuser.
+        ///   Looks up a localized string similar to Number of different case folder statuses.
         /// </summary>
         public static string N5_15 {
             get {
@@ -475,7 +475,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall registreringer.
+        ///   Looks up a localized string similar to Total number of recording made for framework : %1 and industry : %2 is %3.
         /// </summary>
         public static string N5_16 {
             get {
@@ -484,7 +484,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall av ulike journalposttyper.
+        ///   Looks up a localized string similar to Number of different journal entry types.
         /// </summary>
         public static string N5_17 {
             get {
@@ -493,7 +493,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall registreringer for hvert år.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_18 {
             get {
@@ -502,7 +502,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasser med både underklasse(r) og registrering(er).
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_19 {
             get {
@@ -511,7 +511,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall registreringer for hver klasse (ikke medregnet registreringer under mappe).
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_20 {
             get {
@@ -520,7 +520,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall registreringer uten dokumentbeskrivelse.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_21 {
             get {
@@ -529,7 +529,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall av ulike journalstatuser.
+        ///   Looks up a localized string similar to Number of different journal statuses.
         /// </summary>
         public static string N5_22 {
             get {
@@ -538,7 +538,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentbeskrivelser.
+        ///   Looks up a localized string similar to Number of document descriptions.
         /// </summary>
         public static string N5_23 {
             get {
@@ -547,7 +547,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentbeskrivelser uten dokumentobjekt.
+        ///   Looks up a localized string similar to Number of document descriptions without document object.
         /// </summary>
         public static string N5_24 {
             get {
@@ -556,7 +556,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall av ulike dokumentstatuser.
+        ///   Looks up a localized string similar to Number of different document statuses.
         /// </summary>
         public static string N5_25 {
             get {
@@ -565,7 +565,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentobjekter.
+        ///   Looks up a localized string similar to Number of document objects.
         /// </summary>
         public static string N5_26 {
             get {
@@ -574,7 +574,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Opprettelsesdatoer for første og siste registrering.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_27 {
             get {
@@ -583,7 +583,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Validering av antall dokumentfiler.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_28 {
             get {
@@ -592,7 +592,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall av ulike dokumentformater.
+        ///   Looks up a localized string similar to Number of different document formats.
         /// </summary>
         public static string N5_29 {
             get {
@@ -601,7 +601,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dokumentfilers sjekksummer.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_30 {
             get {
@@ -610,7 +610,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Refererte dokumenters eksistens.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_32 {
             get {
@@ -619,7 +619,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dokumentfiler som mangler referanse.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_33 {
             get {
@@ -628,7 +628,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dokumentfiler med referanse fra mer enn ett dokumentobjekt.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_34 {
             get {
@@ -637,7 +637,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall saksparter.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_35 {
             get {
@@ -646,7 +646,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall parter.
+        ///   Looks up a localized string similar to Number of parties.
         /// </summary>
         public static string N5_35v5_5 {
             get {
@@ -655,7 +655,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall merknader.
+        ///   Looks up a localized string similar to Number of notes.
         /// </summary>
         public static string N5_36 {
             get {
@@ -664,7 +664,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall kryssreferanser.
+        ///   Looks up a localized string similar to Number of cross-references.
         /// </summary>
         public static string N5_37 {
             get {
@@ -673,7 +673,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall presedenser.
+        ///   Looks up a localized string similar to Number of precedents.
         /// </summary>
         public static string N5_38 {
             get {
@@ -682,7 +682,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall korrespondanseparter.
+        ///   Looks up a localized string similar to Number of correspondence parties.
         /// </summary>
         public static string N5_39 {
             get {
@@ -691,7 +691,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall avskrivninger.
+        ///   Looks up a localized string similar to Number of depreciation.
         /// </summary>
         public static string N5_40 {
             get {
@@ -700,7 +700,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentflyter.
+        ///   Looks up a localized string similar to Number of document flows.
         /// </summary>
         public static string N5_41 {
             get {
@@ -709,7 +709,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall skjerminger.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_42 {
             get {
@@ -718,7 +718,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall graderinger.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_43 {
             get {
@@ -727,7 +727,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall kassasjonsvedtak.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_44 {
             get {
@@ -736,7 +736,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall utførte kassasjoner.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_45 {
             get {
@@ -745,7 +745,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall konverterte dokumenter.
+        ///   Looks up a localized string similar to Number of converted documents.
         /// </summary>
         public static string N5_46 {
             get {
@@ -754,7 +754,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Systemidentifikasjoner.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_47 {
             get {
@@ -763,7 +763,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdelreferanser.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_48 {
             get {
@@ -772,7 +772,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klassereferanser.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_51 {
             get {
@@ -781,7 +781,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall journalposter.
+        ///   Looks up a localized string similar to Number of journal entries.
         /// </summary>
         public static string N5_59 {
             get {
@@ -790,7 +790,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start- og sluttdatoer.
+        ///   Looks up a localized string similar to Timesheet period start and end dates.
         /// </summary>
         public static string N5_60 {
             get {
@@ -799,7 +799,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall loggførte endringer.
+        ///   Looks up a localized string similar to Number of logged changes.
         /// </summary>
         public static string N5_61 {
             get {
@@ -808,7 +808,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Endringslogg-referanser til arkivstrukturen.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_62 {
             get {
@@ -817,7 +817,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elementer som mangler innhold.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string N5_63 {
             get {
