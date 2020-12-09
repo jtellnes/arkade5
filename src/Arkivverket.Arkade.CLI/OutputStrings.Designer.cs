@@ -61,8 +61,8 @@ namespace Arkivverket.Arkade.CLI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oppgi test-ID (N5.XX) i starten av en egen linje for hver test som skal utføres
-        ///{0} Tester kan utelates ved å sette tegnet {0} først på linjen.
+        ///   Looks up a localized string similar to Enter the test ID (N5.XX) at the beginning of a separate line for each test to be performed
+        ///{0} Tests can be omitted by putting the {0} character first on the line.
         /// </summary>
         public static string Noark5TestSelectionFileDescription {
             get {
@@ -71,7 +71,7 @@ namespace Arkivverket.Arkade.CLI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NOARK5-TESTER SOM SKAL UTFØRES AV ARKADE.
+        ///   Looks up a localized string similar to NOARK5 TESTS TO BE PERFORMED BY ARKADE.
         /// </summary>
         public static string Noark5TestSelectionFileHeading {
             get {
@@ -98,7 +98,7 @@ namespace Arkivverket.Arkade.CLI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkaderapport-{0}.html.
+        ///   Looks up a localized string similar to Arkadereport-{0}.html.
         /// </summary>
         public static string TestReportFileName {
             get {
