@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Addml" xml:space="preserve">
-    <value>nødvending ADDML data</value>
+    <value>necessary ADDML data</value>
   </data>
   <data name="AddmlFile" xml:space="preserve">
-    <value>nødvending ADDML fil</value>
+    <value>necessary ADDML file</value>
   </data>
   <data name="AddmlInfo" xml:space="preserve">
-    <value>nødvending ADDML informasjon</value>
+    <value>necessary ADDML information</value>
   </data>
   <data name="AssertNotNull" xml:space="preserve">
-    <value>Finner ingen referanse til {0}. Dette må være definert.</value>
+    <value>No reference to {0} found. This must be defined.</value>
   </data>
   <data name="AssertNotNullOrEmpty" xml:space="preserve">
-    <value>Finner ikke {0}. Denne må både være definert og satt til en verdi.</value>
+    <value>Cannot find {0}. This must be both defined and set to a value.</value>
   </data>
   <data name="CouldNotInstatiateUnsupportedAddmlProcess" xml:space="preserve">
-    <value>Arkade har ikke støtte for den oppgitte ADDML-prosessen {0}</value>
+    <value>Arkade does not support the specified ADDML process {0}</value>
   </data>
   <data name="Dataset" xml:space="preserve">
     <value>ADDML element dataset</value>
@@ -148,27 +148,27 @@
     <value>ADDML element recordDefinitions</value>
   </data>
   <data name="RecordLengthErrorTestName" xml:space="preserve">
-    <value>ADDML-post med feil antall felt</value>
+    <value>ADDML record with the wrong number of fields</value>
   </data>
   <data name="UnexpectedNumberOfFields" xml:space="preserve">
-    <value>Uventet felt-antall (funnet/forventet)</value>
+    <value>Unexpected field number (found/expected)</value>
   </data>
   <data name="UnknownAddmlProcess" xml:space="preserve">
-    <value>Ukjent ADDML-prosess: {0}</value>
+    <value>Unknown ADDML process: {0}</value>
   </data>
   <data name="NumberOfRecordsWithFieldDelimiterErrorIdentifier" xml:space="preserve">
-    <value>ADDML-poster med feil antall felt i filen {0}</value>
+    <value>ADDML records with the wrong number of fields in file {0}</value>
   </data>
   <data name="FailedRecordErrorMessage" xml:space="preserve">
-    <value>{0} Felttekst: {1}</value>
+    <value>{0} Field text: {1}</value>
   </data>
   <data name="TotalAmountText" xml:space="preserve">
-    <value>Totalt antall: {0}</value>
+    <value>Total number: {0}</value>
   </data>
   <data name="FailedRecordErrorIdentifier" xml:space="preserve">
-    <value>ADDML-post med feil antall felt i fil {0}, post nummer {1}, feil nummer {2}</value>
+    <value>ADDML record with the wrong number of fields in file {0}, record number {1}, error number {2}</value>
   </data>
   <data name="TotalAmountOfRecordsWithFieldDelimiterErrorResultText" xml:space="preserve">
-    <value>Filens totale antall poster med feil antall felt: {0}</value>
+    <value>Total number of records with the wrong number of fields in the file: {0}</value>
   </data>
 </root>

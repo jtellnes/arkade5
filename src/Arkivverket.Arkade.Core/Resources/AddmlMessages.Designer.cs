@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to nødvending ADDML data.
+        ///   Looks up a localized string similar to necessary ADDML data.
         /// </summary>
         public static string Addml {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to nødvending ADDML fil.
+        ///   Looks up a localized string similar to necessary ADDML file.
         /// </summary>
         public static string AddmlFile {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to nødvending ADDML informasjon.
+        ///   Looks up a localized string similar to necessary ADDML information.
         /// </summary>
         public static string AddmlInfo {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner ingen referanse til {0}. Dette må være definert..
+        ///   Looks up a localized string similar to No reference to {0} found. This must be defined..
         /// </summary>
         public static string AssertNotNull {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner ikke {0}. Denne må både være definert og satt til en verdi..
+        ///   Looks up a localized string similar to Cannot find {0}. This must be both defined and set to a value..
         /// </summary>
         public static string AssertNotNullOrEmpty {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade har ikke støtte for den oppgitte ADDML-prosessen {0}.
+        ///   Looks up a localized string similar to Arkade does not support the specified ADDML process {0}.
         /// </summary>
         public static string CouldNotInstatiateUnsupportedAddmlProcess {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML-post med feil antall felt i fil {0}, post nummer {1}, feil nummer {2}.
+        ///   Looks up a localized string similar to ADDML record with the wrong number of fields in file {0}, record number {1}, error number {2}.
         /// </summary>
         public static string FailedRecordErrorIdentifier {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} Felttekst: {1}.
+        ///   Looks up a localized string similar to {0} Field text: {1}.
         /// </summary>
         public static string FailedRecordErrorMessage {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML-poster med feil antall felt i filen {0}.
+        ///   Looks up a localized string similar to ADDML records with the wrong number of fields in file {0}.
         /// </summary>
         public static string NumberOfRecordsWithFieldDelimiterErrorIdentifier {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML-post med feil antall felt.
+        ///   Looks up a localized string similar to ADDML record with the wrong number of fields.
         /// </summary>
         public static string RecordLengthErrorTestName {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filens totale antall poster med feil antall felt: {0}.
+        ///   Looks up a localized string similar to Total number of records with the wrong number of fields in the file: {0}.
         /// </summary>
         public static string TotalAmountOfRecordsWithFieldDelimiterErrorResultText {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Totalt antall: {0}.
+        ///   Looks up a localized string similar to Total number: {0}.
         /// </summary>
         public static string TotalAmountText {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uventet felt-antall (funnet/forventet).
+        ///   Looks up a localized string similar to Unexpected field number (found/expected).
         /// </summary>
         public static string UnexpectedNumberOfFields {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ukjent ADDML-prosess: {0}.
+        ///   Looks up a localized string similar to Unknown ADDML process: {0}.
         /// </summary>
         public static string UnknownAddmlProcess {
             get {
