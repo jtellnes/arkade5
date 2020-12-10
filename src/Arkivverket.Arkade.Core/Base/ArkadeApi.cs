@@ -119,8 +119,9 @@ namespace Arkivverket.Arkade.Core.Base
             }
         }
 
-        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath)
+        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string outputLanguage)
         {
+            LanguageManager.SetResourceCultureForStandalonePronomAnalysis(outputLanguage);
             FileFormatInfoGenerator.Generate(filesDirectory, resultFileDirectoryPath);
         }
 
