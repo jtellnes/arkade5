@@ -142,11 +142,12 @@ namespace Arkivverket.Arkade.GUI
 
             if (uiLanguage == null)
             {
-                uiLanguage = Thread.CurrentThread.CurrentCulture.ToString();
+                uiLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
                 Settings.Default.SelectedUILanguage = uiLanguage;
             }
 
-            var cultureInfo = new CultureInfo(uiLanguage, true);
+            var cultureInfo = CultureInfo.CreateSpecificCulture(uiLanguage);
+            //cultureInfo = new CultureInfo("nb-NO", true);
 
             AboutGUI.Culture = cultureInfo;
             CreatePackageGUI.Culture = cultureInfo;

@@ -242,6 +242,7 @@ namespace Arkivverket.Arkade.CLI
             if (!Enum.TryParse(selectedOutputLanguage, out SupportedLanguage outputLanguage))
                 outputLanguage = SupportedLanguage.en;
             testSession.OutputLanguage = outputLanguage;
+
             testSession.GenerateDocumentFileInfo = checkDocumentFileFormat;
 
             return testSession;

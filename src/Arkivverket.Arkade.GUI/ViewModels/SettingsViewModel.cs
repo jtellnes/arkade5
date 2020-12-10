@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using Arkivverket.Arkade.Core.Base;
 using System.Windows;
@@ -27,6 +28,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         public string CurrentArkadeProcessingAreaLocation { get; }
         public string DirectoryNameArkadeProcessingAreaRoot { get; }
+        public Dictionary<SupportedLanguage, string> SupportedLanguages { get; }
 
         public bool DarkModeSelected
         {
@@ -34,13 +36,24 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             set => SetProperty(ref _darkModeSelected, value);
         }
 
-        public SupportedLanguage SelectedUILanguage
+        public int SelectedUILanguageIndex
+        {
+            get => (int) SelectedUILanguage;
+            set => SelectedUILanguage = (SupportedLanguage) value;
+        }
+
+        private SupportedLanguage SelectedUILanguage
         {
             get => _selectedUILanguage;
             set => SetProperty(ref _selectedUILanguage, value);
         }
-        
-        public SupportedLanguage SelectedOutputLanguage
+
+        public int SelectedOutputLanguageIndex
+        {
+            get => (int)SelectedOutputLanguage;
+            set => SelectedOutputLanguage = (SupportedLanguage)value;
+        }
+        private SupportedLanguage SelectedOutputLanguage
         {
             get => _selectedOutputLanguage;
             set => SetProperty(ref _selectedOutputLanguage, value);
@@ -65,6 +78,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
             ChangeArkadeProcessingAreaLocationCommand = new DelegateCommand(ChangeArkadeProcessingAreaLocation);
             ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
+
+            SupportedLanguages = GetSupportedLanguagesAsString();
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
             if (!Enum.TryParse(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
@@ -156,6 +171,22 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             _eventAggregator.GetEvent<UpdateOutputLanguageEvent>().Publish();
 
             Settings.Default.Save();
+        }
+
+        private static Dictionary<SupportedLanguage, string> GetSupportedLanguagesAsString()
+        {
+            var supportedLanguages = new Dictionary<SupportedLanguage, string>();
+            foreach (SupportedLanguage supportedLanguage in Enum.GetValues(typeof(SupportedLanguage)))
+            {
+                string languageAsString = supportedLanguage switch
+                {
+                    SupportedLanguage.en => "English",
+                    SupportedLanguage.nb => "Norsk (Bokmål)",
+                    _ => null
+                };
+                supportedLanguages.TryAdd(supportedLanguage, languageAsString);
+            }
+            return supportedLanguages;
         }
     }
 }

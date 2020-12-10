@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:coreLang="clr-namespace:Arkivverket.Arkade.Core.Languages;assembly=Arkivverket.Arkade.Core"
         xmlns:lang="clr-namespace:Arkivverket.Arkade.GUI.Languages"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
@@ -14,16 +13,9 @@
         Background="{DynamicResource MaterialDesignPaper}"
         d:DataContext="{d:DesignData SettingsViewModel}">
     <Grid>
-        <Grid.Resources>
-            <ObjectDataProvider x:Key="GetSupportedLanguages" MethodName="GetValues" ObjectType="coreLang:SupportedLanguage">
-                <ObjectDataProvider.MethodParameters>
-                    <x:Type TypeName="coreLang:SupportedLanguage"></x:Type>
-                </ObjectDataProvider.MethodParameters>
-            </ObjectDataProvider>
-        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="160"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -61,17 +53,17 @@
                    HorizontalAlignment="Left" FontSize="18" FontWeight="Bold"
                    Text="{x:Static lang:SettingsGUI.SelectUILanguageText}"/>
         <ComboBox Margin="10" Grid.Row="1" Grid.Column="1"
-                  Width="90" Cursor="Hand"
-                  ItemsSource="{Binding Source={StaticResource GetSupportedLanguages}}"
-                  SelectedItem="{Binding SelectedUILanguage}"/>
+                  Width="120" Cursor="Hand"
+                  ItemsSource="{Binding SupportedLanguages}" DisplayMemberPath="Value" SelectedValuePath="Value"
+                  SelectedIndex="{Binding SelectedUILanguageIndex}"/>
 
         <TextBlock Margin="10" Grid.Row="2" Grid.Column="0"
                    HorizontalAlignment="Left" FontSize="18" FontWeight="Bold"
                    Text="{x:Static lang:SettingsGUI.SelectOutputLanguageText}"/>
         <ComboBox Margin="10" Grid.Row="2" Grid.Column="1"
-                  Width="90" Cursor="Hand"
-                  ItemsSource="{Binding Source={StaticResource GetSupportedLanguages}}"
-                  SelectedItem="{Binding SelectedOutputLanguage}"/>
+                  Width="120" Cursor="Hand"
+                  ItemsSource="{Binding SupportedLanguages}"
+                  SelectedIndex="{Binding SelectedOutputLanguageIndex}" DisplayMemberPath="Value" SelectedValuePath="Value"/>
 
         <WrapPanel Margin="10" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
             <TextBlock Text="{x:Static lang:SettingsGUI.SelectDarkModeText}"

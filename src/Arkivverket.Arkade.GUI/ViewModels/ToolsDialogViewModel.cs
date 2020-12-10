@@ -108,7 +108,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                     CloseButtonIsEnabled = false;
                     ProgressBarVisibility = Visibility.Visible;
 
-                    _arkadeApi.GenerateFileFormatInfoFiles(new DirectoryInfo(DirectoryForFormatCheck), DirectoryToSaveFormatCheckResult);
+                    _arkadeApi.GenerateFileFormatInfoFiles(new DirectoryInfo(DirectoryForFormatCheck),
+                        DirectoryToSaveFormatCheckResult, Properties.Settings.Default.SelectedOutputLanguage);
                 });
 
             CloseButtonIsEnabled = true;
