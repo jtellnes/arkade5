@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sjekksum er kontrollert med algoritmen {0}..
+        ///   Looks up a localized string similar to Checksum is checked with the algorithm {0}..
         /// </summary>
         public static string AlgorithmUsedToControlChecksumMessage {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Referanse fra {0} (systemID) {1} til arkivdel (systemID) {2} er ikke gyldig.
+        ///   Looks up a localized string similar to Reference from {0} (systemID) {1} to archive part (systemID) {2} is not valid.
         /// </summary>
         public static string ArchivepartReferenceControlMessage {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1}.
         /// </summary>
         public static string ArchivePartSystemId {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start- og sluttdato i arkivstrukturen: {0} - {1}.
+        ///   Looks up a localized string similar to Start and end date in the archive structure: {0} - {1}.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_DatesArchive {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start- og sluttdato i offentlig journal: {0} - {1}.
+        ///   Looks up a localized string similar to Public journal start and end date: {0} - {1}.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_DatesPublicJournal {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start- og sluttdato i løpende journal: {0} - {1}.
+        ///   Looks up a localized string similar to Start and end date in running journal: {0} - {1}.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_DatesRunningJournal {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det ble ikke funnet noen gyldige journaldatoer i arkivuttrekket.
+        ///   Looks up a localized string similar to No valid journal dates were found in the archive extract.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_NoArchiveDatesFound {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Periodeskille er skarpt og datoer i arkivstrukturen er ikke like de i offentlig og løpende journal.
+        ///   Looks up a localized string similar to Period separation is sharp and dates in the archive structure are not like those in public and ongoing journal.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_UnEqualJournalAndArchiveDates {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Datoer i offentlig og løpende journal er ikke like.
+        ///   Looks up a localized string similar to Dates in public and ongoing journals are not equal.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_UnEqualJournalDates {
             get {
@@ -142,7 +142,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Referanse til arkivenhet er ikke gyldig: (systemID) {0}.
+        ///   Looks up a localized string similar to Reference to archive unit is not valid: (systemID) {0}.
         /// </summary>
         public static string ChangeLogArchiveReferenceControlMessage {
             get {
@@ -151,7 +151,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Referanse fra mappe (systemID) {0} til klasse (systemID) {1} er ikke gyldig.
+        ///   Looks up a localized string similar to Folder reference (systemID) {0} to class (systemID) {1} is not valid.
         /// </summary>
         public static string ClassReferenceControlMessage {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Etter systemID {0}.
+        ///   Looks up a localized string similar to After systemID {0}.
         /// </summary>
         public static string ControlElementHasContent_AfterSystemId {
             get {
@@ -169,7 +169,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elementet {0} mangler innhold.
+        ///   Looks up a localized string similar to Item {0} missing content.
         /// </summary>
         public static string ControlElementHasContent_ElementHasNoContent {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasse med systemID {0}.
+        ///   Looks up a localized string similar to Class with systemID {0}.
         /// </summary>
         public static string ControlNoSuperclassesHasFoldersMessage {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasse med systemID {0}.
+        ///   Looks up a localized string similar to Class with systemID {0}.
         /// </summary>
         public static string ControlNoSuperclassesHasRegistrationsMessage {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kunne ikke lese fra en eller flere filer.
+        ///   Looks up a localized string similar to Could not read from one or more files.
         /// </summary>
         public static string CouldNotReadFromFiles {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Første registrering: Opprettet {0}.
+        ///   Looks up a localized string similar to First registration: Created {0}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_CreationDateFirstRegistration {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} - Første registrering: Opprettet {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} - First registration: Created {2}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_CreationDateFirstRegistration_InArchivePart {
             get {
@@ -223,7 +223,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Siste registrering: Opprettet {0}.
+        ///   Looks up a localized string similar to Last registration: Created {0}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_CreationDateLastRegistration {
             get {
@@ -232,7 +232,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} - Siste registrering: Opprettet {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} - Last registration: Created {2}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_CreationDateLastRegistration_InArchivePart {
             get {
@@ -241,7 +241,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ingen gyldige datoer for registreringsopprettelse funnet.
+        ///   Looks up a localized string similar to No valid registration creation dates found.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_NoValidRegistrationCreationDates {
             get {
@@ -250,7 +250,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall ugyldige datoer for registreringsopprettelse funnet: {0}.
+        ///   Looks up a localized string similar to Number of invalid registration creation dates found: {0}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_NumberOfInvalidRegistrationCreationDates {
             get {
@@ -259,7 +259,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Totalt: {0}.
+        ///   Looks up a localized string similar to Total: {0}.
         /// </summary>
         public static string DatesFirstAndLastRegistrationMessage_NumberOfRegistrations {
             get {
@@ -268,7 +268,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} - Filen {2} har ikke samme sjekksum som oppgitt i dokumentbeskrivelse (systemID) {3}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} - The file {2} does not have the same checksum as specified in document description (systemID) {3}.
         /// </summary>
         public static string DocumentFilesChecksumControlMessage {
             get {
@@ -277,7 +277,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ikke-referert fil funnet: {0}.
+        ///   Looks up a localized string similar to Non-referenced file(s) found: {0}.
         /// </summary>
         public static string DocumentfilesReferenceControlMessage {
             get {
@@ -286,7 +286,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det oppsto et problem under validering av {0}: {1}.
+        ///   Looks up a localized string similar to There was a problem while validating {0}: {1}.
         /// </summary>
         public static string ExceptionDuringXmlValidation {
             get {
@@ -295,9 +295,9 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sjekksummen stemmer ikke for filen: {0}
-        ///Forventet: {1}
-        ///Generert:  {2}.
+        ///   Looks up a localized string similar to Unexpected checksum for file: {0}
+        ///Expected: {1}
+        ///Generated: {2}.
         /// </summary>
         public static string ExceptionInvalidChecksum {
             get {
@@ -306,7 +306,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filen {0} ble ikke funnet.
+        ///   Looks up a localized string similar to File {0} could not be found.
         /// </summary>
         public static string FileNotFound {
             get {
@@ -315,7 +315,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skjemafil {0} ble ikke funnet i uttrekket. Validering gjøres ihht. en versjon av {0} som er innebygget i Arkade.
+        ///   Looks up a localized string similar to Schema file {0} could not be found in the extraction. Validation is done according to a version of {0} built into Arkade.
         /// </summary>
         public static string InternalSchemaFileIsUsed {
             get {
@@ -324,7 +324,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journalpostregistreringer: {0}.
+        ///   Looks up a localized string similar to Journal entry registrations: {0}.
         /// </summary>
         public static string JournalPostRegistrationCount {
             get {
@@ -333,7 +333,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Møteregistreringer: {0}.
+        ///   Looks up a localized string similar to Meeting registrations: {0}.
         /// </summary>
         public static string MeetingRegistrationCount {
             get {
@@ -342,7 +342,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID - tittel) {0} - {1}: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID - title) {0} - {1}: {2}.
         /// </summary>
         public static string NumberOf_PerArchivePart {
             get {
@@ -351,7 +351,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall arkivdeler i arkiv (systemID) {0}: {1}.
+        ///   Looks up a localized string similar to Number of archive parts in archive (systemID) {0}: {1}.
         /// </summary>
         public static string NumberOfArchivePartsMessage_ArchivepartsInArchive {
             get {
@@ -360,7 +360,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall arkiv på nivå {0}: {1}.
+        ///   Looks up a localized string similar to Number of archives at level {0}: {1}.
         /// </summary>
         public static string NumberOfArchivesMessage_ArchivesAtLevel {
             get {
@@ -369,7 +369,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Totalt antall klasser: {0}.
+        ///   Looks up a localized string similar to Total classes: {0}.
         /// </summary>
         public static string NumberOfClasses {
             get {
@@ -378,7 +378,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasser på nivå {0}: {1}.
+        ///   Looks up a localized string similar to Classes at level {0}: {1}.
         /// </summary>
         public static string NumberOfClassesPerLevel {
             get {
@@ -387,7 +387,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} {2} klassifikasjonssystem (systemID): {3} - .
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} {2} classification system (systemID): {3} - .
         /// </summary>
         public static string NumberOfClassesTestResultMessage {
             get {
@@ -396,7 +396,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Graderinger i {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Security classifications in {0} - Number: {1}.
         /// </summary>
         public static string NumberOfClassificationsMessage {
             get {
@@ -405,7 +405,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall klassifikasjonssystemer i arkivdel (systemID, tittel) {0}, {1}: {2}.
+        ///   Looks up a localized string similar to Number of classification systems in archive part (systemID, title) {0}, {1}: {2}.
         /// </summary>
         public static string NumberOfClassificationSystemsMessage_ClassificationSystemInArchivePart {
             get {
@@ -414,7 +414,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall merknader i {0}: {1}.
+        ///   Looks up a localized string similar to Number of comments in {0}: {1}.
         /// </summary>
         public static string NumberOfCommentsMessage {
             get {
@@ -423,7 +423,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall kryssreferanser fra basisregistreringer: {0}.
+        ///   Looks up a localized string similar to Number of cross-references from base registrations: {0}.
         /// </summary>
         public static string NumberOfCrossReferencesToBasicRegistrationMessage {
             get {
@@ -432,7 +432,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} - Antall kryssreferanser fra basisregistreringer: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} - Number of cross-references from base registrations: {2}.
         /// </summary>
         public static string NumberOfCrossReferencesToBasicRegistrationMessage_ForArchivePart {
             get {
@@ -441,7 +441,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall kryssreferanser fra klasser: {0}.
+        ///   Looks up a localized string similar to Number of cross-references from classes: {0}.
         /// </summary>
         public static string NumberOfCrossReferencesToClassMessage {
             get {
@@ -450,7 +450,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0 }, {1} - Antall kryssreferanser fra klasser: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0 }, {1} - Number of cross-references from classes: {2}.
         /// </summary>
         public static string NumberOfCrossReferencesToClassMessage_ForArchivePart {
             get {
@@ -459,7 +459,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall kryssreferanser fra mapper: {0}.
+        ///   Looks up a localized string similar to Number of cross-references from folders: {0}.
         /// </summary>
         public static string NumberOfCrossReferencesToFolderMessage {
             get {
@@ -468,7 +468,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel): {0}, {1} - Antall kryssreferanser fra mapper: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title): {0}, {1} - Number of cross-references from folders: {2}.
         /// </summary>
         public static string NumberOfCrossReferencesToFolderMessage_ForArchivePart {
             get {
@@ -477,7 +477,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel) {0}, {1} - {2}: {3}.
+        ///   Looks up a localized string similar to Archive part (systemID, title) {0}, {1} - {2}: {3}.
         /// </summary>
         public static string NumberOfDepreciationsMessage_ForArchivePart {
             get {
@@ -486,7 +486,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kassasjonsvedtak i {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Destruction resolutions in {0} - Number: {1}.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage {
             get {
@@ -495,7 +495,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at uttrekket ikke skal inneholde kassasjonsvedtak, men kassasjonsvedtak ble funnet.
+        ///   Looks up a localized string similar to The archive extraction is specified with no destruction resolutions, however destruction resolutions were found.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage_DocFalseActualTrue {
             get {
@@ -504,7 +504,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at uttrekket skal inneholde kassasjonsvedtak, men ingen kassasjonsvedtak ble funnet.
+        ///   Looks up a localized string similar to The archive extraction is specified with destruction resolutions, however no destruction resolutions were found.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage_DocTrueActualFalse {
             get {
@@ -513,7 +513,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er dokumentert at uttrekket ikke skal omfatte utførte kassasjoner, men utførte kassasjoner ble funnet.
+        ///   Looks up a localized string similar to It has been documented that the archive extraction shall not include completed destructions, however completed destructions were found.
         /// </summary>
         public static string NumberOfDisposalsExecutedMessage_DocFalseActualTrue {
             get {
@@ -522,7 +522,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er dokumentert at uttrekket skal omfatte utførte kassasjoner, men ingen utførte kassasjoner ble funnet.
+        ///   Looks up a localized string similar to It has been documented that the archive extraction shall include completed destructions, however no completed destructions were found.
         /// </summary>
         public static string NumberOfDisposalsExecutedMessage_DocTrueActualFalse {
             get {
@@ -531,7 +531,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Saksmappestatus: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Case folder status: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfEachCaseFolderStatusMessage {
             get {
@@ -540,7 +540,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dokumentformat: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Document format: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfEachDocumentFormatMessage {
             get {
@@ -549,7 +549,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Format-misforhold: Dokumentformat: {0} - Dokumentfilreferanse: {1}.
+        ///   Looks up a localized string similar to Format mismatch: Document format: {0} - Document file reference: {1}.
         /// </summary>
         public static string NumberOfEachDocumentFormatMessage_FormatMismatch {
             get {
@@ -558,7 +558,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dokumentstatus: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Document status: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfEachDocumentStatusMessage {
             get {
@@ -567,7 +567,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journalpost med systemID {0} mangler hoveddokument.
+        ///   Looks up a localized string similar to Journal entry with systemID {0} missing master page.
         /// </summary>
         public static string NumberOfEachJournalPostTypeMessage_MissingMainDocument {
             get {
@@ -576,7 +576,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journalposttype: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Journal entry type: {0} - Quantity: {1}.
         /// </summary>
         public static string NumberOfEachJournalPostTypeMessage_TypeAndCount {
             get {
@@ -585,7 +585,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journalstatus: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Journal status: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfEachJournalStatusMessage {
             get {
@@ -594,7 +594,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel) {0}, {1} - klassifikasjonssystem (systemID) {2}: {3}.
+        ///   Looks up a localized string similar to Archive part (systemID, title) {0}, {1} - classification system (systemID) {2}: {3}.
         /// </summary>
         public static string NumberOfEmptyClassesInMainClassificationSystem {
             get {
@@ -603,7 +603,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at arkivstrukturen skal innholde {0} mapper men {1} ble funnet.
+        ///   Looks up a localized string similar to The archive structure is set to contain {0} folders but {1} was found.
         /// </summary>
         public static string NumberOfFolders_DocumentedAndActualMismatch {
             get {
@@ -612,7 +612,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasser uten mapper (og uten underklasser) - Antall: {0}.
+        ///   Looks up a localized string similar to Classes without folders (and without subclasses) - Number: {0}.
         /// </summary>
         public static string NumberOfFoldersPerClassMessage_NumberOfClassesWithoutFolders {
             get {
@@ -621,7 +621,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasse (systemID): {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Class (systemID): {0} - Number: {1}.
         /// </summary>
         public static string NumberOfFoldersPerClassMessage_NumberOfFolders {
             get {
@@ -630,7 +630,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel) {0}, {1} - {2}: {3}.
+        ///   Looks up a localized string similar to Archive part (systemID, title) {0}, {1} - {2}: {3}.
         /// </summary>
         public static string NumberOfFoldersPerYear_ForArchivePart {
             get {
@@ -639,7 +639,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kunne ikke lese fra en eller flere journalfiler.
+        ///   Looks up a localized string similar to Could not read from one or more journal files.
         /// </summary>
         public static string NumberOfJournalPostsMessage_CouldNotReadFromJournals {
             get {
@@ -648,7 +648,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall journalposter funnet i arkivstrukturen: {0}.
+        ///   Looks up a localized string similar to Number of journal entries found in the archive structure: {0}.
         /// </summary>
         public static string NumberOfJournalPostsMessage_NumberOfJournalPostsFound {
             get {
@@ -657,7 +657,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall journalposter dokumentert i offentlig journal: {0}.
+        ///   Looks up a localized string similar to Number of journal entries documented in public journal: {0}.
         /// </summary>
         public static string NumberOfJournalPostsMessage_NumberOfJournalPostsInPublicJournal {
             get {
@@ -666,7 +666,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall journalposter dokumentert i løpende journal: {0}.
+        ///   Looks up a localized string similar to Number of journal entries documented in rolling journal: {0}.
         /// </summary>
         public static string NumberOfJournalPostsMessage_NumberOfJournalPostsInRunningJournal {
             get {
@@ -675,7 +675,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Periodeskille er skarpt og antallet journalposter i arkivstrukturen er ikke likt det i offentlig og løpende journal.
+        ///   Looks up a localized string similar to Period separator is sharp and the number of journal entries in the archive structure is not equal to that in public and rolling journal.
         /// </summary>
         public static string NumberOfJournalPostsMessage_UnEqualJournalAndArchiveNumbers {
             get {
@@ -684,7 +684,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antallet journalposter i offentlig og løpende journal er ulikt.
+        ///   Looks up a localized string similar to The number of journal entries in public and rolling journals are different.
         /// </summary>
         public static string NumberOfJournalPostsMessage_UnEqualJournalNumbers {
             get {
@@ -693,7 +693,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Referert dokumentfil: {0} - Antall referanser: {1}.
+        ///   Looks up a localized string similar to Referenced document file: {0} - Number of References: {1}.
         /// </summary>
         public static string NumberOfMultiReferencedDocumentFilesMessage {
             get {
@@ -702,7 +702,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall presedenser i saksmapper: {0}.
+        ///   Looks up a localized string similar to Number of precedents in case folders: {0}.
         /// </summary>
         public static string NumberOfPrecedentsInCaseFolderMessage {
             get {
@@ -711,7 +711,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel) {0}, {1} - Antall presedenser i saksmapper: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title) {0}, {1} - Number of precedents in case folders: {2}.
         /// </summary>
         public static string NumberOfPrecedentsInCaseFolderMessage_ForArchivePart {
             get {
@@ -720,7 +720,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall presedenser i journalposter: {0}.
+        ///   Looks up a localized string similar to Number of precedents in journal entries: {0}.
         /// </summary>
         public static string NumberOfPrecedentsInJournalpostsMessage {
             get {
@@ -729,7 +729,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdel (systemID, tittel) {0}, {1} - Antall presedenser i journalposter: {2}.
+        ///   Looks up a localized string similar to Archive part (systemID, title) {0}, {1} - Number of precedents in journal entries: {2}.
         /// </summary>
         public static string NumberOfPrecedentsInJournalpostsMessage_ForArchivePart {
             get {
@@ -738,7 +738,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at arkivstrukturen skal innholde {0} registreringer, men {1} ble funnet.
+        ///   Looks up a localized string similar to The archive structure is set to contain {0} registrations, but {1} was found.
         /// </summary>
         public static string NumberOfRegistrations_DocumentedAndActualMismatch {
             get {
@@ -747,7 +747,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasser uten registreringer (og uten underklasser) - Antall: {0}.
+        ///   Looks up a localized string similar to Classes without registrations (and without subclasses) - Number: {0}.
         /// </summary>
         public static string NumberOfRegistrationsPerClassMessage_NumberOfClassesWithoutRegistrations {
             get {
@@ -756,7 +756,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klasse (systemID): {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Class (systemID): {0} - Number: {1}.
         /// </summary>
         public static string NumberOfRegistrationsPerClassMessage_NumberOfRegistrations {
             get {
@@ -765,7 +765,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skjerminger i {0} - Antall: {1}.
+        ///   Looks up a localized string similar to {0} shielding stations - Number: {1}.
         /// </summary>
         public static string NumberOfRestrictionsMessage {
             get {
@@ -774,7 +774,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at uttrekket ikke skal inneholde skjerminger, men skjerminger ble funnet.
+        ///   Looks up a localized string similar to The archive extraction is specified with no restricted entries, however restricted entries were found.
         /// </summary>
         public static string NumberOfRestrictionsMessage_DocFalseActualTrue {
             get {
@@ -783,7 +783,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er angitt at uttrekket skal inneholde skjerminger, men ingen skjerminger ble funnet.
+        ///   Looks up a localized string similar to The archive extraction is specified with restricted entries, however no restricted entries were found.
         /// </summary>
         public static string NumberOfRestrictionsMessage_DocTrueActualFalse {
             get {
@@ -792,7 +792,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mappetype: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Folder type: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfTypeFolders {
             get {
@@ -801,7 +801,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mappetype: {0} - Antall på nivå {1}: {2}.
+        ///   Looks up a localized string similar to Folder type: {0} - Number at level {1}: {2}.
         /// </summary>
         public static string NumberOfTypeFoldersAtLevel {
             get {
@@ -810,7 +810,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registreringstype: {0} - Antall: {1}.
+        ///   Looks up a localized string similar to Registration type: {0} - Number: {1}.
         /// </summary>
         public static string NumberOfTypeRegistrations {
             get {
@@ -819,7 +819,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Primært.
+        ///   Looks up a localized string similar to Primary.
         /// </summary>
         public static string Primary {
             get {
@@ -828,7 +828,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sekundært.
+        ///   Looks up a localized string similar to Secondary.
         /// </summary>
         public static string Secondary {
             get {
@@ -837,7 +837,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkivdelstatus: {0}.
+        ///   Looks up a localized string similar to Archive part status: {0}.
         /// </summary>
         public static string StatusOfArchivePartsMessage {
             get {
@@ -846,7 +846,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status for arkivdel (systemID, tittel) {0}, {1}: {2}.
+        ///   Looks up a localized string similar to Status for archive part (systemID, title) {0}, {1}: {2}.
         /// </summary>
         public static string StatusOfArchivePartsMessage_ForArchivePart {
             get {
@@ -855,7 +855,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ikke-unik ID: Systemidentifikasjonen (systemID) {0} forekommer {1} ganger.
+        ///   Looks up a localized string similar to Non-unique ID: System identification (systemID) {0} occurs {1} times.
         /// </summary>
         public static string SystemIdUniqueControlMessage {
             get {
@@ -864,7 +864,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Totalt: {0}.
+        ///   Looks up a localized string similar to Total: {0}.
         /// </summary>
         public static string TotalResultNumber {
             get {
@@ -873,7 +873,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentfiler ble ikke funnet oppgitt.
+        ///   Looks up a localized string similar to Number of document files were not found specified.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_DocumentationNotFound {
             get {
@@ -882,7 +882,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Det er ikke samsvar mellom oppgitt antall og faktisk antall dokumentfiler.
+        ///   Looks up a localized string similar to Mismatch between the specified quantity and the actual number of document files.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_FileAndDocumentationMismatch {
             get {
@@ -891,7 +891,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ingen dokumentfilkatalog funnet.
+        ///   Looks up a localized string similar to No document file directory found.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_FilesDirectoryNotFound {
             get {
@@ -900,7 +900,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ingen dokumentfiler funnet.
+        ///   Looks up a localized string similar to No document files found.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_NoFilesFound {
             get {
@@ -909,7 +909,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oppgitt antall dokumentfiler: {0}.
+        ///   Looks up a localized string similar to Specified number of document files: {0}.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_NumberOfFilesDocumented {
             get {
@@ -918,7 +918,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Antall dokumentfiler funnet: {0}.
+        ///   Looks up a localized string similar to Number of document files found: {0}.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_NumberOfFilesFound {
             get {
@@ -927,7 +927,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filen {0} er listet opp i arkivuttrekket, men mangler i pakke.
+        ///   Looks up a localized string similar to The file {0} is listed in the archive extract, but is missing in the package.
         /// </summary>
         public static string ValidateStructureFileExists_FileMissing {
             get {
