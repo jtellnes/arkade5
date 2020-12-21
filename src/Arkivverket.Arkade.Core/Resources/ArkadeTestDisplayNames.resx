@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AH_01" xml:space="preserve">
-    <value></value>
+    <value>Validate checksums</value>
   </data>
   <data name="AH_02" xml:space="preserve">
-    <value></value>
+    <value>Control extra or missing files</value>
   </data>
   <data name="AH_03" xml:space="preserve">
-    <value></value>
+    <value>Control invalid record delimiter or incorrect amount of fields</value>
   </data>
   <data name="AI_01" xml:space="preserve">
-    <value></value>
+    <value>Validate uniqueness of record key</value>
   </data>
   <data name="A_01" xml:space="preserve">
     <value>Number of records</value>
@@ -136,89 +136,89 @@
     <value>Number of characters</value>
   </data>
   <data name="A_03" xml:space="preserve">
-    <value></value>
+    <value>Record length extremes</value>
   </data>
   <data name="A_04" xml:space="preserve">
-    <value></value>
+    <value>Occurrences per record type</value>
   </data>
   <data name="A_05" xml:space="preserve">
-    <value></value>
+    <value>Frequency of codes in dataset</value>
   </data>
   <data name="A_07" xml:space="preserve">
-    <value></value>
+    <value>Number of null values in field</value>
   </data>
   <data name="A_08" xml:space="preserve">
-    <value></value>
+    <value>Field length extremes</value>
   </data>
   <data name="A_09" xml:space="preserve">
-    <value></value>
+    <value>Field value extremes</value>
   </data>
   <data name="A_10" xml:space="preserve">
-    <value>Number of instances of values for fields</value>
+    <value>Occurrences of value per field</value>
   </data>
   <data name="A_11" xml:space="preserve">
-    <value></value>
+    <value>Validate specified length for all record types</value>
   </data>
   <data name="A_12" xml:space="preserve">
-    <value></value>
+    <value>Validate number of records</value>
   </data>
   <data name="A_13" xml:space="preserve">
-    <value></value>
+    <value>Validate specified length for record type</value>
   </data>
   <data name="A_14" xml:space="preserve">
-    <value></value>
+    <value>Verify that record type is used</value>
   </data>
   <data name="A_15" xml:space="preserve">
-    <value></value>
+    <value>Validate unique key</value>
   </data>
   <data name="A_16" xml:space="preserve">
-    <value></value>
+    <value>Validate foreign key</value>
   </data>
   <data name="A_17" xml:space="preserve">
-    <value></value>
+    <value>Validate specified minimum length</value>
   </data>
   <data name="A_18" xml:space="preserve">
-    <value></value>
+    <value>Validate specified maximum length</value>
   </data>
   <data name="A_19" xml:space="preserve">
-    <value></value>
+    <value>Validate specified data format for field</value>
   </data>
   <data name="A_20" xml:space="preserve">
-    <value></value>
+    <value>Control null values for field</value>
   </data>
   <data name="A_21" xml:space="preserve">
-    <value></value>
+    <value>Validate uniqeness of values for field</value>
   </data>
   <data name="A_22" xml:space="preserve">
-    <value></value>
+    <value>Codes used in field</value>
   </data>
   <data name="A_32" xml:space="preserve">
-    <value></value>
+    <value>Validate birth number for field</value>
   </data>
   <data name="A_33" xml:space="preserve">
-    <value></value>
+    <value>Validate organisation number for field</value>
   </data>
   <data name="A_34" xml:space="preserve">
-    <value></value>
+    <value>Validate account number for field</value>
   </data>
   <data name="A_35" xml:space="preserve">
-    <value></value>
+    <value>Validate date value for field</value>
   </data>
   <data name="A_36" xml:space="preserve">
-    <value></value>
+    <value>Validate boolean value for field</value>
   </data>
   <data name="DisplayNameFormat" xml:space="preserve">
     <value>{0} - {1}</value>
     <comment>ID - name</comment>
   </data>
   <data name="N5_01" xml:space="preserve">
-    <value></value>
+    <value>Validation of existence of XML-files</value>
   </data>
   <data name="N5_02" xml:space="preserve">
-    <value></value>
+    <value>Validation of checksums</value>
   </data>
   <data name="N5_03" xml:space="preserve">
-    <value></value>
+    <value>Validation of XML according to schema</value>
   </data>
   <data name="N5_04" xml:space="preserve">
     <value>Number of archives</value>
@@ -227,55 +227,55 @@
     <value>Number of archive parts</value>
   </data>
   <data name="N5_06" xml:space="preserve">
-    <value></value>
+    <value>Status of archive parts</value>
   </data>
   <data name="N5_07" xml:space="preserve">
     <value>Number of classification systems</value>
   </data>
   <data name="N5_08" xml:space="preserve">
-    <value>&amp;Number of bins</value>
+    <value>Number of classes</value>
   </data>
   <data name="N5_09" xml:space="preserve">
-    <value>Number of classes in the primary classification system without subclasses, folders or registrations</value>
+    <value>Number of classes in main classification system without subclasses, folders or registrations</value>
   </data>
   <data name="N5_10" xml:space="preserve">
-    <value>Number of folders to apply the view to: &lt;0d&gt;</value>
+    <value>Number of folders</value>
   </data>
   <data name="N5_11" xml:space="preserve">
-    <value>Number of folders for each year</value>
+    <value>Number of folders per year</value>
   </data>
   <data name="N5_12" xml:space="preserve">
-    <value></value>
+    <value>Classes with subclasses and folders</value>
   </data>
   <data name="N5_13" xml:space="preserve">
-    <value>Number of folders for each class</value>
+    <value>Number of folders per class</value>
   </data>
   <data name="N5_14" xml:space="preserve">
     <value>Number of folders without registrations or subfolders</value>
   </data>
   <data name="N5_15" xml:space="preserve">
-    <value>Number of different case folder statuses</value>
+    <value>Number of case folder statuses</value>
   </data>
   <data name="N5_16" xml:space="preserve">
-    <value>Total number of recording made for framework : %1 and industry : %2 is %3</value>
+    <value>Number of registrations</value>
   </data>
   <data name="N5_17" xml:space="preserve">
-    <value>Number of different journal entry types</value>
+    <value>Number of journal record types</value>
   </data>
   <data name="N5_18" xml:space="preserve">
-    <value></value>
+    <value>Number of registrations per year</value>
   </data>
   <data name="N5_19" xml:space="preserve">
-    <value></value>
+    <value>Classes with subclasses and registrations</value>
   </data>
   <data name="N5_20" xml:space="preserve">
-    <value></value>
+    <value>Number of registrations per class</value>
   </data>
   <data name="N5_21" xml:space="preserve">
-    <value></value>
+    <value>Number of registrations without document description</value>
   </data>
   <data name="N5_22" xml:space="preserve">
-    <value>Number of different journal statuses</value>
+    <value>Number of journal statuses</value>
   </data>
   <data name="N5_23" xml:space="preserve">
     <value>Number of document descriptions</value>
@@ -284,93 +284,93 @@
     <value>Number of document descriptions without document object</value>
   </data>
   <data name="N5_25" xml:space="preserve">
-    <value>Number of different document statuses</value>
+    <value>Number of document statuses</value>
   </data>
   <data name="N5_26" xml:space="preserve">
     <value>Number of document objects</value>
   </data>
   <data name="N5_27" xml:space="preserve">
-    <value></value>
+    <value>Creation dates for first and last registration</value>
   </data>
   <data name="N5_28" xml:space="preserve">
-    <value></value>
+    <value>Validation of number of document files</value>
   </data>
   <data name="N5_29" xml:space="preserve">
-    <value>Number of different document formats</value>
+    <value>Number of document formats</value>
   </data>
   <data name="N5_30" xml:space="preserve">
-    <value></value>
+    <value>Validation of document files' checksums</value>
   </data>
   <data name="N5_32" xml:space="preserve">
-    <value></value>
+    <value>Validation of existence of referenced documents</value>
   </data>
   <data name="N5_33" xml:space="preserve">
-    <value></value>
+    <value>Document files missing reference</value>
   </data>
   <data name="N5_34" xml:space="preserve">
-    <value></value>
+    <value>Document files referenced from more than one document object</value>
   </data>
   <data name="N5_35" xml:space="preserve">
-    <value></value>
+    <value>Number of case parties</value>
   </data>
   <data name="N5_35v5_5" xml:space="preserve">
     <value>Number of parties</value>
   </data>
   <data name="N5_36" xml:space="preserve">
-    <value>Number of notes</value>
+    <value>Number of remarks</value>
   </data>
   <data name="N5_37" xml:space="preserve">
-    <value>Number of cross-references</value>
+    <value>Number of cross references</value>
   </data>
   <data name="N5_38" xml:space="preserve">
     <value>Number of precedents</value>
   </data>
   <data name="N5_39" xml:space="preserve">
-    <value>Number of correspondence parties</value>
+    <value>Number of correspondance parties</value>
   </data>
   <data name="N5_40" xml:space="preserve">
-    <value>Number of depreciation</value>
+    <value>Number of ************</value>
   </data>
   <data name="N5_41" xml:space="preserve">
-    <value>Number of document flows</value>
+    <value>Number of ************</value>
   </data>
   <data name="N5_42" xml:space="preserve">
-    <value></value>
+    <value>Number of restricted entries</value>
   </data>
   <data name="N5_43" xml:space="preserve">
-    <value></value>
+    <value>Number of security classifications</value>
   </data>
   <data name="N5_44" xml:space="preserve">
-    <value></value>
+    <value>Number of destruction resolutions</value>
   </data>
   <data name="N5_45" xml:space="preserve">
-    <value></value>
+    <value>Number of completed destructions</value>
   </data>
   <data name="N5_46" xml:space="preserve">
     <value>Number of converted documents</value>
   </data>
   <data name="N5_47" xml:space="preserve">
-    <value></value>
+    <value>System identifications</value>
   </data>
   <data name="N5_48" xml:space="preserve">
-    <value></value>
+    <value>Archive part references</value>
   </data>
   <data name="N5_51" xml:space="preserve">
-    <value></value>
+    <value>Class references</value>
   </data>
   <data name="N5_59" xml:space="preserve">
-    <value>Number of journal entries</value>
+    <value>Number of journal records</value>
   </data>
   <data name="N5_60" xml:space="preserve">
-    <value>Timesheet period start and end dates</value>
+    <value>Start and end dates</value>
   </data>
   <data name="N5_61" xml:space="preserve">
     <value>Number of logged changes</value>
   </data>
   <data name="N5_62" xml:space="preserve">
-    <value></value>
+    <value>Changelog references to archive</value>
   </data>
   <data name="N5_63" xml:space="preserve">
-    <value></value>
+    <value>Elements without content</value>
   </data>
 </root>
