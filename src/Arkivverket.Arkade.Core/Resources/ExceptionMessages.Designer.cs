@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prosessområde er ikke satt..
+        ///   Looks up a localized string similar to Processing area is not set..
         /// </summary>
         public static string ArkadeProcessAreaNotSet {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade klarte ikke å finne informasjon om {0} i {1}.
+        ///   Looks up a localized string similar to Arkade could not find any information about {0} from {1}.
         /// </summary>
         public static string FileDescriptionParseError {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finner ikke filen: {0}.
+        ///   Looks up a localized string similar to Cannot find the file: {0}.
         /// </summary>
         public static string FileNotFound {
             get {
@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kunne ikke lese inn filen: {0}.
+        ///   Looks up a localized string similar to Could not read the file: {0}.
         /// </summary>
         public static string FileNotRead {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kunne ikke kombinere {0} og {1}.
+        ///   Looks up a localized string similar to Could not combine {0} and {1}.
         /// </summary>
         public static string PathCombine {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade klarte ikke å tolke informasjon om periodeskille i {0}.
+        ///   Looks up a localized string similar to Arkade did not manage to interpret information about period separator from {0}.
         /// </summary>
         public static string PeriodSeparationParseError {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Linje {0}: {1}.
+        ///   Looks up a localized string similar to Line {0}: {1}.
         /// </summary>
         public static string XmlValidationErrorMessage {
             get {
