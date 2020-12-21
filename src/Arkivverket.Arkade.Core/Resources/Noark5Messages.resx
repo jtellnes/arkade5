@@ -378,7 +378,7 @@ Generated: {2}</value>
     <value>Folder type: {0} - Number at level {1}: {2}</value>
   </data>
   <data name="NumberOfFolders_DocumentedAndActualMismatch" xml:space="preserve">
-    <value>The archive structure is set to contain {0} folders but {1} was found</value>
+    <value>The archive structure is specified with {0} folders but {1} was found</value>
   </data>
   <data name="JournalPostRegistrationCount" xml:space="preserve">
     <value>Journal entry registrations: {0}</value>
@@ -405,7 +405,7 @@ Generated: {2}</value>
     <value>No valid journal dates were found in the archive extract</value>
   </data>
   <data name="NumberOfRegistrations_DocumentedAndActualMismatch" xml:space="preserve">
-    <value>The archive structure is set to contain {0} registrations, but {1} was found</value>
+    <value>The archive structure is specified with {0} registrations, but {1} was found</value>
   </data>
   <data name="AlgorithmUsedToControlChecksumMessage" xml:space="preserve">
     <value>Checksum is checked with the algorithm {0}.</value>

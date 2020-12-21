@@ -329,10 +329,10 @@
     <value>Number of correspondance parties</value>
   </data>
   <data name="N5_40" xml:space="preserve">
-    <value>Number of ************</value>
+    <value>Number of closed handling registrations</value>
   </data>
   <data name="N5_41" xml:space="preserve">
-    <value>Number of ************</value>
+    <value>Number of document transfers</value>
   </data>
   <data name="N5_42" xml:space="preserve">
     <value>Number of restricted entries</value>

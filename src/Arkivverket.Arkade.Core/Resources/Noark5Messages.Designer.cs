@@ -603,7 +603,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive structure is set to contain {0} folders but {1} was found.
+        ///   Looks up a localized string similar to The archive structure is specified with {0} folders but {1} was found.
         /// </summary>
         public static string NumberOfFolders_DocumentedAndActualMismatch {
             get {
@@ -738,7 +738,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive structure is set to contain {0} registrations, but {1} was found.
+        ///   Looks up a localized string similar to The archive structure is specified with {0} registrations, but {1} was found.
         /// </summary>
         public static string NumberOfRegistrations_DocumentedAndActualMismatch {
             get {

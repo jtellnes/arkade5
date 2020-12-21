@@ -691,7 +691,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of ************.
+        ///   Looks up a localized string similar to Number of closed handling registrations.
         /// </summary>
         public static string N5_40 {
             get {
@@ -700,7 +700,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of ************.
+        ///   Looks up a localized string similar to Number of document transfers.
         /// </summary>
         public static string N5_41 {
             get {
