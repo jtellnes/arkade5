@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Diagnostics;
 using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.GUI.Languages;
+using Arkivverket.Arkade.GUI.Util;
 using Prism.Commands;
 using Prism.Mvvm;
 
@@ -27,17 +27,17 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private void ShowLicenseWebPage()
         {
-            Process.Start(AboutGUI.GnuGpl3_0Uri);
+            AboutGUI.GnuGpl3_0Uri.LaunchUrl();
         }
 
         private void ShowSiegfriedWebPage()
         {
-            Process.Start(AboutGUI.SiegfriedUri);
+            AboutGUI.SiegfriedUri.LaunchUrl();
         }
 
         private void ShowApacheLicenseWebPage()
         {
-            Process.Start(AboutGUI.ApacheV2_0Uri);
+            AboutGUI.ApacheV2_0Uri.LaunchUrl();
         }
     }
 }

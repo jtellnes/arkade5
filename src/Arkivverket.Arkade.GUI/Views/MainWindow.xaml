@@ -73,7 +73,7 @@
             <TextBlock Padding="2" FontSize="10" FontStyle="Italic" Foreground="Black"
                        HorizontalAlignment="Right" TextAlignment="Left" TextWrapping="NoWrap"
                        Visibility="{Binding UiAndOutputLanguagesIsDifferentWarningMessageVisibility}"
-                       Text="{x:Static lang:GUI.UiAndOutputLanguagesIsDifferentWarningMessage}">
+                       Text="{Binding UiAndOutputLanguagesIsDifferentWarningMessage}">
             </TextBlock>
         </DockPanel>
         

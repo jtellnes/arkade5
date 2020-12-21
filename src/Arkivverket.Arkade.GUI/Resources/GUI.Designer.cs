@@ -251,7 +251,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About Arkade 5.
+        ///   Looks up a localized string similar to Om Arkade 5.
         /// </summary>
         public static string ShowAboutDialogButtonText {
             get {
@@ -269,7 +269,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tools.
+        ///   Looks up a localized string similar to Verktøy.
         /// </summary>
         public static string ShowToolsDialogButtonText {
             get {

@@ -200,4 +200,7 @@ Package creation can still be executed.</value>
   <data name="EventIdCreatingReport" xml:space="preserve">
     <value>Creating report</value>
   </data>
+  <data name="TestingNotImplemented" xml:space="preserve">
+    <value>Testing of {0} archives is not available</value>
+  </data>
 </root>

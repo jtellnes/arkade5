@@ -26,7 +26,7 @@ namespace Arkivverket.Arkade.Core.Base
 
         public DateTime DateOfTesting { get; }
 
-        public bool GenerateDocumentFileInfo { get; set; }
+        public bool GenerateFileFormatInfo { get; set; }
 
         public SupportedLanguage OutputLanguage { get; set; }
 
@@ -53,7 +53,8 @@ namespace Arkivverket.Arkade.Core.Base
 
         public bool IsTestableArchive()
         {
-            return AddmlDefinition != null ||
+            return Archive.ArchiveType != ArchiveType.Siard &&
+                   AddmlDefinition != null ||
                    Archive.ArchiveType == ArchiveType.Noark5 && Archive.AddmlXmlUnit.File.Exists;
         }
     }

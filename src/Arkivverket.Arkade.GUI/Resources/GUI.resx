@@ -164,10 +164,10 @@
     <value>Arkade needs a restart to apply the changes. Do you want to restart now?</value>
   </data>
   <data name="ShowAboutDialogButtonText" xml:space="preserve">
-    <value>About Arkade 5</value>
+    <value>Om Arkade 5</value>
   </data>
   <data name="ShowToolsDialogButtonText" xml:space="preserve">
-    <value>Tools</value>
+    <value>Verktøy</value>
   </data>
   <data name="ShowWebPageButtonText" xml:space="preserve">
     <value>Webpage</value>

@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, options.TestSelectionFile, options.DocumentFileFormatCheck);
+                    options.LanguageForOutputFiles, options.TestSelectionFile, options.PerformFileFormatAnalysis);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -109,7 +109,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, checkDocumentFileFormat: options.DocumentFileFormatCheck);
+                    options.LanguageForOutputFiles, performFileFormatAnalysis: options.PerformFileFormatAnalysis);
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 
@@ -146,14 +146,27 @@ namespace Arkivverket.Arkade.CLI
         {
             string command = GetRunningCommand(options.GetType().Name);
 
-            Log.Information($"{{{command.TrimEnd('e')}ing}} format of all content in {options.FormatCheckTarget}");
-            Arkade.GenerateFileFormatInfoFiles(new DirectoryInfo(options.FormatCheckTarget), options.OutputDirectory);
+            var analysisDirectory = new DirectoryInfo(options.FormatCheckTarget);
 
+            Log.Information($"{{{command.TrimEnd('e')}ing}} format of all content in {analysisDirectory}");
+            string outputFileName = options.OutputFileName ?? string.Format(
+                OutputFileNames.FileFormatInfoFile,
+                analysisDirectory.Name
+            );
+            Arkade.GenerateFileFormatInfoFiles(
+                analysisDirectory, options.OutputDirectory, outputFileName, options.LanguageForOutputFiles
+            );
+            
             LogFinishedStatus(command);
         }
 
         private static void Test(string outputDirectory, TestSession testSession)
         {
+            if (testSession.Archive.ArchiveType == ArchiveType.Siard)
+            {
+                Log.Error("Testing of Siard archive has not yet been implemented.");
+                return;
+            }
             if (!testSession.IsTestableArchive())
             {
                 Log.Error("Archive is not testable: Valid specification file not found");
@@ -204,7 +217,7 @@ namespace Arkivverket.Arkade.CLI
 
         private static TestSession CreateTestSession(string archive, string archiveTypeString,
             string command, string selectedOutputLanguage, string testSelectionFilePath = null,
-            bool checkDocumentFileFormat = false)
+            bool performFileFormatAnalysis = false)
         {
             var fileInfo = new FileInfo(archive);
             Log.Information($"{{{command}ing}} archive: {fileInfo.FullName}");
@@ -242,7 +255,8 @@ namespace Arkivverket.Arkade.CLI
             if (!Enum.TryParse(selectedOutputLanguage, out SupportedLanguage outputLanguage))
                 outputLanguage = SupportedLanguage.en;
             testSession.OutputLanguage = outputLanguage;
-            testSession.GenerateDocumentFileInfo = checkDocumentFileFormat;
+
+            testSession.GenerateFileFormatInfo = performFileFormatAnalysis;
 
             return testSession;
         }

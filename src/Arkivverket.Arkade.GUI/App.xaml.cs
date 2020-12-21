@@ -5,6 +5,7 @@ using System.Windows;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Base.Addml;
 using Arkivverket.Arkade.Core.Base.Noark5;
+using Arkivverket.Arkade.Core.Base.Siard;
 using Arkivverket.Arkade.Core.Identify;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Metadata;
@@ -106,6 +107,8 @@ namespace Arkivverket.Arkade.GUI
             containerRegistry.Register<IReleaseInfoReader, GitHubReleaseInfoReader>();
             containerRegistry.Register<ArkadeVersion>();
             containerRegistry.Register<IFileFormatIdentifier, SiegfriedFileFormatIdentifier>();
+            containerRegistry.Register<ISiardArchiveReader, SiardArchiveReader>();
+            containerRegistry.Register<ISiardXmlTableReader, SiardXmlTableReader>();
         }
 
         public static void MyHandler(object sender, UnhandledExceptionEventArgs args)
@@ -142,11 +145,12 @@ namespace Arkivverket.Arkade.GUI
 
             if (uiLanguage == null)
             {
-                uiLanguage = Thread.CurrentThread.CurrentCulture.ToString();
+                uiLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
                 Settings.Default.SelectedUILanguage = uiLanguage;
             }
 
-            var cultureInfo = new CultureInfo(uiLanguage, true);
+            var cultureInfo = CultureInfo.CreateSpecificCulture(uiLanguage);
+            //cultureInfo = new CultureInfo("nb-NO", true);
 
             AboutGUI.Culture = cultureInfo;
             CreatePackageGUI.Culture = cultureInfo;

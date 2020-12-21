@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Globalization;
 using System.Windows;
 using Arkivverket.Arkade.GUI.Languages;
 using Arkivverket.Arkade.GUI.Util;
@@ -30,6 +31,13 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         public string CurrentVersion { get; }
         public string VersionStatusMessage { get; }
         public DelegateCommand DownloadNewVersionCommand { get; }
+
+        private string _uiAndOutputLanguagesIsDifferentWarningMessage;
+        public string UiAndOutputLanguagesIsDifferentWarningMessage
+        {
+            get => _uiAndOutputLanguagesIsDifferentWarningMessage;
+            set => SetProperty(ref _uiAndOutputLanguagesIsDifferentWarningMessage, value);
+        }
 
         private Visibility _uiAndOutputLanguagesIsDifferentWarningMessageVisibility;
         public Visibility UiAndOutputLanguagesIsDifferentWarningMessageVisibility
@@ -75,6 +83,15 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private void SetUiAndOutputLanguagesIsDifferentWarningMessageVisibility()
         {
+            string outputLanguageName =
+                CultureInfo.CreateSpecificCulture(Properties.Settings.Default.SelectedOutputLanguage).NativeName;
+
+            UiAndOutputLanguagesIsDifferentWarningMessage =
+                string.Format(
+                    Languages.GUI.UiAndOutputLanguagesIsDifferentWarningMessage,
+                    outputLanguageName.Remove(outputLanguageName.IndexOf('('))
+                );
+
             UiAndOutputLanguagesIsDifferentWarningMessageVisibility =
                 Properties.Settings.Default.SelectedUILanguage == Properties.Settings.Default.SelectedOutputLanguage
                     ? Visibility.Hidden
@@ -172,11 +189,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         private static void LaunchArkadeWebSite()
         {
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = ArkadeConstants.ArkadeWebSiteUrl,
-                UseShellExecute = true
-            });
+            ArkadeConstants.ArkadeWebSiteUrl.LaunchUrl();
         }
     }
 

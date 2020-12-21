@@ -25,7 +25,9 @@ namespace Arkivverket.Arkade.Core.Base
         private readonly TestSessionXmlGenerator _testSessionXmlGenerator;
         private readonly IArchiveTypeIdentifier _archiveTypeIdentifier;
 
-        public ArkadeApi(TestSessionFactory testSessionFactory, TestEngineFactory testEngineFactory, MetadataFilesCreator metadataFilesCreator, InformationPackageCreator informationPackageCreator, TestSessionXmlGenerator testSessionXmlGenerator, IArchiveTypeIdentifier archiveTypeIdentifier)
+        public ArkadeApi(TestSessionFactory testSessionFactory, TestEngineFactory testEngineFactory,
+            MetadataFilesCreator metadataFilesCreator, InformationPackageCreator informationPackageCreator,
+            TestSessionXmlGenerator testSessionXmlGenerator, IArchiveTypeIdentifier archiveTypeIdentifier)
         {
             _testSessionFactory = testSessionFactory;
             _testEngineFactory = testEngineFactory;
@@ -65,7 +67,7 @@ namespace Arkivverket.Arkade.Core.Base
 
             Log.Information("Starting testing of archive.");
 
-            LanguageManager.SetResourcesCultureForTesting(testSession.OutputLanguage);
+            LanguageManager.SetResourcesCultureForTesting(testSession.OutputLanguage.ToString());
 
             ITestEngine testEngine = _testEngineFactory.GetTestEngine(testSession);
             testSession.TestSuite = testEngine.RunTestsOnArchive(testSession);
@@ -83,9 +85,9 @@ namespace Arkivverket.Arkade.Core.Base
                 : "AIP";
             Log.Information($"Creating {packageType}.");
 
-            LanguageManager.SetResourceCultureForPackageCreation(testSession.OutputLanguage);
+            LanguageManager.SetResourceCultureForPackageCreation(testSession.OutputLanguage.ToString());
 
-            _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateDocumentFileInfo);
+            _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateFileFormatInfo);
 
             string packageFilePath;
 
@@ -119,9 +121,13 @@ namespace Arkivverket.Arkade.Core.Base
             }
         }
 
-        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath)
+        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string resultFileName, string outputLanguage)
         {
-            FileFormatInfoGenerator.Generate(filesDirectory, resultFileDirectoryPath);
+            LanguageManager.SetResourceCultureForStandalonePronomAnalysis(outputLanguage);
+            
+            string resultFileFullName = Path.Combine(resultFileDirectoryPath, resultFileName);
+            
+            FileFormatInfoGenerator.Generate(filesDirectory, resultFileFullName);
         }
 
         public ArchiveType? DetectArchiveType(string archiveFileName)
