@@ -148,4 +148,10 @@ Resultat lagret i:</value>
   <data name="ToolsDialogTitle" xml:space="preserve">
     <value>Verktøy</value>
   </data>
+  <data name="ChooseDirectoryToAnalyse" xml:space="preserve">
+    <value>Velg katalog hvis innhold skal analyseres</value>
+  </data>
+  <data name="SaveFormatFileExtensionFilter" xml:space="preserve">
+    <value>CSV (Semikolondelt) (*.csv)|*.csv</value>
+  </data>
 </root>

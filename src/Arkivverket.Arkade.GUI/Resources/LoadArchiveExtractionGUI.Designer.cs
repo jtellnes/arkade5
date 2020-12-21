@@ -70,6 +70,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Archive files|*.tar;*.siard.
+        /// </summary>
+        public static string ChooseArchiveFileDialogFilter {
+            get {
+                return ResourceManager.GetString("ChooseArchiveFileDialogFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Archive extraction.
         /// </summary>
         public static string ChooseArchiveHeadingText {

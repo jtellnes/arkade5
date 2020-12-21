@@ -138,4 +138,7 @@
   <data name="ViewHeadingText" xml:space="preserve">
     <value>Last inn arkivuttrekk</value>
   </data>
+  <data name="ChooseArchiveFileDialogFilter" xml:space="preserve">
+    <value>Arkivfiler|*.tar;*.siard</value>
+  </data>
 </root>

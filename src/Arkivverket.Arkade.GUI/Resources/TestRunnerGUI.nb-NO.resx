@@ -200,4 +200,7 @@ Du kan fortsatt lage en pakke av uttrekket.</value>
   <data name="EventIdCreatingReport" xml:space="preserve">
     <value>Lager rapport</value>
   </data>
+  <data name="TestingNotImplemented" xml:space="preserve">
+    <value>Testing av {0} uttrekk er ikke tilgjengelig</value>
+  </data>
 </root>

@@ -339,4 +339,7 @@
   <data name="UnsufficientDiskSpaceLogMessage" xml:space="preserve">
     <value>Not enough diskspace on target location.</value>
   </data>
+  <data name="CreateLobFormatInfoFileText" xml:space="preserve">
+    <value>Include format information for LOBs</value>
+  </data>
 </root>

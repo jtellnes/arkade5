@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to fileformatinfo.csv.
+        ///   Looks up a localized string similar to {0}-fileformatinfo.csv.
         /// </summary>
         public static string FileFormatInfoFile {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to fileformatinfo-statistics.csv.
+        ///   Looks up a localized string similar to {0}-statistics.csv.
         /// </summary>
         public static string FileFormatInfoStatisticsFile {
             get {

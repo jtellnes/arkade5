@@ -187,6 +187,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Include format information for LOBs.
+        /// </summary>
+        public static string CreateLobFormatInfoFileText {
+            get {
+                return ResourceManager.GetString("CreateLobFormatInfoFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creator of information package.
         /// </summary>
         public static string Creator {

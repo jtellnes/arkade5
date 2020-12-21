@@ -120,6 +120,9 @@
   <data name="ArchiveTypeHeadingText" xml:space="preserve">
     <value>Archive Type</value>
   </data>
+  <data name="ChooseArchiveFileDialogFilter" xml:space="preserve">
+    <value>Archive files|*.tar;*.siard</value>
+  </data>
   <data name="ChooseArchiveHeadingText" xml:space="preserve">
     <value>Archive extraction</value>
   </data>

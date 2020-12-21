@@ -121,10 +121,10 @@
     <value>Arkaderesults</value>
   </data>
   <data name="FileFormatInfoFile" xml:space="preserve">
-    <value>fileformatinfo.csv</value>
+    <value>{0}-fileformatinfo.csv</value>
   </data>
   <data name="FileFormatInfoStatisticsFile" xml:space="preserve">
-    <value>fileformatinfo-statistics.csv</value>
+    <value>{0}-statistics.csv</value>
   </data>
   <data name="MetadataFile" xml:space="preserve">
     <value>arkade-ip-metadata.json</value>

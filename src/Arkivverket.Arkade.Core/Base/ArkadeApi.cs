@@ -25,7 +25,9 @@ namespace Arkivverket.Arkade.Core.Base
         private readonly TestSessionXmlGenerator _testSessionXmlGenerator;
         private readonly IArchiveTypeIdentifier _archiveTypeIdentifier;
 
-        public ArkadeApi(TestSessionFactory testSessionFactory, TestEngineFactory testEngineFactory, MetadataFilesCreator metadataFilesCreator, InformationPackageCreator informationPackageCreator, TestSessionXmlGenerator testSessionXmlGenerator, IArchiveTypeIdentifier archiveTypeIdentifier)
+        public ArkadeApi(TestSessionFactory testSessionFactory, TestEngineFactory testEngineFactory,
+            MetadataFilesCreator metadataFilesCreator, InformationPackageCreator informationPackageCreator,
+            TestSessionXmlGenerator testSessionXmlGenerator, IArchiveTypeIdentifier archiveTypeIdentifier)
         {
             _testSessionFactory = testSessionFactory;
             _testEngineFactory = testEngineFactory;
@@ -85,7 +87,7 @@ namespace Arkivverket.Arkade.Core.Base
 
             LanguageManager.SetResourceCultureForPackageCreation(testSession.OutputLanguage.ToString());
 
-            _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateDocumentFileInfo);
+            _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateFileFormatInfo);
 
             string packageFilePath;
 
@@ -119,10 +121,13 @@ namespace Arkivverket.Arkade.Core.Base
             }
         }
 
-        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string outputLanguage)
+        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string resultFileName, string outputLanguage)
         {
             LanguageManager.SetResourceCultureForStandalonePronomAnalysis(outputLanguage);
-            FileFormatInfoGenerator.Generate(filesDirectory, resultFileDirectoryPath);
+            
+            string resultFileFullName = Path.Combine(resultFileDirectoryPath, resultFileName);
+            
+            FileFormatInfoGenerator.Generate(filesDirectory, resultFileFullName);
         }
 
         public ArchiveType? DetectArchiveType(string archiveFileName)

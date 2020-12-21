@@ -261,6 +261,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Testing of {0} archives is not available.
+        /// </summary>
+        public static string TestingNotImplemented {
+            get {
+                return ResourceManager.GetString("TestingNotImplemented", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Messages:.
         /// </summary>
         public static string TestMessagesHeading {
