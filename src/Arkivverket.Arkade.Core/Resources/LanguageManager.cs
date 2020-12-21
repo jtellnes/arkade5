@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+using System.Globalization;
+using System.Threading;
 
 namespace Arkivverket.Arkade.Core.Languages
 {
@@ -7,7 +8,9 @@ namespace Arkivverket.Arkade.Core.Languages
         internal static void SetResourcesCultureForTesting(string outputLanguage)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(outputLanguage);
-
+            
+            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
             Resources.ExceptionMessages.Culture = cultureInfo;
