@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.CLI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter the test ID (N5.XX) at the beginning of a separate line for each test to be performed
+        ///   Looks up a localized string similar to Enter the test ID (N5.XX) at the beginning og a separate line for each test to be performed
         ///{0} Tests can be omitted by putting the {0} character first on the line.
         /// </summary>
         public static string Noark5TestSelectionFileDescription {
