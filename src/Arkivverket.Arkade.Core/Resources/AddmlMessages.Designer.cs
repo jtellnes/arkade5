@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to necessary ADDML data.
+        ///   Looks up a localized string similar to required ADDML data.
         /// </summary>
         public static string Addml {
             get {
@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to necessary ADDML file.
+        ///   Looks up a localized string similar to required ADDML file.
         /// </summary>
         public static string AddmlFile {
             get {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to necessary ADDML information.
+        ///   Looks up a localized string similar to required ADDML information.
         /// </summary>
         public static string AddmlInfo {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML record with the wrong number of fields in file {0}, record number {1}, error number {2}.
+        ///   Looks up a localized string similar to ADDML record with incorrect number of fields in file {0}, record number {1}, error number {2}.
         /// </summary>
         public static string FailedRecordErrorIdentifier {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML records with the wrong number of fields in file {0}.
+        ///   Looks up a localized string similar to ADDML records with incorrect number of fields in file {0}.
         /// </summary>
         public static string NumberOfRecordsWithFieldDelimiterErrorIdentifier {
             get {
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML record with the wrong number of fields.
+        ///   Looks up a localized string similar to ADDML record with incorrect number of fields.
         /// </summary>
         public static string RecordLengthErrorTestName {
             get {
@@ -187,7 +187,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total number of records with the wrong number of fields in the file: {0}.
+        ///   Looks up a localized string similar to The file&apos;s total number of records with incorrect number of fields: {0}.
         /// </summary>
         public static string TotalAmountOfRecordsWithFieldDelimiterErrorResultText {
             get {
@@ -196,7 +196,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total number: {0}.
+        ///   Looks up a localized string similar to Total amount: {0}.
         /// </summary>
         public static string TotalAmountText {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unexpected field number (found/expected).
+        ///   Looks up a localized string similar to Unexpected field quantity (found/expected).
         /// </summary>
         public static string UnexpectedNumberOfFields {
             get {

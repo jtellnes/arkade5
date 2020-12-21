@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Addml" xml:space="preserve">
-    <value>necessary ADDML data</value>
+    <value>required ADDML data</value>
   </data>
   <data name="AddmlFile" xml:space="preserve">
-    <value>necessary ADDML file</value>
+    <value>required ADDML file</value>
   </data>
   <data name="AddmlInfo" xml:space="preserve">
-    <value>necessary ADDML information</value>
+    <value>required ADDML information</value>
   </data>
   <data name="AssertNotNull" xml:space="preserve">
     <value>No reference to {0} found. This must be defined.</value>
@@ -148,27 +148,27 @@
     <value>ADDML element recordDefinitions</value>
   </data>
   <data name="RecordLengthErrorTestName" xml:space="preserve">
-    <value>ADDML record with the wrong number of fields</value>
+    <value>ADDML record with incorrect number of fields</value>
   </data>
   <data name="UnexpectedNumberOfFields" xml:space="preserve">
-    <value>Unexpected field number (found/expected)</value>
+    <value>Unexpected field quantity (found/expected)</value>
   </data>
   <data name="UnknownAddmlProcess" xml:space="preserve">
     <value>Unknown ADDML process: {0}</value>
   </data>
   <data name="NumberOfRecordsWithFieldDelimiterErrorIdentifier" xml:space="preserve">
-    <value>ADDML records with the wrong number of fields in file {0}</value>
+    <value>ADDML records with incorrect number of fields in file {0}</value>
   </data>
   <data name="FailedRecordErrorMessage" xml:space="preserve">
     <value>{0} Field text: {1}</value>
   </data>
   <data name="TotalAmountText" xml:space="preserve">
-    <value>Total number: {0}</value>
+    <value>Total amount: {0}</value>
   </data>
   <data name="FailedRecordErrorIdentifier" xml:space="preserve">
-    <value>ADDML record with the wrong number of fields in file {0}, record number {1}, error number {2}</value>
+    <value>ADDML record with incorrect number of fields in file {0}, record number {1}, error number {2}</value>
   </data>
   <data name="TotalAmountOfRecordsWithFieldDelimiterErrorResultText" xml:space="preserve">
-    <value>Total number of records with the wrong number of fields in the file: {0}</value>
+    <value>The file's total number of records with incorrect number of fields: {0}</value>
   </data>
 </root>

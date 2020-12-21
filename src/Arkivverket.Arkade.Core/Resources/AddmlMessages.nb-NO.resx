@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Addml" xml:space="preserve">
-    <value>nødvending ADDML data</value>
+    <value>nødvendig ADDML data</value>
   </data>
   <data name="AddmlFile" xml:space="preserve">
-    <value>nødvending ADDML fil</value>
+    <value>nødvendig ADDML fil</value>
   </data>
   <data name="AddmlInfo" xml:space="preserve">
-    <value>nødvending ADDML informasjon</value>
+    <value>nødvendig ADDML informasjon</value>
   </data>
   <data name="AssertNotNull" xml:space="preserve">
     <value>Finner ingen referanse til {0}. Dette må være definert.</value>
