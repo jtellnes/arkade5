@@ -216,6 +216,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NB!.
+        /// </summary>
+        public static string MessageLabelInfo {
+            get {
+                return ResourceManager.GetString("MessageLabelInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         public static string MessageLabelSuccess {
@@ -248,6 +257,15 @@ namespace Arkivverket.Arkade.GUI.Languages {
         public static string ShowTestReportButtonText {
             get {
                 return ResourceManager.GetString("ShowTestReportButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gyldighetstesting av Siard-uttrekk er ikke støttet. Format-analyse av BLOB-er/CLOB-er i uttrekket er tilgjengelig ved opprettelse av pakke..
+        /// </summary>
+        public static string SiardSupportInfo {
+            get {
+                return ResourceManager.GetString("SiardSupportInfo", resourceCulture);
             }
         }
         
