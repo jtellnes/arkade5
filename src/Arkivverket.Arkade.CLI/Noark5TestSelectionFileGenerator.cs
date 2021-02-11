@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Text;
 using Arkivverket.Arkade.Core.Base;
@@ -10,7 +11,7 @@ namespace Arkivverket.Arkade.CLI
 {
     public static class Noark5TestSelectionFileGenerator
     {
-        public static void Generate(string outputFileName, bool allTestsEnabled = false)
+        public static void Generate(string outputFileName, CultureInfo culture, bool allTestsEnabled = false)
         {
             const string commentSymbol = "#";
             var testList = new StringBuilder();
@@ -22,7 +23,7 @@ namespace Arkivverket.Arkade.CLI
             foreach (TestId testId in Noark5TestProvider.GetAllTestIds())
             {
                 string line = (allTestsEnabled ? string.Empty : commentSymbol) +
-                              ArkadeTestNameProvider.GetDisplayName(testId);
+                              ArkadeTestNameProvider.GetDisplayName(testId, culture);
 
                 testList.AppendLine(line);
             }

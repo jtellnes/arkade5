@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using Arkivverket.Arkade.Core.Base;
@@ -18,9 +19,12 @@ namespace Arkivverket.Arkade.CLI.Tests
         private static readonly string testDataDirectoryPath;
         private static readonly string archiveDirectoryPath;
         private static readonly string outputDirectoryPath;
+        private static readonly CultureInfo Culture = new CultureInfo("en");
 
         static ProgramTests()
         {
+            OutputFileNames.Culture = Culture;
+
             workingDirectoryPath = AppDomain.CurrentDomain.BaseDirectory;
             metadataFilePath = Path.Combine(workingDirectoryPath, OutputFileNames.MetadataFile);
             noark5TestSelectionFilePath = Path.Combine(workingDirectoryPath, OutputFileNames.Noark5TestSelectionFile);
@@ -60,7 +64,7 @@ namespace Arkivverket.Arkade.CLI.Tests
         {
             // Prepare needed files and/or directories
 
-            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile);
+            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Culture);
             Directory.CreateDirectory(outputDirectoryPath);
 
             // Run commands and store results:
@@ -120,7 +124,7 @@ namespace Arkivverket.Arkade.CLI.Tests
             // Prepare needed files and/or directories
 
             new MetadataExampleGenerator().Generate(OutputFileNames.MetadataFile);
-            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile);
+            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Culture);
             Directory.CreateDirectory(outputDirectoryPath);
 
             // Run commands and store results:

@@ -67,7 +67,7 @@ namespace Arkivverket.Arkade.Core.Base
 
             Log.Information("Starting testing of archive.");
 
-            LanguageManager.SetResourcesCultureForTesting(testSession.OutputLanguage.ToString());
+            LanguageManager.SetResourcesLanguageForTesting(testSession.OutputLanguage);
 
             ITestEngine testEngine = _testEngineFactory.GetTestEngine(testSession);
             testSession.TestSuite = testEngine.RunTestsOnArchive(testSession);
@@ -85,7 +85,7 @@ namespace Arkivverket.Arkade.Core.Base
                 : "AIP";
             Log.Information($"Creating {packageType}.");
 
-            LanguageManager.SetResourceCultureForPackageCreation(testSession.OutputLanguage.ToString());
+            LanguageManager.SetResourceLanguageForPackageCreation(testSession.OutputLanguage);
 
             _metadataFilesCreator.Create(testSession.Archive, testSession.ArchiveMetadata, testSession.GenerateFileFormatInfo);
 
@@ -121,9 +121,9 @@ namespace Arkivverket.Arkade.Core.Base
             }
         }
 
-        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string resultFileName, string outputLanguage)
+        public void GenerateFileFormatInfoFiles(DirectoryInfo filesDirectory, string resultFileDirectoryPath, string resultFileName, SupportedLanguage language)
         {
-            LanguageManager.SetResourceCultureForStandalonePronomAnalysis(outputLanguage);
+            LanguageManager.SetResourceLanguageForStandalonePronomAnalysis(language);
             
             string resultFileFullName = Path.Combine(resultFileDirectoryPath, resultFileName);
             

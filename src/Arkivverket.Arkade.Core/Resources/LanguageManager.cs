@@ -5,11 +5,9 @@ namespace Arkivverket.Arkade.Core.Languages
 {
     public static class LanguageManager
     {
-        internal static void SetResourcesCultureForTesting(string outputLanguage)
+        internal static void SetResourcesLanguageForTesting(SupportedLanguage language)
         {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(outputLanguage);
-            
-            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            CultureInfo cultureInfo = CultureInfo.CreateSpecificCulture(language.ToString());
             
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
@@ -21,9 +19,9 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.Report.Culture = cultureInfo;
         }
 
-        internal static void SetResourceCultureForPackageCreation(string outputLanguage)
+        internal static void SetResourceLanguageForPackageCreation(SupportedLanguage language)
         {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(outputLanguage);
+            CultureInfo cultureInfo = CultureInfo.CreateSpecificCulture(language.ToString());
 
             Resources.ArkadeTestDisplayNames.Culture = cultureInfo;
             Resources.AddmlMessages.Culture = cultureInfo;
@@ -33,9 +31,9 @@ namespace Arkivverket.Arkade.Core.Languages
             Resources.OutputFileNames.Culture = cultureInfo;
         }
 
-        internal static void SetResourceCultureForStandalonePronomAnalysis(string outputLanguage)
+        internal static void SetResourceLanguageForStandalonePronomAnalysis(SupportedLanguage language)
         {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(outputLanguage);
+            CultureInfo cultureInfo = CultureInfo.CreateSpecificCulture(language.ToString());
 
             Resources.FormatAnalysisResultFileContent.Culture = cultureInfo;
             Resources.OutputFileNames.Culture = cultureInfo;

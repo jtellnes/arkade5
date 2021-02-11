@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ArchiveNotTestable" xml:space="preserve">
-    <value>Archive is not testable: Did not find a valid specification file.
+    <value>The archive is not testable: A valid specification file was not found.
 (See log for details {0}).
-Package creation can still be executed.</value>
+It can still be created a package from the archive.</value>
   </data>
   <data name="ArchiveTestability" xml:space="preserve">
     <value>Testability</value>

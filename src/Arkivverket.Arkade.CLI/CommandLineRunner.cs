@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -135,7 +136,7 @@ namespace Arkivverket.Arkade.CLI
             if (options.GenerateNoark5TestSelectionFile)
             {
                 string noark5TestSelectionFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
-                Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName);
+                Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName, new CultureInfo(options.LanguageForOutputFiles));
                 Log.Information(noark5TestSelectionFileName + " was created");
             }
 
@@ -153,9 +154,10 @@ namespace Arkivverket.Arkade.CLI
                 OutputFileNames.FileFormatInfoFile,
                 analysisDirectory.Name
             );
-            Arkade.GenerateFileFormatInfoFiles(
-                analysisDirectory, options.OutputDirectory, outputFileName, options.LanguageForOutputFiles
-            );
+
+            var language = Enum.Parse<SupportedLanguage>(options.LanguageForOutputFiles);
+
+            Arkade.GenerateFileFormatInfoFiles(analysisDirectory, options.OutputDirectory, outputFileName, language);
             
             LogFinishedStatus(command);
         }
