@@ -1,4 +1,5 @@
 using System.Globalization;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Util;
 
@@ -11,19 +12,21 @@ namespace Arkivverket.Arkade.Core.Base
             return GetDisplayName(arkadeTest.GetId(), ArkadeTestDisplayNames.Culture);
         }
 
-        public static string GetDisplayName(TestId testId, CultureInfo culture) // Use type SupportedLanguage instead of CultureInfo?
+        public static string GetDisplayName(TestId testId, SupportedLanguage language)
         {
-            return string.Format(ArkadeTestDisplayNames.DisplayNameFormat, testId, GetTestName(testId, culture));
+            return GetDisplayName(testId, new CultureInfo(language.ToString()));
         }
 
-        private static string GetTestName(TestId testId, CultureInfo culture)
+        private static string GetDisplayName(TestId testId, CultureInfo culture)
         {
             string resourceDisplayNameKey = testId.ToString().Replace('.', '_');
 
             if (testId.Version.Equals("5.5"))
                 resourceDisplayNameKey = $"{resourceDisplayNameKey}v5_5";
 
-            return ArkadeTestDisplayNames.ResourceManager.GetString(resourceDisplayNameKey, culture);
+            string testName = ArkadeTestDisplayNames.ResourceManager.GetString(resourceDisplayNameKey, culture);
+
+            return string.Format(ArkadeTestDisplayNames.DisplayNameFormat, testId, testName);
         }
     }
 }

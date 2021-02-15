@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.Core.Util;
 using Xunit;
@@ -12,6 +13,9 @@ namespace Arkivverket.Arkade.CLI.Tests
 {
     public class ProgramTests : IDisposable
     {
+        // Setup language
+        private const SupportedLanguage Language = SupportedLanguage.en;
+
         // Establish needed paths:
         private static readonly string workingDirectoryPath;
         private static readonly string metadataFilePath;
@@ -19,11 +23,10 @@ namespace Arkivverket.Arkade.CLI.Tests
         private static readonly string testDataDirectoryPath;
         private static readonly string archiveDirectoryPath;
         private static readonly string outputDirectoryPath;
-        private static readonly CultureInfo Culture = new CultureInfo("en");
 
         static ProgramTests()
         {
-            OutputFileNames.Culture = Culture;
+            OutputFileNames.Culture = new CultureInfo(Language.ToString());
 
             workingDirectoryPath = AppDomain.CurrentDomain.BaseDirectory;
             metadataFilePath = Path.Combine(workingDirectoryPath, OutputFileNames.MetadataFile);
@@ -64,7 +67,7 @@ namespace Arkivverket.Arkade.CLI.Tests
         {
             // Prepare needed files and/or directories
 
-            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Culture);
+            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Language);
             Directory.CreateDirectory(outputDirectoryPath);
 
             // Run commands and store results:
@@ -124,7 +127,7 @@ namespace Arkivverket.Arkade.CLI.Tests
             // Prepare needed files and/or directories
 
             new MetadataExampleGenerator().Generate(OutputFileNames.MetadataFile);
-            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Culture);
+            Noark5TestSelectionFileGenerator.Generate(OutputFileNames.Noark5TestSelectionFile, Language);
             Directory.CreateDirectory(outputDirectoryPath);
 
             // Run commands and store results:

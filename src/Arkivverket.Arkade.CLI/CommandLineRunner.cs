@@ -136,7 +136,8 @@ namespace Arkivverket.Arkade.CLI
             if (options.GenerateNoark5TestSelectionFile)
             {
                 string noark5TestSelectionFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
-                Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName, new CultureInfo(options.LanguageForOutputFiles));
+                var language = Enum.Parse<SupportedLanguage>(options.LanguageForOutputFiles);
+                Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName, language);
                 Log.Information(noark5TestSelectionFileName + " was created");
             }
 

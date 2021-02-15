@@ -245,14 +245,12 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 {
                     Enum.TryParse(Settings.Default.SelectedUILanguage, out SupportedLanguage uiLanguage);
 
-                    var cultureInfo = new CultureInfo(uiLanguage.ToString());
-
                     foreach (TestId testId in _testSession.AvailableTests)
                     {
                         _selectableTests.Add(new SelectableTest
                         {
                             TestId = testId,
-                            DisplayName = ArkadeTestNameProvider.GetDisplayName(testId, cultureInfo),
+                            DisplayName = ArkadeTestNameProvider.GetDisplayName(testId, uiLanguage),
                             IsSelected = true
                         });
                     }
