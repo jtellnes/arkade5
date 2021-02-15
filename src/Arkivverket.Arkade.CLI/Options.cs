@@ -1,4 +1,4 @@
-﻿using CommandLine;
+using CommandLine;
 
 namespace Arkivverket.Arkade.CLI
 {
@@ -8,6 +8,7 @@ namespace Arkivverket.Arkade.CLI
         public string OutputDirectory { get; set; }
 
         [Option('l', "language",
+            Default = "nb",
             HelpText =
                 "Optional. Used to set language for files produced by Arkade.\n" +
                 "Supported values are:\n" +
