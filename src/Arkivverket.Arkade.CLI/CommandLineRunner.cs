@@ -110,7 +110,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, performFileFormatAnalysis: options.PerformFileFormatAnalysis);
+                    options.LanguageForOutputFiles, performFileFormatAnalysis: options.PerformFileFormatAnalysis); // TODO: Ensure supported language?
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 
@@ -136,7 +136,7 @@ namespace Arkivverket.Arkade.CLI
             if (options.GenerateNoark5TestSelectionFile)
             {
                 string noark5TestSelectionFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
-                var language = Enum.Parse<SupportedLanguage>(options.LanguageForOutputFiles);
+                SupportedLanguage language = GetSupportedLanguage(options.LanguageForOutputFiles);
                 Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName, language);
                 Log.Information(noark5TestSelectionFileName + " was created");
             }
@@ -156,7 +156,7 @@ namespace Arkivverket.Arkade.CLI
                 analysisDirectory.Name
             );
 
-            var language = Enum.Parse<SupportedLanguage>(options.LanguageForOutputFiles);
+            SupportedLanguage language = GetSupportedLanguage(options.LanguageForOutputFiles);
 
             Arkade.GenerateFileFormatInfoFiles(analysisDirectory, options.OutputDirectory, outputFileName, language);
             
@@ -216,6 +216,14 @@ namespace Arkivverket.Arkade.CLI
             }
 
             return selectedArchiveType;
+        }
+
+        private static SupportedLanguage GetSupportedLanguage(string chosenLanguage)
+        {
+            if (!Enum.TryParse(chosenLanguage, out SupportedLanguage language))
+                throw new ArgumentException("Language \"" + chosenLanguage + "\" is not supported");
+         
+            return language;
         }
 
         private static TestSession CreateTestSession(string archive, string archiveTypeString,
