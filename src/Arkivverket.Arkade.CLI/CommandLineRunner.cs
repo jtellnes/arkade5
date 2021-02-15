@@ -62,7 +62,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, options.TestSelectionFile, options.PerformFileFormatAnalysis);
+                    options.OutputLanguage, options.TestSelectionFile, options.PerformFileFormatAnalysis);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -87,7 +87,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, options.TestSelectionFile);
+                    options.OutputLanguage, options.TestSelectionFile);
 
                 Test(options.OutputDirectory, testSession);
 
@@ -110,7 +110,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.LanguageForOutputFiles, performFileFormatAnalysis: options.PerformFileFormatAnalysis); // TODO: Ensure supported language?
+                    options.OutputLanguage, performFileFormatAnalysis: options.PerformFileFormatAnalysis); // TODO: Ensure supported language?
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 
@@ -136,7 +136,7 @@ namespace Arkivverket.Arkade.CLI
             if (options.GenerateNoark5TestSelectionFile)
             {
                 string noark5TestSelectionFileName = Path.Combine(options.OutputDirectory, OutputFileNames.Noark5TestSelectionFile);
-                SupportedLanguage language = GetSupportedLanguage(options.LanguageForOutputFiles);
+                SupportedLanguage language = GetSupportedLanguage(options.OutputLanguage);
                 Noark5TestSelectionFileGenerator.Generate(noark5TestSelectionFileName, language);
                 Log.Information(noark5TestSelectionFileName + " was created");
             }
@@ -156,7 +156,7 @@ namespace Arkivverket.Arkade.CLI
                 analysisDirectory.Name
             );
 
-            SupportedLanguage language = GetSupportedLanguage(options.LanguageForOutputFiles);
+            SupportedLanguage language = GetSupportedLanguage(options.OutputLanguage);
 
             Arkade.GenerateFileFormatInfoFiles(analysisDirectory, options.OutputDirectory, outputFileName, language);
             

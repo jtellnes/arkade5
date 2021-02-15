@@ -37,7 +37,7 @@ namespace Arkivverket.Arkade.CLI
             if (!ReadyToRun(processOptions.OutputDirectory, processOptions.ProcessingArea,
                 metadataFilePath: processOptions.MetadataFile,
                 testSelectionFilePath: processOptions.TestSelectionFile,
-                languageForOutputFiles: processOptions.LanguageForOutputFiles))
+                languageForOutputFiles: processOptions.OutputLanguage))
                 return;
 
             CommandLineRunner.Run(processOptions);
@@ -47,7 +47,7 @@ namespace Arkivverket.Arkade.CLI
         {
             if (!ReadyToRun(testOptions.OutputDirectory, testOptions.ProcessingArea,
                 testSelectionFilePath: testOptions.TestSelectionFile,
-                languageForOutputFiles: testOptions.LanguageForOutputFiles))
+                languageForOutputFiles: testOptions.OutputLanguage))
                 return;
 
             CommandLineRunner.Run(testOptions);
@@ -57,7 +57,7 @@ namespace Arkivverket.Arkade.CLI
         {
             if (!ReadyToRun(packOptions.OutputDirectory, packOptions.ProcessingArea,
                 metadataFilePath: packOptions.MetadataFile,
-                languageForOutputFiles: packOptions.LanguageForOutputFiles))
+                languageForOutputFiles: packOptions.OutputLanguage))
                 return;
 
             CommandLineRunner.Run(packOptions);
@@ -82,14 +82,14 @@ namespace Arkivverket.Arkade.CLI
         private static bool ReadyToRun(Options options)
         {
             return DirectoryArgsExists(options.OutputDirectory) &&
-                SelectedOutputLanguageIsValid(options.LanguageForOutputFiles);
+                SelectedOutputLanguageIsValid(options.OutputLanguage);
         }
 
         private static bool ReadyToRun(AnalyseOptions analyseOptions)
         {
             return DirectoryArgsExists(analyseOptions.OutputDirectory,
                 documentFileDirectoryPath: analyseOptions.FormatCheckTarget) &&
-                SelectedOutputLanguageIsValid(analyseOptions.LanguageForOutputFiles);
+                SelectedOutputLanguageIsValid(analyseOptions.OutputLanguage);
         }
 
         private static bool ReadyToRun(string outputDirectoryPath, string processingAreaPath = null,

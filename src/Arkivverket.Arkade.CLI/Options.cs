@@ -14,6 +14,6 @@ namespace Arkivverket.Arkade.CLI
                 "Supported languages:\n" +
                 "\t'nb' (Norwegian bokmaal)\n" +
                 "\t'en' (British English)")]
-        public string LanguageForOutputFiles { get; set; }
+        public string OutputLanguage { get; set; }
     }
 }
