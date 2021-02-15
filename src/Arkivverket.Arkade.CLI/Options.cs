@@ -1,4 +1,5 @@
-using CommandLine;
+﻿using CommandLine;
+using CsvHelper.Configuration.Attributes;
 
 namespace Arkivverket.Arkade.CLI
 {
@@ -10,10 +11,10 @@ namespace Arkivverket.Arkade.CLI
         [Option('l', "language",
             Default = "nb",
             HelpText =
-                "Optional. Used to set language for files produced by Arkade.\n" +
-                "Supported values are:\n" +
-                "\t'en' (British English) OR\n" +
-                "\t'nb' (Norwegian Bokmål)")]
+                "Optional. Set language for Arkade output files.\n" +
+                "Supported languages:\n" +
+                "\t'nb' (Norwegian bokmaal)\n" +
+                "\t'en' (British English)")]
         public string LanguageForOutputFiles { get; set; }
     }
 }
