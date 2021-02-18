@@ -142,13 +142,13 @@
     <value>Archive Extraction System</value>
   </data>
   <data name="ArchiveExtractionType" xml:space="preserve">
-    <value>Type (Extraction)</value>
+    <value>Type (Extract)</value>
   </data>
   <data name="ArchiveExtractionTypeVersion" xml:space="preserve">
-    <value>Type Version (Extraction)</value>
+    <value>Type Version (Extract)</value>
   </data>
   <data name="ArchiveExtractionVersion" xml:space="preserve">
-    <value>Version (Extraction)</value>
+    <value>Version (Extract)</value>
   </data>
   <data name="ArchiveSystem" xml:space="preserve">
     <value>Extraction System</value>
@@ -157,7 +157,7 @@
     <value>Include format information for document files</value>
   </data>
   <data name="CreateDocumentFileInfoToolTip" xml:space="preserve">
-    <value>NB! Large amounts of document files will heavily increase run time.</value>
+    <value>NB! Time consuming when many document files.</value>
   </data>
   <data name="Creator" xml:space="preserve">
     <value>Creator of information package</value>
@@ -238,7 +238,7 @@
     <value>Fetch external metadata</value>
   </data>
   <data name="LoadExternalMetadataInfoText" xml:space="preserve">
-    <value>Fill out the form with metadata from an external METS-file. I.e. info.xml from a previously created package.</value>
+    <value>Fill out the form with metadata from an external METS-file, e.g. info.xml from a previously created package.</value>
   </data>
   <data name="MetadataGuiLocale" xml:space="preserve">
     <value>en</value>
@@ -292,7 +292,7 @@
     <value>Choose METS-file to load metadata</value>
   </data>
   <data name="SelectOutputDirectoryMessage" xml:space="preserve">
-    <value>Choose location for package</value>
+    <value>Choose package location</value>
   </data>
   <data name="StartDate" xml:space="preserve">
     <value>Start Date</value>

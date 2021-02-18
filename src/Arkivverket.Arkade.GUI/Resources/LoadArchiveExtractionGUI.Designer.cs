@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Archive extraction.
+        ///   Looks up a localized string similar to Archive extract.
         /// </summary>
         public static string ChooseArchiveHeadingText {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please select archive extraction.
+        ///   Looks up a localized string similar to Please select archive extract.
         /// </summary>
         public static string ChooseArchiveLabelText {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Load extraction.
+        ///   Looks up a localized string similar to Load extract.
         /// </summary>
         public static string LoadArchiveButtonText {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Load archive extraction.
+        ///   Looks up a localized string similar to Load archive extract.
         /// </summary>
         public static string ViewHeadingText {
             get {

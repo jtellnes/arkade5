@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ArchiveNotTestable" xml:space="preserve">
-    <value>The archive is not testable: A valid specification file was not found.
+    <value>The archive is not testable: A valid specification file for the extract was not found.
 (See log for details {0}).
-It can still be created a package from the archive.</value>
+It can still be created a package from the extract.</value>
   </data>
   <data name="ArchiveTestability" xml:space="preserve">
     <value>Testability</value>
@@ -141,7 +141,7 @@ It can still be created a package from the archive.</value>
     <value>Warning</value>
   </data>
   <data name="ErrorReadingArchive" xml:space="preserve">
-    <value>Error while reading archive: {0}</value>
+    <value>Error while loading archive: {0}</value>
   </data>
   <data name="FileNotFoundMessage" xml:space="preserve">
     <value>File not found: {0}</value>
@@ -156,7 +156,7 @@ It can still be created a package from the archive.</value>
     <value>New session</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Test archive extraction</value>
+    <value>Archive extract testing</value>
   </data>
   <data name="HeaderFilePath" xml:space="preserve">
     <value>Path to file:</value>
@@ -201,7 +201,7 @@ It can still be created a package from the archive.</value>
     <value>Creating report</value>
   </data>
   <data name="TestingNotImplemented" xml:space="preserve">
-    <value>Testing of {0} archives is not available</value>
+    <value>Testing of {0} extracts is not available</value>
   </data>
   <data name="MessageLabelInfo" xml:space="preserve">
     <value>NB!</value>

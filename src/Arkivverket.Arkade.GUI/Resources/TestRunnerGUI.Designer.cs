@@ -61,9 +61,9 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive is not testable: A valid specification file was not found.
+        ///   Looks up a localized string similar to The archive is not testable: A valid specification file for the extract was not found.
         ///(See log for details {0}).
-        ///It can still be created a package from the archive..
+        ///It can still be created a package from the extract..
         /// </summary>
         public static string ArchiveNotTestable {
             get {
@@ -99,7 +99,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error while reading archive: {0}.
+        ///   Looks up a localized string similar to Error while loading archive: {0}.
         /// </summary>
         public static string ErrorReadingArchive {
             get {
@@ -279,7 +279,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testing of {0} archives is not available.
+        ///   Looks up a localized string similar to Testing of {0} extracts is not available.
         /// </summary>
         public static string TestingNotImplemented {
             get {
@@ -324,7 +324,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Test archive extraction.
+        ///   Looks up a localized string similar to Archive extract testing.
         /// </summary>
         public static string Title {
             get {

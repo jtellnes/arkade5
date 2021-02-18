@@ -133,7 +133,7 @@
     <value>Total: {0}</value>
   </data>
   <data name="DocumentfilesReferenceControlMessage" xml:space="preserve">
-    <value>Non-referenced file(s) found: {0}</value>
+    <value>Non-referenced file found: {0}</value>
   </data>
   <data name="ExceptionInvalidChecksum" xml:space="preserve">
     <value>Unexpected checksum for file: {0}
@@ -165,7 +165,7 @@ Generated: {2}</value>
     <value>Number of document files were not found specified</value>
   </data>
   <data name="ValidateNumberOfDocumentfilesMessage_FileAndDocumentationMismatch" xml:space="preserve">
-    <value>Mismatch between the specified quantity and the actual number of document files</value>
+    <value>Mismatch between the specified and the actual number of document files</value>
   </data>
   <data name="ValidateNumberOfDocumentfilesMessage_FilesDirectoryNotFound" xml:space="preserve">
     <value>No document file directory found</value>
@@ -180,7 +180,7 @@ Generated: {2}</value>
     <value>Number of document files found: {0}</value>
   </data>
   <data name="NumberOfEachJournalPostTypeMessage_MissingMainDocument" xml:space="preserve">
-    <value>Journal entry with systemID {0} missing master page</value>
+    <value>Journal entry with systemID {0} is missing master page</value>
   </data>
   <data name="NumberOfEachJournalPostTypeMessage_TypeAndCount" xml:space="preserve">
     <value>Journal entry type: {0} - Quantity: {1}</value>
@@ -216,28 +216,28 @@ Generated: {2}</value>
     <value>Security classifications in {0} - Number: {1}</value>
   </data>
   <data name="NumberOfDisposalResolutionsMessage" xml:space="preserve">
-    <value>Destruction resolutions in {0} - Number: {1}</value>
+    <value>Disposal resolutions in {0} - Number: {1}</value>
   </data>
   <data name="NumberOfDisposalsExecutedMessage_DocFalseActualTrue" xml:space="preserve">
-    <value>It has been documented that the archive extraction shall not include completed destructions, however completed destructions were found</value>
+    <value>It is documented that the archive extract shall not include performed disposals, but performed disposals were found</value>
   </data>
   <data name="NumberOfDisposalsExecutedMessage_DocTrueActualFalse" xml:space="preserve">
-    <value>It has been documented that the archive extraction shall include completed destructions, however no completed destructions were found</value>
+    <value>It is documented that the archive extract shall include performed disposals, but no performed disposals were found</value>
   </data>
   <data name="NumberOfDisposalResolutionsMessage_DocFalseActualTrue" xml:space="preserve">
-    <value>The archive extraction is specified with no destruction resolutions, however destruction resolutions were found</value>
+    <value>The archive extract is specified with no disposal resolutions, but disposal resolutions were found</value>
   </data>
   <data name="NumberOfDisposalResolutionsMessage_DocTrueActualFalse" xml:space="preserve">
-    <value>The archive extraction is specified with destruction resolutions, however no destruction resolutions were found</value>
+    <value>The archive extract is specified with disposal resolutions, but no disposal resolutions were found</value>
   </data>
   <data name="NumberOfRestrictionsMessage" xml:space="preserve">
-    <value>{0} shielding stations - Number: {1}</value>
+    <value>Restrictions in {0} - Number: {1}</value>
   </data>
   <data name="NumberOfRestrictionsMessage_DocFalseActualTrue" xml:space="preserve">
-    <value>The archive extraction is specified with no restricted entries, however restricted entries were found</value>
+    <value>The archive extract is specified with no restricted entries, but restricted entries were found</value>
   </data>
   <data name="NumberOfRestrictionsMessage_DocTrueActualFalse" xml:space="preserve">
-    <value>The archive extraction is specified with restricted entries, however no restricted entries were found</value>
+    <value>The archive extract is specified with restricted entries, but no restricted entries were found</value>
   </data>
   <data name="ArchiveStartAndEndDateControlMessage_DatesArchive" xml:space="preserve">
     <value>Start and end date in the archive structure: {0} - {1}</value>
@@ -249,16 +249,16 @@ Generated: {2}</value>
     <value>Start and end date in running journal: {0} - {1}</value>
   </data>
   <data name="ArchiveStartAndEndDateControlMessage_UnEqualJournalAndArchiveDates" xml:space="preserve">
-    <value>Period separation is sharp and dates in the archive structure are not like those in public and ongoing journal</value>
+    <value>Period separation is sharp and dates in the archive structure are not similar to those in public and rolling journal</value>
   </data>
   <data name="ArchiveStartAndEndDateControlMessage_UnEqualJournalDates" xml:space="preserve">
-    <value>Dates in public and ongoing journals are not equal</value>
+    <value>Dates in public and rolling journals are not equal</value>
   </data>
   <data name="ChangeLogArchiveReferenceControlMessage" xml:space="preserve">
     <value>Reference to archive unit is not valid: (systemID) {0}</value>
   </data>
   <data name="FileNotFound" xml:space="preserve">
-    <value>File {0} could not be found</value>
+    <value>The file {0} was not found</value>
   </data>
   <data name="ArchivepartReferenceControlMessage" xml:space="preserve">
     <value>Reference from {0} (systemID) {1} to archive part (systemID) {2} is not valid</value>
@@ -279,7 +279,7 @@ Generated: {2}</value>
     <value>There was a problem while validating {0}: {1}</value>
   </data>
   <data name="InternalSchemaFileIsUsed" xml:space="preserve">
-    <value>Schema file {0} could not be found in the extraction. Validation is done according to a version of {0} built into Arkade</value>
+    <value>Schema file {0} could not be found in the extract. Validation is done according to a version of {0} built into Arkade</value>
   </data>
   <data name="NumberOfFoldersPerClassMessage_NumberOfClassesWithoutFolders" xml:space="preserve">
     <value>Classes without folders (and without subclasses) - Number: {0}</value>
@@ -390,7 +390,7 @@ Generated: {2}</value>
     <value>The file {0} is listed in the archive extract, but is missing in the package</value>
   </data>
   <data name="ControlElementHasContent_ElementHasNoContent" xml:space="preserve">
-    <value>Item {0} missing content</value>
+    <value>The element {0} has no content</value>
   </data>
   <data name="ControlElementHasContent_AfterSystemId" xml:space="preserve">
     <value>After systemID {0}</value>

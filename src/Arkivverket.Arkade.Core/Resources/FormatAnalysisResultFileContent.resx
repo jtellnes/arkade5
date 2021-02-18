@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="HeaderFileName" xml:space="preserve">
-    <value>Name</value>
+    <value>File name</value>
   </data>
   <data name="HeaderFileExtension" xml:space="preserve">
     <value>Extension</value>
@@ -130,7 +130,7 @@
     <value>Format name</value>
   </data>
   <data name="HeaderMimeType" xml:space="preserve">
-    <value>MIME-type</value>
+    <value>MIME type</value>
   </data>
   <data name="HeaderErrors" xml:space="preserve">
     <value>Error</value>

@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Period separation is sharp and dates in the archive structure are not like those in public and ongoing journal.
+        ///   Looks up a localized string similar to Period separation is sharp and dates in the archive structure are not similar to those in public and rolling journal.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_UnEqualJournalAndArchiveDates {
             get {
@@ -133,7 +133,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dates in public and ongoing journals are not equal.
+        ///   Looks up a localized string similar to Dates in public and rolling journals are not equal.
         /// </summary>
         public static string ArchiveStartAndEndDateControlMessage_UnEqualJournalDates {
             get {
@@ -169,7 +169,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Item {0} missing content.
+        ///   Looks up a localized string similar to The element {0} has no content.
         /// </summary>
         public static string ControlElementHasContent_ElementHasNoContent {
             get {
@@ -277,7 +277,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Non-referenced file(s) found: {0}.
+        ///   Looks up a localized string similar to Non-referenced file found: {0}.
         /// </summary>
         public static string DocumentfilesReferenceControlMessage {
             get {
@@ -306,7 +306,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File {0} could not be found.
+        ///   Looks up a localized string similar to The file {0} was not found.
         /// </summary>
         public static string FileNotFound {
             get {
@@ -315,7 +315,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schema file {0} could not be found in the extraction. Validation is done according to a version of {0} built into Arkade.
+        ///   Looks up a localized string similar to Schema file {0} could not be found in the extract. Validation is done according to a version of {0} built into Arkade.
         /// </summary>
         public static string InternalSchemaFileIsUsed {
             get {
@@ -486,7 +486,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Destruction resolutions in {0} - Number: {1}.
+        ///   Looks up a localized string similar to Disposal resolutions in {0} - Number: {1}.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage {
             get {
@@ -495,7 +495,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive extraction is specified with no destruction resolutions, however destruction resolutions were found.
+        ///   Looks up a localized string similar to The archive extract is specified with no disposal resolutions, but disposal resolutions were found.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage_DocFalseActualTrue {
             get {
@@ -504,7 +504,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive extraction is specified with destruction resolutions, however no destruction resolutions were found.
+        ///   Looks up a localized string similar to The archive extract is specified with disposal resolutions, but no disposal resolutions were found.
         /// </summary>
         public static string NumberOfDisposalResolutionsMessage_DocTrueActualFalse {
             get {
@@ -513,7 +513,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It has been documented that the archive extraction shall not include completed destructions, however completed destructions were found.
+        ///   Looks up a localized string similar to It is documented that the archive extract shall not include performed disposals, but performed disposals were found.
         /// </summary>
         public static string NumberOfDisposalsExecutedMessage_DocFalseActualTrue {
             get {
@@ -522,7 +522,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It has been documented that the archive extraction shall include completed destructions, however no completed destructions were found.
+        ///   Looks up a localized string similar to It is documented that the archive extract shall include performed disposals, but no performed disposals were found.
         /// </summary>
         public static string NumberOfDisposalsExecutedMessage_DocTrueActualFalse {
             get {
@@ -567,7 +567,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journal entry with systemID {0} missing master page.
+        ///   Looks up a localized string similar to Journal entry with systemID {0} is missing master page.
         /// </summary>
         public static string NumberOfEachJournalPostTypeMessage_MissingMainDocument {
             get {
@@ -765,7 +765,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} shielding stations - Number: {1}.
+        ///   Looks up a localized string similar to Restrictions in {0} - Number: {1}.
         /// </summary>
         public static string NumberOfRestrictionsMessage {
             get {
@@ -774,7 +774,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive extraction is specified with no restricted entries, however restricted entries were found.
+        ///   Looks up a localized string similar to The archive extract is specified with no restricted entries, but restricted entries were found.
         /// </summary>
         public static string NumberOfRestrictionsMessage_DocFalseActualTrue {
             get {
@@ -783,7 +783,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The archive extraction is specified with restricted entries, however no restricted entries were found.
+        ///   Looks up a localized string similar to The archive extract is specified with restricted entries, but no restricted entries were found.
         /// </summary>
         public static string NumberOfRestrictionsMessage_DocTrueActualFalse {
             get {
@@ -882,7 +882,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mismatch between the specified quantity and the actual number of document files.
+        ///   Looks up a localized string similar to Mismatch between the specified and the actual number of document files.
         /// </summary>
         public static string ValidateNumberOfDocumentfilesMessage_FileAndDocumentationMismatch {
             get {

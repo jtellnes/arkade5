@@ -209,7 +209,7 @@ Noark 3, Noark 4, Noark 5, Fagsystem</comment>
     <comment>Can't get it to work as a reference</comment>
   </data>
   <data name="MetadataRequiredFieldsInfo" xml:space="preserve">
-    <value>* = Feltet er påkrevet for å skape en gyldig arkivpakke</value>
+    <value>* = Feltet er påkrevet for å opprette en gyldig arkivpakke</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>Eier*</value>

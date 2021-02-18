@@ -121,7 +121,7 @@
     <value>dd. MMMM yyyy</value>
   </data>
   <data name="HeadingTestReport" xml:space="preserve">
-    <value>Testreport</value>
+    <value>Test report</value>
   </data>
   <data name="HeadingTestResults" xml:space="preserve">
     <value>Results</value>
@@ -196,7 +196,7 @@
     <value>Number of tests executed</value>
   </data>
   <data name="WarningNotAllTestsExecuted" xml:space="preserve">
-    <value>Not all tests executed</value>
+    <value>Not all tests are executed</value>
   </data>
   <data name="HeadingDeviations" xml:space="preserve">
     <value>Deviations</value>

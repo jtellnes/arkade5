@@ -124,10 +124,10 @@
     <value>Archive files|*.tar;*.siard</value>
   </data>
   <data name="ChooseArchiveHeadingText" xml:space="preserve">
-    <value>Archive extraction</value>
+    <value>Archive extract</value>
   </data>
   <data name="ChooseArchiveLabelText" xml:space="preserve">
-    <value>Please select archive extraction</value>
+    <value>Please select archive extract</value>
   </data>
   <data name="ChooseFolderButtonText" xml:space="preserve">
     <value>Select folder</value>
@@ -136,9 +136,9 @@
     <value>Select file</value>
   </data>
   <data name="LoadArchiveButtonText" xml:space="preserve">
-    <value>Load extraction</value>
+    <value>Load extract</value>
   </data>
   <data name="ViewHeadingText" xml:space="preserve">
-    <value>Load archive extraction</value>
+    <value>Load archive extract</value>
   </data>
 </root>

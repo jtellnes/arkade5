@@ -61,7 +61,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose target directory for format analysis.
+        ///   Looks up a localized string similar to Choose directory with the content to be analysed.
         /// </summary>
         public static string ChooseDirectoryToAnalyse {
             get {
@@ -116,7 +116,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PRONOM fileformat-analysis.
+        ///   Looks up a localized string similar to PRONOM file format analysis.
         /// </summary>
         public static string FormatCheckHeading {
             get {
@@ -134,7 +134,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose location to save results.
+        ///   Looks up a localized string similar to Choose location for results.
         /// </summary>
         public static string FormatCheckOutputDirectoryPickerTitle {
             get {

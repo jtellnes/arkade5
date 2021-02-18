@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade processing area is a directory, &quot;arkade-tmp&quot;, where temporary files are placed during processing of the archive extraction, and where system- and error logs are saved. A location with writing rights must be chosen..
+        ///   Looks up a localized string similar to Arkade processing area is a directory, &quot;arkade-tmp&quot;, where temporary files are placed during processing of the archive extract, and where system- and error logs are saved. A location with writing rights must be chosen..
         /// </summary>
         public static string ArkadeProcessingAreaLocation_Info {
             get {
@@ -124,7 +124,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please close all instances of Arkade before changing the location of Arkade processing area..
+        ///   Looks up a localized string similar to Please close other instances of Arkade before changing the location of Arkade processing area..
         /// </summary>
         public static string OtherInstancesRunningOnProcessingAreaChangeMessage {
             get {
@@ -160,7 +160,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please choose a processing available to Arkade.
+        ///   Looks up a localized string similar to Please choose a processing area available to Arkade.
         /// </summary>
         public static string UndefinedArkadeProcessingAreaLocationDialogMessage {
             get {

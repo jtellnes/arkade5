@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error when reading archive: {0}.
+        ///   Looks up a localized string similar to Error when loading archive: {0}.
         /// </summary>
         public static string ErrorReadingArchive {
             get {
@@ -205,7 +205,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart Arkade.
+        ///   Looks up a localized string similar to Restarting of Arkade.
         /// </summary>
         public static string RestartArkadeDialogTitle {
             get {
@@ -214,7 +214,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkade needs a restart to apply the changes. Do you want to restart now?.
+        ///   Looks up a localized string similar to Arkade needs to be restarted for the changes to be applied. Do you want to do the restart now?.
         /// </summary>
         public static string RestartArkadeForChangesToTakeEffectPrompt {
             get {
@@ -269,7 +269,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verktøy.
+        ///   Looks up a localized string similar to Tools.
         /// </summary>
         public static string ShowToolsDialogButtonText {
             get {
@@ -296,7 +296,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amount of archive parts.
+        ///   Looks up a localized string similar to Find the number of archive parts.
         /// </summary>
         public static string TestName_NumberOfArchiveParts {
             get {
@@ -305,7 +305,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amount of archives.
+        ///   Looks up a localized string similar to Find the number of archives.
         /// </summary>
         public static string TestName_NumberOfArchives {
             get {
@@ -314,7 +314,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amount of classes.
+        ///   Looks up a localized string similar to Find the number of classes.
         /// </summary>
         public static string TestName_NumberOfClasses {
             get {
@@ -323,7 +323,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amont of classes in pri classification system without sub classes/folders.
+        ///   Looks up a localized string similar to Find the number of classes in the primary classification system without subclasses/subfolders.
         /// </summary>
         public static string TestName_NumberOfClassesInMainClassificationSystemWithoutSubClassesorFolders {
             get {
@@ -332,7 +332,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amount of classification systems.
+        ///   Looks up a localized string similar to Find the number of classification systems.
         /// </summary>
         public static string TestName_NumberOfClassificationSystems {
             get {
@@ -341,7 +341,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find amount of folders.
+        ///   Looks up a localized string similar to Find the number of folders.
         /// </summary>
         public static string TestName_NumberOfFolders {
             get {
@@ -350,7 +350,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find status on archive parts.
+        ///   Looks up a localized string similar to Find the status on archive parts.
         /// </summary>
         public static string TestName_StatusOfArchiveParts {
             get {
@@ -386,7 +386,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If the application is exited now, the current test results will be lost. Do you still want to exit?.
+        ///   Looks up a localized string similar to If the application is closed now, the current test results will be lost. Do you still want to close?.
         /// </summary>
         public static string UnsavedTestResultsOnExitWarning {
             get {

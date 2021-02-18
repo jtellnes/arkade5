@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to File name.
         /// </summary>
         public static string HeaderFileName {
             get {
@@ -115,7 +115,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MIME-type.
+        ///   Looks up a localized string similar to MIME type.
         /// </summary>
         public static string HeaderMimeType {
             get {

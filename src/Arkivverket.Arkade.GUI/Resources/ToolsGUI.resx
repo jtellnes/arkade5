@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChooseDirectoryToAnalyse" xml:space="preserve">
-    <value>Choose target directory for format analysis</value>
+    <value>Choose directory with the content to be analysed</value>
   </data>
   <data name="CloseDialogButtonText" xml:space="preserve">
     <value>Close</value>
@@ -131,13 +131,13 @@
 Result saved at:</value>
   </data>
   <data name="FormatCheckHeading" xml:space="preserve">
-    <value>PRONOM fileformat-analysis</value>
+    <value>PRONOM file format analysis</value>
   </data>
   <data name="FormatCheckOngoing" xml:space="preserve">
     <value>Performing format analysis ...</value>
   </data>
   <data name="FormatCheckOutputDirectoryPickerTitle" xml:space="preserve">
-    <value>Choose location to save results</value>
+    <value>Choose location for results</value>
   </data>
   <data name="FormatCheckRunButtonText" xml:space="preserve">
     <value>Run</value>

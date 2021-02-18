@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testreport.
+        ///   Looks up a localized string similar to Test report.
         /// </summary>
         public static string HeadingTestReport {
             get {
@@ -304,7 +304,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Not all tests executed.
+        ///   Looks up a localized string similar to Not all tests are executed.
         /// </summary>
         public static string WarningNotAllTestsExecuted {
             get {
