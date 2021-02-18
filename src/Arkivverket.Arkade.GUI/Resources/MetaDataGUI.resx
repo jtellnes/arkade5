@@ -333,12 +333,6 @@
   <data name="UnsufficientDiskSpaceStatusMessage" xml:space="preserve">
     <value>Not enough disk space on target location.</value>
   </data>
-  <data name="PackageCreationErrorLogMessage" xml:space="preserve">
-    <value>Error: Could not create/overwrite package.</value>
-  </data>
-  <data name="UnsufficientDiskSpaceLogMessage" xml:space="preserve">
-    <value>Not enough diskspace on target location.</value>
-  </data>
   <data name="CreateLobFormatInfoFileText" xml:space="preserve">
     <value>Include format information for LOBs</value>
   </data>
