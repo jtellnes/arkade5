@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -202,5 +202,11 @@ Det kan fortsatt lages en pakke av uttrekket.</value>
   </data>
   <data name="TestingNotImplemented" xml:space="preserve">
     <value>Testing av {0} uttrekk er ikke tilgjengelig</value>
+  </data>
+  <data name="SiardSupportInfo" xml:space="preserve">
+    <value>Gyldighetstesting av Siard-uttrekk er ikke støttet. Format-analyse av BLOB-er/CLOB-er i uttrekket er tilgjengelig ved opprettelse av pakke.</value>
+  </data>
+  <data name="MessageLabelInfo" xml:space="preserve">
+    <value>NB!</value>
   </data>
 </root>

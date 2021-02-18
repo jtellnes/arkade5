@@ -198,4 +198,7 @@
   <data name="HeadingDeviations" xml:space="preserve">
     <value>Avvik</value>
   </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>dd. MMMM yyyy</value>
+  </data>
 </root>
