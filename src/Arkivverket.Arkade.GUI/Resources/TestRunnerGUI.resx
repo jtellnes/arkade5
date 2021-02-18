@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -207,6 +207,6 @@ It can still be created a package from the archive.</value>
     <value>NB!</value>
   </data>
   <data name="SiardSupportInfo" xml:space="preserve">
-    <value>Gyldighetstesting av Siard-uttrekk er ikke støttet. Format-analyse av BLOB-er/CLOB-er i uttrekket er tilgjengelig ved opprettelse av pakke.</value>
+    <value>Compliance testing for Siard extracts is not supported. Format analysis for BLOBs/CLOBs in the extract is available upon creation of package.</value>
   </data>
 </root>
