@@ -79,24 +79,6 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to save format analysis result.
-        /// </summary>
-        public static string FormatCheckActionChooseOutputDirectory {
-            get {
-                return ResourceManager.GetString("FormatCheckActionChooseOutputDirectory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to format analysis.
-        /// </summary>
-        public static string FormatCheckActionChooseTargetDirectory {
-            get {
-                return ResourceManager.GetString("FormatCheckActionChooseTargetDirectory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Choose directory ....
         /// </summary>
         public static string FormatCheckChooseTargetDirectoryButtonText {

@@ -224,7 +224,7 @@
     <value>Versjon </value>
   </data>
   <data name="RestartFailedMessageBoxText" xml:space="preserve">
-    <value>Klarte ikke å restarte Arkade.
+    <value>Kunne ikke starte Arkade på nytt.
 Vennligst start Arkade manuelt etter avslutning.</value>
   </data>
   <data name="RestartFailedMessageBoxTitle" xml:space="preserve">

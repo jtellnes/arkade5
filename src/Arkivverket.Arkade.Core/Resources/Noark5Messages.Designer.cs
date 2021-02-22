@@ -61,15 +61,6 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Checksum is checked with the algorithm {0}..
-        /// </summary>
-        public static string AlgorithmUsedToControlChecksumMessage {
-            get {
-                return ResourceManager.GetString("AlgorithmUsedToControlChecksumMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Reference from {0} (systemID) {1} to archive part (systemID) {2} is not valid.
         /// </summary>
         public static string ArchivepartReferenceControlMessage {
@@ -147,6 +138,15 @@ namespace Arkivverket.Arkade.Core.Resources {
         public static string ChangeLogArchiveReferenceControlMessage {
             get {
                 return ResourceManager.GetString("ChangeLogArchiveReferenceControlMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Algorithm used for checksum validation: {0}.
+        /// </summary>
+        public static string ChecksumAlgorithmMessage {
+            get {
+                return ResourceManager.GetString("ChecksumAlgorithmMessage", resourceCulture);
             }
         }
         

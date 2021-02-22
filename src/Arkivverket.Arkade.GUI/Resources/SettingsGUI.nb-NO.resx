@@ -124,7 +124,7 @@
     <value>Avbryt</value>
   </data>
   <data name="ArkadeProcessingAreaLocation_EditButtonText" xml:space="preserve">
-    <value>Endre ...</value>
+    <value>Velg ...</value>
   </data>
   <data name="ArkadeProcessingAreaLocation_Header" xml:space="preserve">
     <value>Arkades prosesseringsområde</value>

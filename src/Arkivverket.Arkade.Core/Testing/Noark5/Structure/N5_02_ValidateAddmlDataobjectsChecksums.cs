@@ -77,10 +77,12 @@ namespace Arkivverket.Arkade.Core.Testing.Noark5.Structure
                 var message = string.Format(Noark5Messages.ExceptionInvalidChecksum, fileName,
                     expectedChecksum.ToLower(), generatedChecksum.ToLower());
                 return new TestResult(ResultType.Error, new Location(fileName),
-                    $"{message}.\n " + string.Format(Noark5Messages.AlgorithmUsedToControlChecksumMessage, checksumAlgorithm));
+                    $"{message}.\n " + string.Format(Noark5Messages.ChecksumAlgorithmMessage, checksumAlgorithm));
             }
+
             return new TestResult(ResultType.Success, new Location(fileName),
-                string.Format(Noark5Messages.AlgorithmUsedToControlChecksumMessage, checksumAlgorithm));
+                string.Format(Noark5Messages.ChecksumAlgorithmMessage, checksumAlgorithm)
+            );
         }
 
         private string GenerateChecksumForFile(string filename, string checksumAlgorithm)

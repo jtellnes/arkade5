@@ -407,7 +407,7 @@ Generated: {2}</value>
   <data name="NumberOfRegistrations_DocumentedAndActualMismatch" xml:space="preserve">
     <value>The archive structure is specified with {0} registrations, but {1} was found</value>
   </data>
-  <data name="AlgorithmUsedToControlChecksumMessage" xml:space="preserve">
-    <value>Checksum is checked with the algorithm {0}.</value>
+  <data name="ChecksumAlgorithmMessage" xml:space="preserve">
+    <value>Algorithm used for checksum validation: {0}</value>
   </data>
 </root>
