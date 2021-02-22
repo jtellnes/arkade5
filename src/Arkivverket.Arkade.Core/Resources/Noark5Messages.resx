@@ -180,7 +180,7 @@ Generated: {2}</value>
     <value>Number of document files found: {0}</value>
   </data>
   <data name="NumberOfEachJournalPostTypeMessage_MissingMainDocument" xml:space="preserve">
-    <value>Journal entry with systemID {0} is missing master page</value>
+    <value>Journal entry with systemID {0} is missing main document</value>
   </data>
   <data name="NumberOfEachJournalPostTypeMessage_TypeAndCount" xml:space="preserve">
     <value>Journal entry type: {0} - Quantity: {1}</value>

@@ -567,7 +567,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Journal entry with systemID {0} is missing master page.
+        ///   Looks up a localized string similar to Journal entry with systemID {0} is missing main document.
         /// </summary>
         public static string NumberOfEachJournalPostTypeMessage_MissingMainDocument {
             get {
