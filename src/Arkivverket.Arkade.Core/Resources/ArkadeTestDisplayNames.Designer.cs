@@ -223,7 +223,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Control for null values in fields.
+        ///   Looks up a localized string similar to Control for null values in field.
         /// </summary>
         public static string A_20 {
             get {

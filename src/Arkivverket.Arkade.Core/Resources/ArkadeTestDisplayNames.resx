@@ -184,7 +184,7 @@
     <value>Control of field specified data format</value>
   </data>
   <data name="A_20" xml:space="preserve">
-    <value>Control for null values in fields</value>
+    <value>Control for null values in field</value>
   </data>
   <data name="A_21" xml:space="preserve">
     <value>Control of field value uniqeness</value>
