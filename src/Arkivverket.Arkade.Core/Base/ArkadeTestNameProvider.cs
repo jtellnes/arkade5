@@ -14,7 +14,7 @@ namespace Arkivverket.Arkade.Core.Base
 
         public static string GetDisplayName(TestId testId, SupportedLanguage language)
         {
-            return GetDisplayName(testId, new CultureInfo(language.ToString()));
+            return GetDisplayName(testId, CultureInfo.CreateSpecificCulture(language.ToString()));
         }
 
         private static string GetDisplayName(TestId testId, CultureInfo culture)
