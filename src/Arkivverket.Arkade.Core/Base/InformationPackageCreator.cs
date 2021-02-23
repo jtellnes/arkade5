@@ -139,7 +139,7 @@ namespace Arkivverket.Arkade.Core.Base
         private string CreateResultDirectory(Archive archive, string outputDirectory)
         {
             var resultDirectory = new DirectoryInfo(
-                Path.Combine(outputDirectory, $"{ArkadeConstants.DirectoryNameResultOutputContainer}-{archive.Uuid}")
+                Path.Combine(outputDirectory, $"{OutputFileNames.ResultOutputDirectory}-{archive.Uuid}")
             );
 
             resultDirectory.Create();

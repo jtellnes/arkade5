@@ -48,7 +48,6 @@ namespace Arkivverket.Arkade.Core.Util
         public const string DirectoryNameTemporaryLogsLocation = ".arkade-tmplogs";
         public const string DirectoryNameRepositoryOperations = "repository_operations";
         public const string DirectoryNameContent = "content";
-        public const string DirectoryNameResultOutputContainer = "Arkaderesultater";
         public const string DirectoryNameAppDataArkadeSubFolder = "Arkivverket";
         
         public static readonly string[] DocumentDirectoryNames =

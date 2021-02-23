@@ -113,7 +113,7 @@ namespace Arkivverket.Arkade.CLI.Tests
 
             FileSystemInfo[] outputDirectoryItems = new DirectoryInfo(outputDirectoryPath).GetFileSystemInfos();
             bool packageWasCreated = outputDirectoryItems.Any(item =>
-                item.Name.StartsWith(ArkadeConstants.DirectoryNameResultOutputContainer));
+                item.Name.StartsWith(OutputFileNames.ResultOutputDirectory));
 
             // Control result:
 
@@ -147,7 +147,7 @@ namespace Arkivverket.Arkade.CLI.Tests
             FileSystemInfo[] outputDirectoryItems = new DirectoryInfo(outputDirectoryPath).GetFileSystemInfos();
             bool testReportWasCreated = outputDirectoryItems.Any(item => item.Name.StartsWith("Arkaderapport"));
             bool packageWasCreated = outputDirectoryItems.Any(item =>
-                item.Name.StartsWith(ArkadeConstants.DirectoryNameResultOutputContainer));
+                item.Name.StartsWith(OutputFileNames.ResultOutputDirectory));
 
             // Control results:
 
