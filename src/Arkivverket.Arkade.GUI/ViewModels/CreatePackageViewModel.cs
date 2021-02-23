@@ -13,7 +13,6 @@ using Serilog;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Arkivverket.Arkade.Core.Base;
-using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Metadata;
 using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.GUI.Models;
@@ -21,7 +20,6 @@ using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Languages;
 using Arkivverket.Arkade.GUI.Views;
 using MessageBox = System.Windows.MessageBox;
-using Settings = Arkivverket.Arkade.GUI.Properties.Settings;
 
 namespace Arkivverket.Arkade.GUI.ViewModels
 {
@@ -461,9 +459,6 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
             _testSession.GenerateFileFormatInfo = GenerateFileFormatInfoSelected;
 
-            Enum.TryParse(Settings.Default.SelectedOutputLanguage, out SupportedLanguage outputLanguage);
-            _testSession.OutputLanguage = outputLanguage;
-            
             _isRunningCreatePackage = true;
             CreatePackageCommand.RaiseCanExecuteChanged();
             MainWindow.ProgressBarWorker.ReportProgress(0);
