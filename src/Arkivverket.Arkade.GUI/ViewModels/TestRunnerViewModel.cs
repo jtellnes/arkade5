@@ -47,8 +47,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         private string _archiveFileName;
         private ArchiveType _archiveType;
         private TestSession _testSession;
-        private bool _testRunHasBeenExecuted;
-        private bool _isRunningTests;
+        private bool _testRunHasBeenExecuted; // TODO: Use ArkadeProcessingState?
+        private bool _isRunningTests; // TODO: Use ArkadeProcessingState?
         private bool _testRunCompletedSuccessfully;
         private bool _canSelectTests;
         private bool _allTestsSelected;

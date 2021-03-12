@@ -83,7 +83,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
             if (!Enum.TryParse(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
-                Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+                Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName; // TODO: Default to static value?
             if (!Enum.TryParse(Settings.Default.SelectedUILanguage, out _selectedUILanguage))
                 Settings.Default.SelectedUILanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
 
