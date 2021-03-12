@@ -148,10 +148,4 @@ Result saved at:</value>
   <data name="ToolsDialogTitle" xml:space="preserve">
     <value>Tools</value>
   </data>
-  <data name="FormatCheckActionChooseOutputDirectory" xml:space="preserve">
-    <value>save format analysis result</value>
-  </data>
-  <data name="FormatCheckActionChooseTargetDirectory" xml:space="preserve">
-    <value>format analysis</value>
-  </data>
 </root>

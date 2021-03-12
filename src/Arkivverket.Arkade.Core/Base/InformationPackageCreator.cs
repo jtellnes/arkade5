@@ -26,8 +26,6 @@ namespace Arkivverket.Arkade.Core.Base
             ArkadeConstants.DirectoryNameRepositoryOperations
         };
 
-        public static bool HasRun { get; private set; }
-
         /// <summary>
         /// Create SIP (Submission Information Package). 
         /// Package- and metafile are written to the given output directory
@@ -101,8 +99,6 @@ namespace Arkivverket.Arkade.Core.Base
             new InfoXmlCreator().CreateAndSaveFile(metadata, packageFilePath, diasMetsFilePath,
                 archive.GetInfoXmlFileName());
 
-            HasRun = true;
-
             return packageFilePath;
         }
 
@@ -113,10 +109,10 @@ namespace Arkivverket.Arkade.Core.Base
             string testReportFullFileName =
                 Path.Combine(repositoryOperations.FullName, testReportFileName);
 
-            if (File.Exists(testReportFullFileName))
-                File.Copy(testReportFullFileName,
-                    Path.Combine(resultDirectory, testReportFileName)
-                );
+            string destinationFileName = Path.Combine(resultDirectory, testReportFileName);
+
+            if (File.Exists(testReportFullFileName) && !File.Exists(destinationFileName))
+                File.Copy(testReportFullFileName, destinationFileName);
         }
 
         private static void EnsureSufficientDiskSpace(Archive archive, string outputDirectory)

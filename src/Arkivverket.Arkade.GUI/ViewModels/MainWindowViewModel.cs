@@ -5,6 +5,7 @@ using Arkivverket.Arkade.GUI.Languages;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
 using Arkivverket.Arkade.Core.Util;
+using Arkivverket.Arkade.GUI.Models;
 using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
@@ -52,7 +53,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             NavigateCommandMain = new DelegateCommand<string>(Navigate);
             ShowToolsDialogCommand = new DelegateCommand(ShowToolsDialog);
             ShowWebPageCommand = new DelegateCommand(ShowWebPage);
-            ShowSettingsCommand = new DelegateCommand(ShowSettings);
+            ShowSettingsCommand = new DelegateCommand(ShowSettings, CanChangeSettings);
             ShowAboutDialogCommand = new DelegateCommand(ShowAboutDialog);
             ShowInvalidProcessingAreaLocationDialogCommand =
                 new DelegateCommand(ShowInvalidProcessingAreaLocationDialog);
@@ -96,6 +97,11 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 Properties.Settings.Default.SelectedUILanguage == Properties.Settings.Default.SelectedOutputLanguage
                     ? Visibility.Hidden
                     : Visibility.Visible;
+        }
+
+        private static bool CanChangeSettings()
+        {
+            return !ArkadeProcessingState.TestingIsStarted && !ArkadeProcessingState.PackingIsStarted;
         }
 
         private void Navigate(string uri)

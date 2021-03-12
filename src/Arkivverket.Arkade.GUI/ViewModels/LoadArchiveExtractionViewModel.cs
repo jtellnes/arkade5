@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Identify;
 using Arkivverket.Arkade.GUI.Languages;
+using Arkivverket.Arkade.GUI.Models;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -183,6 +184,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
+            ArkadeProcessingState.Reset();
+            MainWindowViewModel.ShowSettingsCommand.RaiseCanExecuteChanged();
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
