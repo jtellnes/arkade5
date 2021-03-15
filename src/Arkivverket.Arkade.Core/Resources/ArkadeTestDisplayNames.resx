@@ -212,7 +212,7 @@
     <comment>ID - name</comment>
   </data>
   <data name="N5_01" xml:space="preserve">
-    <value>Control of existence of XML-files</value>
+    <value>Control of existence of XML files</value>
   </data>
   <data name="N5_02" xml:space="preserve">
     <value>Validation of checksums</value>

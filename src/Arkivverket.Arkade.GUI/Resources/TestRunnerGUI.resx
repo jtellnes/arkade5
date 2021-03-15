@@ -177,7 +177,7 @@ It can still be created a package from the extract.</value>
     <value>Number of posts processed:</value>
   </data>
   <data name="HeaderNumberOfProcessedXmlElements" xml:space="preserve">
-    <value>Number of XML-elements processed:</value>
+    <value>Number of XML elements processed:</value>
   </data>
   <data name="TestSelectionHeader" xml:space="preserve">
     <value>Tests (expand for selection)</value>

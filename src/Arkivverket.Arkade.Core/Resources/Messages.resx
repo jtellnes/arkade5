@@ -184,7 +184,7 @@
     <value>Mismatch between given record length ({0}) and actual record length ({1})</value>
   </data>
   <data name="ControlBirthNumberDescription" xml:space="preserve">
-    <value>Validates control digits in a birth number</value>
+    <value>Validation of the control digits in a birth number</value>
   </data>
   <data name="ControlBirthNumberMessage" xml:space="preserve">
     <value>Invalid birth number: {0}</value>
@@ -203,7 +203,7 @@
 Actual checksum: {1}</value>
   </data>
   <data name="ControlChecksumMessage_ChecksumMissing" xml:space="preserve">
-    <value>No checksum found in the ADDML-file</value>
+    <value>No checksum found in the ADDML file</value>
   </data>
   <data name="ControlChecksumMessage_UnknownChecksumAlgorithm" xml:space="preserve">
     <value>Unknown checksum algorithm: {0}</value>
@@ -336,7 +336,7 @@ Actual checksum: {1}</value>
     <value>Archive is loaded.</value>
   </data>
   <data name="RunningAddmlProcessesOnFile" xml:space="preserve">
-    <value>ADDML-processes on the file: {0}</value>
+    <value>ADDML processes on the file: {0}</value>
     <comment>{0} angir filnavn på filen som blir testet.</comment>
   </data>
   <data name="TarExtractionEvent" xml:space="preserve">

@@ -70,7 +70,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extension.
+        ///   Looks up a localized string similar to File extension.
         /// </summary>
         public static string HeaderFileExtension {
             get {
@@ -88,7 +88,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PUID.
+        ///   Looks up a localized string similar to Format ID.
         /// </summary>
         public static string HeaderFormatId {
             get {

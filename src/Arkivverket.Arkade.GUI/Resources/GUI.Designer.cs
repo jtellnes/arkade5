@@ -278,7 +278,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Webpage.
+        ///   Looks up a localized string similar to Web page.
         /// </summary>
         public static string ShowWebPageButtonText {
             get {

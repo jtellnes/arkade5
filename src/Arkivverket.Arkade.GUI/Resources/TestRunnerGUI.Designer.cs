@@ -180,7 +180,7 @@ namespace Arkivverket.Arkade.GUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of XML-elements processed:.
+        ///   Looks up a localized string similar to Number of XML elements processed:.
         /// </summary>
         public static string HeaderNumberOfProcessedXmlElements {
             get {

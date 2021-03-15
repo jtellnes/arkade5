@@ -340,7 +340,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Control of existence of XML-files.
+        ///   Looks up a localized string similar to Control of existence of XML files.
         /// </summary>
         public static string N5_01 {
             get {

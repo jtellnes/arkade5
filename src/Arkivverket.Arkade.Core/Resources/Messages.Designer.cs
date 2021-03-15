@@ -259,7 +259,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Validates control digits in a birth number.
+        ///   Looks up a localized string similar to Validation of the control digits in a birth number.
         /// </summary>
         public static string ControlBirthNumberDescription {
             get {
@@ -314,7 +314,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No checksum found in the ADDML-file.
+        ///   Looks up a localized string similar to No checksum found in the ADDML file.
         /// </summary>
         public static string ControlChecksumMessage_ChecksumMissing {
             get {
@@ -711,7 +711,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ADDML-processes on the file: {0}.
+        ///   Looks up a localized string similar to ADDML processes on the file: {0}.
         /// </summary>
         public static string RunningAddmlProcessesOnFile {
             get {
