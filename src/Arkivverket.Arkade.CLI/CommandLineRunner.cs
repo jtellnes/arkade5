@@ -274,14 +274,16 @@ namespace Arkivverket.Arkade.CLI
 
         private static void SaveTestReport(TestSession testSession, string outputDirectory)
         {
+            string testSessionReportFileName = string.Format(OutputFileNames.TestReportFile, testSession.Archive.Uuid);
+
             var packageTestReport = new FileInfo(Path.Combine(
                 testSession.GetReportDirectory().FullName,
-                string.Format(OutputFileNames.TestReportFile, testSession.Archive.Uuid)
+                testSessionReportFileName
             ));
             Arkade.SaveReport(testSession, packageTestReport);
 
             var standaloneTestReport = new FileInfo(Path.Combine(
-                outputDirectory, string.Format(OutputStrings.TestReportFileName, testSession.Archive.Uuid)
+                outputDirectory, testSessionReportFileName
             ));
             Arkade.SaveReport(testSession, standaloneTestReport);
             Log.Information($"Test report generated at: {standaloneTestReport.FullName}");
