@@ -119,13 +119,15 @@
   </resheader>
   <data name="ResultOutputDirectory" xml:space="preserve">
     <value>Arkade-results_{0}</value>
-    <comment>{0} = uuid</comment>
+    <comment>{0} = Archive UUID</comment>
   </data>
   <data name="FileFormatInfoFile" xml:space="preserve">
     <value>{0}-fileformatinfo.csv</value>
+    <comment>{0} = Name of analysed directory</comment>
   </data>
   <data name="FileFormatInfoStatisticsFile" xml:space="preserve">
     <value>{0}-statistics.csv</value>
+    <comment>{0} = Name of analysed directory</comment>
   </data>
   <data name="MetadataFile" xml:space="preserve">
     <value>arkade-ip-metadata.json</value>
@@ -135,6 +137,6 @@
   </data>
   <data name="TestReportFile" xml:space="preserve">
     <value>Arkade-report_{0}.html</value>
-    <comment>{0} = uuid</comment>
+    <comment>{0} = Archive UUID</comment>
   </data>
 </root>
