@@ -122,7 +122,7 @@ namespace Arkivverket.Arkade.Core.Base
         private string CreateResultDirectory(Archive archive, string outputDirectory)
         {
             var resultDirectory = new DirectoryInfo(
-                Path.Combine(outputDirectory, $"{OutputFileNames.ResultOutputDirectory}_{archive.Uuid}")
+                Path.Combine(outputDirectory, string.Format(OutputFileNames.ResultOutputDirectory, archive.Uuid))
             );
 
             resultDirectory.Create();
