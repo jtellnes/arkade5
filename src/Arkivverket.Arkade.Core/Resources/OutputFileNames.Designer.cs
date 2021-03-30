@@ -97,7 +97,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkaderesults.
+        ///   Looks up a localized string similar to Arkade-results.
         /// </summary>
         public static string ResultOutputDirectory {
             get {
@@ -106,7 +106,7 @@ namespace Arkivverket.Arkade.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arkadereport-{0}.html.
+        ///   Looks up a localized string similar to Arkade-report_{0}.html.
         /// </summary>
         public static string TestReportFile {
             get {

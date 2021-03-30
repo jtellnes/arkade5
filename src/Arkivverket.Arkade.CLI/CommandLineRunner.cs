@@ -64,7 +64,7 @@ namespace Arkivverket.Arkade.CLI
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
                     options.OutputLanguage, options.TestSelectionFile, options.PerformFileFormatAnalysis);
 
-                Test(options.OutputDirectory, testSession);
+                Test(options.OutputDirectory, testSession, createStandAloneTestReport: false);
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 
@@ -163,7 +163,7 @@ namespace Arkivverket.Arkade.CLI
             LogFinishedStatus(command);
         }
 
-        private static void Test(string outputDirectory, TestSession testSession)
+        private static void Test(string outputDirectory, TestSession testSession, bool createStandAloneTestReport = true)
         {
             if (testSession.Archive.ArchiveType == ArchiveType.Siard)
             {
@@ -176,7 +176,7 @@ namespace Arkivverket.Arkade.CLI
                 return;
             }
             Arkade.RunTests(testSession);
-            SaveTestReport(testSession, outputDirectory);
+            SaveTestReport(testSession, outputDirectory, createStandAloneTestReport);
         }
 
         private static void Pack(string metadataFile, string packageType, string outputDirectory,
@@ -272,21 +272,19 @@ namespace Arkivverket.Arkade.CLI
             return testSession;
         }
 
-        private static void SaveTestReport(TestSession testSession, string outputDirectory)
+        private static void SaveTestReport(TestSession testSession, string outputDirectory,
+            bool createStandAloneTestReport)
         {
-            string testSessionReportFileName = string.Format(OutputFileNames.TestReportFile, testSession.Archive.Uuid);
+            var packageTestReport = testSession.Archive.GetTestReportFile();
 
-            var packageTestReport = new FileInfo(Path.Combine(
-                testSession.GetReportDirectory().FullName,
-                testSessionReportFileName
-            ));
             Arkade.SaveReport(testSession, packageTestReport);
 
-            var standaloneTestReport = new FileInfo(Path.Combine(
-                outputDirectory, testSessionReportFileName
-            ));
-            Arkade.SaveReport(testSession, standaloneTestReport);
-            Log.Information($"Test report generated at: {standaloneTestReport.FullName}");
+            if(createStandAloneTestReport)
+            {
+                var standaloneTestReport = new FileInfo(Path.Combine(outputDirectory, packageTestReport.Name));
+                Arkade.SaveReport(testSession, standaloneTestReport);
+                Log.Information($"Test report generated at: {standaloneTestReport.FullName}");
+            }
         }
 
         private static void LogFinishedStatus(string command, bool withoutErrors = true)

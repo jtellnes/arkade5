@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ResultOutputDirectory" xml:space="preserve">
-    <value>Arkaderesults</value>
+    <value>Arkade-results</value>
   </data>
   <data name="FileFormatInfoFile" xml:space="preserve">
     <value>{0}-fileformatinfo.csv</value>
@@ -133,7 +133,7 @@
     <value>noark5-testselection.txt</value>
   </data>
   <data name="TestReportFile" xml:space="preserve">
-    <value>Arkadereport-{0}.html</value>
+    <value>Arkade-report_{0}.html</value>
     <comment>{0} = uuid</comment>
   </data>
 </root>

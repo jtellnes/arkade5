@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Arkivverket.Arkade.Core.Resources;
 using Serilog;
 using static Arkivverket.Arkade.Core.Util.ArkadeConstants;
 
@@ -39,6 +40,17 @@ namespace Arkivverket.Arkade.Core.Base
                 if (archiveType == ArchiveType.Noark5)
                     SetupArchiveXmlUnits();
             }
+        }
+
+        public FileInfo GetTestReportFile()
+        {
+            string testReportFileName = string.Format(OutputFileNames.TestReportFile, Uuid);
+
+            string testReportDirectoryPath = WorkingDirectory.RepositoryOperations().DirectoryInfo().FullName;
+            
+            string testReportFullFileName = Path.Combine(testReportDirectoryPath, testReportFileName);
+            
+            return new FileInfo(testReportFullFileName);
         }
 
         public string GetInformationPackageFileName()

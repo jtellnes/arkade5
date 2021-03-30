@@ -46,11 +46,6 @@ namespace Arkivverket.Arkade.Core.Base
             return LogEntries;
         }
 
-        public DirectoryInfo GetReportDirectory()
-        {
-            return Archive.WorkingDirectory.RepositoryOperations().DirectoryInfo();
-        }
-
         public bool IsTestableArchive()
         {
             return Archive.ArchiveType != ArchiveType.Siard &&

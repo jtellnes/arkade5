@@ -57,12 +57,12 @@ namespace Arkivverket.Arkade.Core.Base
             string resultDirectory = CreateResultDirectory(archive, outputDirectory);
 
             if (packageType == PackageType.SubmissionInformationPackage)
-                CopyTestReportToResultsFolder
-                (
-                    archive.WorkingDirectory.RepositoryOperations().DirectoryInfo(),
-                    archive.Uuid.GetValue(),
-                    resultDirectory
-                );
+            {
+                FileInfo testReportFile = archive.GetTestReportFile();
+
+                if (testReportFile.Exists)
+                    testReportFile.CopyTo(Path.Combine(resultDirectory, testReportFile.Name), overwrite: true);
+            }
 
             string packageFilePath = Path.Combine(resultDirectory, archive.GetInformationPackageFileName());
 
@@ -102,19 +102,6 @@ namespace Arkivverket.Arkade.Core.Base
             return packageFilePath;
         }
 
-        private static void CopyTestReportToResultsFolder(FileSystemInfo repositoryOperations, string uuid, string resultDirectory)
-        {
-            string testReportFileName = string.Format(OutputFileNames.TestReportFile, uuid);
-
-            string testReportFullFileName =
-                Path.Combine(repositoryOperations.FullName, testReportFileName);
-
-            string destinationFileName = Path.Combine(resultDirectory, testReportFileName);
-
-            if (File.Exists(testReportFullFileName) && !File.Exists(destinationFileName))
-                File.Copy(testReportFullFileName, destinationFileName);
-        }
-
         private static void EnsureSufficientDiskSpace(Archive archive, string outputDirectory)
         {
             long driveSpace = SystemInfo.GetAvailableDiskSpaceInBytes(outputDirectory);
@@ -135,7 +122,7 @@ namespace Arkivverket.Arkade.Core.Base
         private string CreateResultDirectory(Archive archive, string outputDirectory)
         {
             var resultDirectory = new DirectoryInfo(
-                Path.Combine(outputDirectory, $"{OutputFileNames.ResultOutputDirectory}-{archive.Uuid}")
+                Path.Combine(outputDirectory, $"{OutputFileNames.ResultOutputDirectory}_{archive.Uuid}")
             );
 
             resultDirectory.Create();
