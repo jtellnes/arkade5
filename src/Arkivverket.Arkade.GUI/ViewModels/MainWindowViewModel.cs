@@ -128,7 +128,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
             if (!ArkadeProcessingAreaLocationSetting.IsValid())
                 ShowInvalidProcessingAreaLocationDialog();
-
+            
             _closeSettingsDialogEvent.Unsubscribe(CloseSettingsWindow);
             RestartArkadeIfNeededAndWanted();
         }

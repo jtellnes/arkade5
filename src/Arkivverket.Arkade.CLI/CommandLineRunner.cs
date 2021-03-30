@@ -110,7 +110,7 @@ namespace Arkivverket.Arkade.CLI
                 string command = GetRunningCommand(options.GetType().Name);
 
                 TestSession testSession = CreateTestSession(options.Archive, options.ArchiveType, command,
-                    options.OutputLanguage, performFileFormatAnalysis: options.PerformFileFormatAnalysis); // TODO: Ensure supported language?
+                    options.OutputLanguage, performFileFormatAnalysis: options.PerformFileFormatAnalysis);
 
                 Pack(options.MetadataFile, options.InformationPackageType, options.OutputDirectory, testSession);
 

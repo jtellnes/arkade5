@@ -7,18 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Arkivverket.Arkade.Core.Base;
+using Arkivverket.Arkade.GUI.Models;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using Serilog;
 using Arkivverket.Arkade.Core.Logging;
-using Arkivverket.Arkade.Core.Util;
-using Arkivverket.Arkade.Core.Base;
 using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Resources;
 using Arkivverket.Arkade.GUI.Util;
 using Arkivverket.Arkade.GUI.Views;
-using Arkivverket.Arkade.GUI.Models;
+using Arkivverket.Arkade.Core.Util;
 using Arkivverket.Arkade.GUI.Languages;
 using Application = System.Windows.Application;
 using Settings = Arkivverket.Arkade.GUI.Properties.Settings;
@@ -47,8 +47,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
         private string _archiveFileName;
         private ArchiveType _archiveType;
         private TestSession _testSession;
-        private bool _testRunHasBeenExecuted; // TODO: Use ArkadeProcessingState?
-        private bool _isRunningTests; // TODO: Use ArkadeProcessingState?
+        private bool _testRunHasBeenExecuted;
+        private bool _isRunningTests;
         private bool _testRunCompletedSuccessfully;
         private bool _canSelectTests;
         private bool _allTestsSelected;
@@ -335,14 +335,14 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             try
             {
                 NotifyStartRunningTests();
-
+                
                 _testSession.TestsToRun = GetSelectedTests();
 
                 Enum.TryParse(Settings.Default.SelectedOutputLanguage, out SupportedLanguage outputLanguage);
                 _testSession.OutputLanguage = outputLanguage;
 
                 _arkadeApi.RunTests(_testSession);
-
+                
                 _testSession.TestSummary = new TestSummary(_numberOfProcessedFiles, _numberOfProcessedRecords, _numberOfTestsFinished);
 
                 _testSession.AddLogEntry("Test run completed.");
