@@ -112,6 +112,7 @@ namespace Arkivverket.Arkade.Core.Report
             string fullFileName = Path.Combine(Path.GetDirectoryName(fileFormatInfoFileName),
                 string.Format(OutputFileNames.FileFormatInfoStatisticsFile,
                     Path.GetFileNameWithoutExtension(fileFormatInfoFileName)));
+
             using (var writer = new StreamWriter(fullFileName))
             {
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))

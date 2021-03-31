@@ -236,7 +236,6 @@ namespace Arkivverket.Arkade.CLI
             ArchiveType archiveType = GetArchiveType(archiveTypeString, archive);
 
             TestSession testSession;
-
             if (File.Exists(archive))
             {
                 Log.Debug("File exists");

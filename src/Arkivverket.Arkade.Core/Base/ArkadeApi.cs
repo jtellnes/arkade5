@@ -126,7 +126,7 @@ namespace Arkivverket.Arkade.Core.Base
             LanguageManager.SetResourceLanguageForStandalonePronomAnalysis(language);
             
             string resultFileFullName = Path.Combine(resultFileDirectoryPath, resultFileName);
-            
+
             FileFormatInfoGenerator.Generate(filesDirectory, resultFileFullName);
         }
 
