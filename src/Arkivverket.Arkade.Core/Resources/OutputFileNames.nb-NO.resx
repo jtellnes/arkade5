@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ResultOutputDirectory" xml:space="preserve">
-    <value>Arkade-resultater</value>
+    <value>Arkade-resultater_{0}</value>
   </data>
   <data name="FileFormatInfoFile" xml:space="preserve">
     <value>{0}-filformatinfo.csv</value>
