@@ -243,7 +243,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
                 if (_testSession.Archive.ArchiveType == ArchiveType.Noark5)
                 {
-                    Enum.TryParse(Settings.Default.SelectedUILanguage, out SupportedLanguage uiLanguage);
+                    SupportedLanguage uiLanguage = LanguageSettingHelper.GetUILanguage();
 
                     foreach (TestId testId in _testSession.AvailableTests)
                     {
