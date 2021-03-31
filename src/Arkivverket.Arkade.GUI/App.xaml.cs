@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Threading;
 using System.Windows;
@@ -150,7 +150,6 @@ namespace Arkivverket.Arkade.GUI
             }
 
             var cultureInfo = CultureInfo.CreateSpecificCulture(uiLanguage);
-            //cultureInfo = new CultureInfo("nb-NO", true);
 
             AboutGUI.Culture = cultureInfo;
             CreatePackageGUI.Culture = cultureInfo;
