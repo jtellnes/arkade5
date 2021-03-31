@@ -80,8 +80,8 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
 
             LanguageOptions = GetSupportedLanguagesAsString();
-            _selectedOutputLanguage = LanguageSettingHelper.GetOutputLanguage();
-            _selectedUILanguage = LanguageSettingHelper.GetUILanguage();
+            SelectedOutputLanguage = LanguageSettingHelper.GetOutputLanguage();
+            SelectedUILanguage = LanguageSettingHelper.GetUILanguage();
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
         }
