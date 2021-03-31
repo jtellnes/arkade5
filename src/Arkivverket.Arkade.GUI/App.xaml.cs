@@ -32,10 +32,11 @@ namespace Arkivverket.Arkade.GUI
 
         public App()
         {
+            SetUILanguage();
+            
             try
             {
                 ArkadeProcessingArea.Establish(Settings.Default.ArkadeProcessingAreaLocation);
-                SetUILanguage();
             }
             catch (Exception e)
             {
