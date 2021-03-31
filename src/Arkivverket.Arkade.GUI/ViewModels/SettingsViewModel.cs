@@ -28,7 +28,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
 
         public string CurrentArkadeProcessingAreaLocation { get; }
         public string DirectoryNameArkadeProcessingAreaRoot { get; }
-        public Dictionary<SupportedLanguage, string> SupportedLanguages { get; }
+        public Dictionary<SupportedLanguage, string> LanguageOptions { get; }
 
         public bool DarkModeSelected
         {
@@ -79,7 +79,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             ChangeArkadeProcessingAreaLocationCommand = new DelegateCommand(ChangeArkadeProcessingAreaLocation);
             ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
 
-            SupportedLanguages = GetSupportedLanguagesAsString();
+            LanguageOptions = GetSupportedLanguagesAsString();
             _selectedOutputLanguage = LanguageSettingHelper.GetOutputLanguage();
             _selectedUILanguage = LanguageSettingHelper.GetUILanguage();
 
@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string languageAsString = supportedLanguage switch
                 {
                     SupportedLanguage.en => "English",
-                    SupportedLanguage.nb => "Norsk (Bokmï¿½l)",
+                    SupportedLanguage.nb => "Norsk (Bokmål)",
                     _ => null
                 };
                 supportedLanguages.TryAdd(supportedLanguage, languageAsString);

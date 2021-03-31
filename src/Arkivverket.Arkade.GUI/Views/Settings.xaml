@@ -54,7 +54,7 @@
                    Text="{x:Static lang:SettingsGUI.SelectUILanguageText}"/>
         <ComboBox Margin="10" Grid.Row="1" Grid.Column="1"
                   Width="120" Cursor="Hand"
-                  ItemsSource="{Binding SupportedLanguages}" DisplayMemberPath="Value" SelectedValuePath="Value"
+                  ItemsSource="{Binding LanguageOptions}" DisplayMemberPath="Value" SelectedValuePath="Value"
                   SelectedIndex="{Binding SelectedUILanguageIndex}"/>
 
         <TextBlock Margin="10" Grid.Row="2" Grid.Column="0"
@@ -62,7 +62,7 @@
                    Text="{x:Static lang:SettingsGUI.SelectOutputLanguageText}"/>
         <ComboBox Margin="10" Grid.Row="2" Grid.Column="1"
                   Width="120" Cursor="Hand"
-                  ItemsSource="{Binding SupportedLanguages}"
+                  ItemsSource="{Binding LanguageOptions}"
                   SelectedIndex="{Binding SelectedOutputLanguageIndex}" DisplayMemberPath="Value" SelectedValuePath="Value"/>
 
         <WrapPanel Margin="10" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
