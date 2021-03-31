@@ -178,7 +178,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string languageAsString = supportedLanguage switch
                 {
                     SupportedLanguage.en => "English",
-                    SupportedLanguage.nb => "Norsk (Bokmål)",
+                    SupportedLanguage.nb => "Norsk (BokmÃ¥l)",
                     _ => null
                 };
                 supportedLanguages.TryAdd(supportedLanguage, languageAsString);
