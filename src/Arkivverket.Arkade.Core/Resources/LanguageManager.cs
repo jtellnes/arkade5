@@ -42,7 +42,7 @@ namespace Arkivverket.Arkade.Core.Languages
 
     public enum SupportedLanguage
     {
-        nb,
         en,
+        nb,
     }
 }
