@@ -7,6 +7,7 @@ using Arkivverket.Arkade.Core.Base.Addml;
 using Arkivverket.Arkade.Core.Base.Noark5;
 using Arkivverket.Arkade.Core.Base.Siard;
 using Arkivverket.Arkade.Core.Identify;
+using Arkivverket.Arkade.Core.Languages;
 using Arkivverket.Arkade.Core.Logging;
 using Arkivverket.Arkade.Core.Metadata;
 using Arkivverket.Arkade.Core.Testing;
@@ -141,15 +142,9 @@ namespace Arkivverket.Arkade.GUI
 
         private static void SetUILanguage()
         {
-            string uiLanguage = Settings.Default.SelectedUILanguage;
+            SupportedLanguage uiLanguage = LanguageSettingHelper.GetUILanguage();
 
-            if (uiLanguage == null)
-            {
-                uiLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
-                Settings.Default.SelectedUILanguage = uiLanguage;
-            }
-
-            var cultureInfo = CultureInfo.CreateSpecificCulture(uiLanguage);
+            var cultureInfo = CultureInfo.CreateSpecificCulture(uiLanguage.ToString());
 
             AboutGUI.Culture = cultureInfo;
             CreatePackageGUI.Culture = cultureInfo;

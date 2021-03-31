@@ -80,13 +80,10 @@ namespace Arkivverket.Arkade.GUI.ViewModels
             ApplyChangesAndCloseWindowCommand = new DelegateCommand(ApplyChangesAndCloseWindow);
 
             SupportedLanguages = GetSupportedLanguagesAsString();
+            _selectedOutputLanguage = LanguageSettingHelper.GetOutputLanguage();
+            _selectedUILanguage = LanguageSettingHelper.GetUILanguage();
 
             DarkModeSelected = Settings.Default.DarkModeEnabled;
-            if (!Enum.TryParse(Settings.Default.SelectedOutputLanguage, out _selectedOutputLanguage))
-                Settings.Default.SelectedOutputLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName; // TODO: Default to static value?
-            if (!Enum.TryParse(Settings.Default.SelectedUILanguage, out _selectedUILanguage))
-                Settings.Default.SelectedUILanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
-
         }
 
         private void ChangeArkadeProcessingAreaLocation()
@@ -181,7 +178,7 @@ namespace Arkivverket.Arkade.GUI.ViewModels
                 string languageAsString = supportedLanguage switch
                 {
                     SupportedLanguage.en => "English",
-                    SupportedLanguage.nb => "Norsk (Bokmål)",
+                    SupportedLanguage.nb => "Norsk (Bokmï¿½l)",
                     _ => null
                 };
                 supportedLanguages.TryAdd(supportedLanguage, languageAsString);
